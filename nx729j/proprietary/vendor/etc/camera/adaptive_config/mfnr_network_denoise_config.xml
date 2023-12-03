@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<mfnr_network_denoise_config>
+    <PhoneConfigParam target_brightness="0.55f" dump_value="0" cache_path="/data/data/com.android.camera/cache/" phone_id="NX711J"
+        k1_net="0.0004897055f" k2_net="0.01507620f" s1_net="7.910723e-7f" s2_net="0.002898401f"
+        s3_net="-1.223214f" black_level_net="64" white_level_net="1023" iso_a="2000"
+        model_width="608" model_height="608" tflite_model="tflite_model_denoised_608_608">
+        <CameraConfigParam camera_id="0" factor_rough="8" k1_camera="0.0004990743188275732f"
+            k2_camera="-0.004905349592507713f" s1_camera="8.159870039922353e-07f"
+            s2_camera="0.0009510717756422594f" s3_camera="0.48233114578518527f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="6400" num_w="4"
+            num_h="3" threshold_dpc_luma_percent="0.005f"></CameraConfigParam>
+        <CameraConfigParam camera_id="1" factor_rough="8" k1_camera="0.0005954980601593063f"
+            k2_camera="0.00881361268494385f" s1_camera="1.0338283579588894e-06f"
+            s2_camera="0.001465578764045025f" s3_camera="0.057515100272384205f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1550" num_w="2"
+            num_h="2" threshold_dpc_luma_percent="0.005f"></CameraConfigParam>
+        <CameraConfigParam camera_id="2" factor_rough="8" k1_camera="0.00033889138491001225f"
+            k2_camera="-0.006582954586840328f" s1_camera="1.4164783927790576e-06f"
+            s2_camera="-0.0005897163909008022f" s3_camera="0.8173615399268959f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1600" num_w="4"
+            num_h="3" threshold_dpc_luma_percent="0.015f"></CameraConfigParam>
+    </PhoneConfigParam>
+</mfnr_network_denoise_config>
