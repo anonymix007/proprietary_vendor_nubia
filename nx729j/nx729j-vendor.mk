@@ -356,222 +356,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.latency@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.2.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.voiceprint@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/Theme_Mark.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/Theme_Mark.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/cn.nubia.launcher:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/cn.nubia.launcher \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/description.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/description.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/framework-nubia-res:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/framework-nubia-res \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/icons:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/icons \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/preview/preview_icons_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/preview/preview_icons_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/preview/preview_launcher_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/preview/preview_launcher_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/preview/preview_lockscreen_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/preview/preview_lockscreen_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/preview/preview_thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/preview/preview_thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/wallpaper/default_lock_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/wallpaper/default_lock_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_colorful_international/wallpaper/default_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_colorful_international/wallpaper/default_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/Theme_Mark.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/Theme_Mark.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/cn.nubia.launcher:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/cn.nubia.launcher \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/description.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/description.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/framework-nubia-res:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/framework-nubia-res \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/icons:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/icons \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/preview/preview_icons_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/preview/preview_icons_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/preview/preview_launcher_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/preview/preview_launcher_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/preview/preview_lockscreen_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/preview/preview_lockscreen_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/preview/preview_thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/preview/preview_thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/wallpaper/default_lock_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/wallpaper/default_lock_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_tech/wallpaper/default_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_tech/wallpaper/default_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/Theme_Mark.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/Theme_Mark.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/cn.nubia.launcher:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/cn.nubia.launcher \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/description.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/description.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/framework-nubia-res:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/framework-nubia-res \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/icons:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/icons \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/preview/preview_icons_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/preview/preview_icons_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/preview/preview_launcher_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/preview/preview_launcher_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/preview/preview_lockscreen_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/preview/preview_lockscreen_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/preview/preview_thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/preview/preview_thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/wallpaper/default_lock_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/wallpaper/default_lock_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_future_universe/wallpaper/default_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_future_universe/wallpaper/default_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/Theme_Mark.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/Theme_Mark.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/cn.nubia.contacts:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/cn.nubia.contacts \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/cn.nubia.launcher:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/cn.nubia.launcher \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/cn.nubia.mms:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/cn.nubia.mms \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/colorful/aod.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/colorful/aod.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/colorful/finger_print.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/colorful/finger_print.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/colorful/notification_panel.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/colorful/notification_panel.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/colorful/thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/colorful/thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/com.android.settings:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/com.android.settings \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/description.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/description.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/framework-nubia-res:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/framework-nubia-res \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/icons:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/icons \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_icons_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_icons_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_launcher_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_launcher_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_lockscreen_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_lockscreen_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_setting_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_setting_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/preview/preview_thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/wallpaper/default_lock_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/wallpaper/default_lock_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_glassy_rhythm/wallpaper/default_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_glassy_rhythm/wallpaper/default_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/Theme_Mark.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/Theme_Mark.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/cn.nubia.launcher:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/cn.nubia.launcher \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/description.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/description.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/framework-nubia-res:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/framework-nubia-res \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/icons:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/icons \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/preview/preview_icons_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/preview/preview_icons_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/preview/preview_launcher_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/preview/preview_launcher_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/preview/preview_lockscreen_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/preview/preview_lockscreen_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/preview/preview_thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/preview/preview_thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/wallpaper/default_lock_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/wallpaper/default_lock_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_number/wallpaper/default_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_number/wallpaper/default_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/Theme_Mark.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/Theme_Mark.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/cn.nubia.contacts:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/cn.nubia.contacts \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/cn.nubia.launcher:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/cn.nubia.launcher \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/cn.nubia.mms:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/cn.nubia.mms \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/colorful/aod.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/colorful/aod.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/colorful/finger_print.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/colorful/finger_print.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/colorful/notification_panel.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/colorful/notification_panel.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/colorful/thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/colorful/thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/com.android.settings:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/com.android.settings \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/description.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/description.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/framework-nubia-res:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/framework-nubia-res \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/icons:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/icons \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/preview/preview_icons_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/preview/preview_icons_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/preview/preview_launcher_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/preview/preview_launcher_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/preview/preview_lockscreen_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/preview/preview_lockscreen_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/preview/preview_setting_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/preview/preview_setting_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/preview/preview_thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/preview/preview_thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/wallpaper/default_lock_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/wallpaper/default_lock_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_shadow_warship/wallpaper/default_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_shadow_warship/wallpaper/default_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/Theme_Mark.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/Theme_Mark.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/cn.nubia.launcher:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/cn.nubia.launcher \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/colorful/aod.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/colorful/aod.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/colorful/finger_print.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/colorful/finger_print.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/colorful/notification_panel.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/colorful/notification_panel.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/colorful/thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/colorful/thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/description.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/description.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/framework-nubia-res:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/framework-nubia-res \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/icons:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/icons \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/preview/preview_icons_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/preview/preview_icons_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/preview/preview_launcher_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/preview/preview_launcher_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/preview/preview_lockscreen_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/preview/preview_lockscreen_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/preview/preview_setting_0.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/preview/preview_setting_0.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/preview/preview_thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/preview/preview_thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/wallpaper/default_lock_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/wallpaper/default_lock_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/default_superpower_universe/wallpaper/default_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/default_superpower_universe/wallpaper/default_wallpaper.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/font_default/NotoSansHans-Regular.otf:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/font_default/NotoSansHans-Regular.otf \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/font_default/description_font.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/font_default/description_font.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/font_default/id_default.extra:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/font_default/id_default.extra \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/font_default/id_info.extra:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/font_default/id_info.extra \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/font_default/preview/font_preview_contact.jpg:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/font_default/preview/font_preview_contact.jpg \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/font_default/preview/font_preview_launcher.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/font_default/preview/font_preview_launcher.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/font_default/preview/font_preview_mms.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/font_default/preview/font_preview_mms.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/theme/thememanager/font_default/preview/font_preview_thumbnail.png:$(TARGET_COPY_OUT_VENDOR)/app/media/theme/thememanager/font_default/preview/font_preview_thumbnail.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_01.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_01.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_02.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_02.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_03.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_03.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_04.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_04.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_05.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_05.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_06.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_06.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_07.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_07.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_08.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_08.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_09.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_09.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_10.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_10.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_11.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_11.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_12.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_12.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_13.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_13.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_14.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_14.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_15.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_15.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_16.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_16.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_17.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_17.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_18.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_18.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_19.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_19.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_20.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_20.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_21.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_21.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_22.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_22.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_23.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_23.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_24.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_24.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_25.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_25.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_26.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_26.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_27.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_27.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_28.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_28.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_29.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_29.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_30.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_30.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_31.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_31.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_32.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_32.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_33.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_33.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_34.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_34.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_35.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_35.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_36.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_36.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_37.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_37.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_38.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_38.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_39.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_39.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_40.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_40.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/1920/wallpaper_41.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/1920/wallpaper_41.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/controlXml/xmlfile3.xml:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/controlXml/xmlfile3.xml \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_01.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_01.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_02.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_02.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_03.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_03.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_04.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_04.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_05.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_05.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_06.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_06.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_07.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_07.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_08.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_08.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_09.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_09.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_10.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_10.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_11.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_11.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_12.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_12.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_13.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_13.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_14.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_14.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_15.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_15.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_16.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_16.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_17.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_17.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_18.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_18.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_19.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_19.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_20.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_20.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_21.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_21.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_22.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_22.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_23.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_23.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_24.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_24.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_25.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_25.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_26.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_26.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_27.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_27.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_28.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_28.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_29.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_29.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_30.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_30.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_31.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_31.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_32.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_32.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_33.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_33.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_34.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_34.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_35.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_35.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_36.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_36.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_37.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_37.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_38.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_38.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_39.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_39.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_40.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_40.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/middle/wallpaper_41.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/middle/wallpaper_41.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_01.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_01.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_02.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_02.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_03.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_03.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_04.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_04.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_05.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_05.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_06.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_06.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_07.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_07.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_08.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_08.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_09.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_09.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_10.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_10.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_11.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_11.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_12.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_12.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_13.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_13.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_14.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_14.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_15.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_15.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_16.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_16.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_17.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_17.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_18.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_18.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_19.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_19.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_20.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_20.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_21.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_21.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_22.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_22.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_23.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_23.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_24.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_24.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_25.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_25.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_26.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_26.png \
-    vendor/nubia/nx729j/proprietary/vendor/app/media/wallpaper/small/wallpaper_27.png:$(TARGET_COPY_OUT_VENDOR)/app/media/wallpaper/small/wallpaper_27.png \
     vendor/nubia/nx729j/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/AnchorTest:$(TARGET_COPY_OUT_VENDOR)/bin/AnchorTest \
     vendor/nubia/nx729j/proprietary/vendor/bin/COSNet_spatial_8bit_quantized.serialized.bin:$(TARGET_COPY_OUT_VENDOR)/bin/COSNet_spatial_8bit_quantized.serialized.bin \
@@ -649,7 +433,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.dumpstate-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate-service.qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.health-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.qti \
@@ -658,7 +441,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service.sec:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service.sec \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.power-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.sensors@2.1-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.1-service.multihal \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.qti-v2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.qti-v2 \
@@ -735,7 +517,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/pm_ioctl_app:$(TARGET_COPY_OUT_VENDOR)/bin/pm_ioctl_app \
     vendor/nubia/nx729j/proprietary/vendor/bin/pmic_key_reset:$(TARGET_COPY_OUT_VENDOR)/bin/pmic_key_reset \
     vendor/nubia/nx729j/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
-    vendor/nubia/nx729j/proprietary/vendor/bin/poweropt-service:$(TARGET_COPY_OUT_VENDOR)/bin/poweropt-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/nubia/nx729j/proprietary/vendor/bin/qcc-trd:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-trd \
     vendor/nubia/nx729j/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
@@ -1130,7 +911,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/nubia/nx729j/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/ffbm_ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ffbm_ftm_test_config \
-    vendor/nubia/nx729j/proprietary/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
     vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
     vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config_kalama-grd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kalama-grd-snd-card \
     vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config_kalama-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kalama-qrd-snd-card \
@@ -1152,7 +932,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.sec.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.power-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.1-service-multihal.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc \
@@ -1197,7 +976,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/poweropt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
@@ -1880,6 +1658,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.1-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.1-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.2-impl.so \
@@ -1896,7 +1676,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.dynamic_sensor_hal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/sound_trigger.primary.kalama.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.kalama.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.nubia.tiktap@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.nubia.tiktap@1.0-impl.so \
@@ -2213,8 +1992,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfioctl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplatformconfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libpowercallback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowercallback.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowercore.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libpsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpsi.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libpsmoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpsmoptfeature.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libq3dtools_adreno.so \
@@ -2937,6 +2714,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.1-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.2-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.3-impl.so \
@@ -2953,7 +2732,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.default.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/sound_trigger.primary.kalama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.kalama.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/tiktap_algo.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/tiktap_algo.default.so \
@@ -3328,8 +3106,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libplatformconfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libpowercallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercallback.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libprefapps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprefapps.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libprekill.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprekill.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libprocomp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprocomp.so \
@@ -3888,7 +3664,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd \
     android.hardware.wifi.supplicant \
     android.hardware.wifi@1.0-service \
-    bluetooth_audio \
     bttpi-saidl \
     c2_manifest_vendor \
     c2_manifest_vendor_audio \
