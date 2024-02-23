@@ -6,7 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nubia/nx729j
 
 PRODUCT_COPY_FILES += \
-    vendor/nubia/nx729j/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
+    vendor/nubia/nx729j/proprietary/vendor/etc/aac_richtap.config:$(TARGET_COPY_OUT_VENDOR)/etc/aac_richtap.config \
     vendor/nubia/nx729j/proprietary/product/etc/permissions/qti_telephony_hidl_wrapper_prd.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_telephony_hidl_wrapper_prd.xml \
     vendor/nubia/nx729j/proprietary/product/etc/permissions/qti_telephony_utils_prd.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_telephony_utils_prd.xml \
     vendor/nubia/nx729j/proprietary/system/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
