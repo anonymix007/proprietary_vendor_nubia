@@ -1,0 +1,16 @@
+on early-init
+    insmod /vendor/lib/modules/tfa98xx_dlkm.ko
+
+on mmi && property:ro.bootmode=ffbm-02
+    chmod 0666 /sys/bus/i2c/devices/5-0034/reg
+    chmod 0666 /sys/bus/i2c/devices/5-0034/rw
+
+    chmod 0666 /sys/bus/i2c/devices/5-0035/reg
+    chmod 0666 /sys/bus/i2c/devices/5-0035/rw
+
+
+    chmod 0666 /sys/bus/i2c/devices/6-0034/reg
+    chmod 0666 /sys/bus/i2c/devices/6-0034/rw
+
+    chmod 0666 /sys/bus/i2c/devices/6-0035/reg
+    chmod 0666 /sys/bus/i2c/devices/6-0035/rw

@@ -27,7 +27,6 @@
 <Feature>
     <Name>sPLH</Name>
     <Configs target="kalama">
-        <Enable>0</Enable>
         <FPS>60,90,120,144,180,240</FPS>
         <FPS60>0,690,80,1600,120,2000</FPS60>
         <FPS90>0,690,80,1600,120,2000</FPS90>

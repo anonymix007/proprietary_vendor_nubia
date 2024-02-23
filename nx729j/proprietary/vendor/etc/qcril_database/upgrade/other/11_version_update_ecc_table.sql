@@ -41,9 +41,7 @@ DELETE FROM qcril_emergency_source_mcc_table where MCC = '310' AND NUMBER = '999
 DELETE FROM qcril_emergency_source_mcc_table where MCC = '414' AND NUMBER = '191';
 DELETE FROM qcril_emergency_source_mcc_table where MCC = '414' AND NUMBER = '192';
 DELETE FROM qcril_emergency_source_mcc_table where MCC = '414' AND NUMBER = '199';
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '515' AND NUMBER = '117';
 DELETE FROM qcril_emergency_source_mcc_table where MCC = '515' AND NUMBER = '192';
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '515' AND NUMBER = '911';
 DELETE FROM qcril_emergency_source_mcc_table where MCC = '520' AND NUMBER = '191';
 DELETE FROM qcril_emergency_source_mcc_table where MCC = '520' AND NUMBER = '1669';
 DELETE FROM qcril_emergency_source_mcc_table where MCC = '520' AND NUMBER = '199';

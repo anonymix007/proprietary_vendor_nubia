@@ -1,30 +1,13 @@
 <?xml version="1.0" standalone="no"?>
 <mfnr_network_denoise_config>
-    <PhoneConfigParam target_brightness="0.2f" cache_path="/data/vendor/camera/" phone_id="NX729J"
+    <PhoneConfigParam target_brightness="0.5f" cache_path="/data/vendor/camera/" phone_id="NX729J"
         k1_net="0.0004897055f" k2_net="0.01507620f" s1_net="7.910723e-7f" s2_net="0.002898401f"
         s3_net="-1.223214f" black_level_net="64" white_level_net="1023" iso_a="2000"
-        model_width="608" model_height="608" tflite_model="tflite_model_denoised_608_608">
-        <CameraConfigParam camera_id="0" factor_rough="8" k1_camera="0.0004990743188275732f"
-            k2_camera="-0.004905349592507713f" s1_camera="8.159870039922353e-07f"
-            s2_camera="0.0009510717756422594f" s3_camera="0.48233114578518527f"
-            black_level_camera="64" white_level_camera="1023" max_analog_iso="6400" num_w="4"
-            num_h="3" threshold_dpc_luma_percent="0.005f"></CameraConfigParam>
-        <CameraConfigParam camera_id="1" factor_rough="8" k1_camera="0.00108461717644247f"
-            k2_camera="0.0483208212265519f" s1_camera="4.470701542543162e-06f"
-            s2_camera="0.002633890760659361f" s3_camera="0.231806834034529f"
-            black_level_camera="64" white_level_camera="1023" max_analog_iso="1550" num_w="2"
-            num_h="2" threshold_dpc_luma_percent="0.005f" target_brightness="3.0f"></CameraConfigParam>
-        <CameraConfigParam camera_id="2" factor_rough="8" k1_camera="0.0005160882133001372f"
-            k2_camera="0.0023064096209415297f" s1_camera="6.508666666666667e-07f"
-            s2_camera="-0.00041560666666666686f" s3_camera="0.43505200000000005f"
-            black_level_camera="64" white_level_camera="1023" max_analog_iso="1600" num_w="4"
-            num_h="3" threshold_dpc_luma_percent="0.015f"
-            target_brightness="0.25f"></CameraConfigParam>
-        <CameraConfigParam camera_id="3" factor_rough="8" k1_camera="0.000638086456057819f"
-            k2_camera="-0.02524397867743966f" s1_camera="9.412475017838612e-07f"
-            s2_camera="0.0027624054214249534f" s3_camera="0.4842212091378713f"
-            black_level_camera="64" white_level_camera="1023" max_analog_iso="1000" num_w="4"
-            num_h="3" threshold_dpc_luma_percent="0.015f"
-            target_brightness="0.3f"></CameraConfigParam>
+        model_width="528" model_height="528" tflite_model="tflite_model_denoised_528_528">
+        <CameraConfigParam camera_id="0" factor_rough="8" k1_camera="0.0005792500655716656"
+            k2_camera="0.00905860334165931" s1_camera="1.8448589583333334e-06f"
+            s2_camera="-0.001570387125f" s3_camera="0.5338830666666667f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="3200" num_w="4"
+            num_h="3" threshold_dpc_luma_percent="0.015f"></CameraConfigParam>
     </PhoneConfigParam>
 </mfnr_network_denoise_config>

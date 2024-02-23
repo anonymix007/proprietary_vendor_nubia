@@ -5,8 +5,4 @@ service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.
     class late_start
     user system
     group system input uhid
-    task_profiles ProcessCapacityHigh
-
-on property:nubia.perf.restart.fps_hal=restart
-    stop vendor.fps_hal
-    start vendor.fps_hal
+    task_profiles ServiceCapacityLow

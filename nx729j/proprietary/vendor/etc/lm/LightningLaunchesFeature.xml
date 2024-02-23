@@ -20,7 +20,7 @@
     <Name>LightningLaunches</Name>
     <Libname>liblightninglaunches.so</Libname>
     <Configs target="kalama">
-        <Enable>0</Enable>
+        <Enable>1</Enable>
         <Cluster>0,1,2</Cluster>
         <Cluster0>0,800,20,990,40,1500</Cluster0>
         <Cluster1>0,690,80,1600,120,2000</Cluster1>

@@ -27,6 +27,7 @@
     <packageinfo name="com.android.cellbroadcastreceiver.module" path="/apex/com.android.cellbroadcast/priv-app/CellBroadcastApp" />
     <packageinfo name="com.android.cellbroadcastservice" path="/apex/com.android.cellbroadcast/priv-app/CellBroadcastServiceModule" />
     <packageinfo name="com.android.dialer" path="/product/priv-app/Dialer" />
+    <packageinfo name="com.android.imsserviceentitlement" path="/product/priv-app/ImsServiceEntitlement" />
     <packageinfo name="com.android.mms" path="/system_ext/priv-app/Mms" />
     <packageinfo name="com.android.mms.service" path="/system/priv-app/MmsService" />
     <packageinfo name="com.android.MultiplePdpTest" path="/system_ext/app/MultiplePdpTest" />
@@ -37,6 +38,7 @@
     <packageinfo name="com.android.stk" path="/system/app/Stk" />
     <packageinfo name="com.qti.confuridialer" path="/product/app/ConfURIDialer" />
     <packageinfo name="com.qti.phone" path="/system_ext/app/QtiTelephony" />
+    <packageinfo name="com.qti.telephonysettings" path="/product/app/QtiTelephonySettings" />
     <packageinfo name="com.qti.qualcomm.carriertest" path="/system_ext/app/CarrierTest" />
     <packageinfo name="com.qti.qualcomm.datastatusnotification" path="/system_ext/app/datastatusnotification" />
     <packageinfo name="com.qti.qualcomm.deviceinfo" path="/system_ext/app/DeviceInfo" />

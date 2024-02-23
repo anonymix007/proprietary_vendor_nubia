@@ -6,358 +6,323 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nubia/nx729j
 
 PRODUCT_COPY_FILES += \
-    vendor/nubia/nx729j/proprietary/etc/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
-    vendor/nubia/nx729j/proprietary/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    vendor/nubia/nx729j/proprietary/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
-    vendor/nubia/nx729j/proprietary/lib/com.dsi.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.dsi.ant@1.0.so \
-    vendor/nubia/nx729j/proprietary/lib/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmedia_codeclist.so \
-    vendor/nubia/nx729j/proprietary/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_bufferpool@2.0.1.so \
-    vendor/nubia/nx729j/proprietary/lib/libstagefright_codecbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_codecbase.so \
-    vendor/nubia/nx729j/proprietary/lib/libstagefright_framecapture_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_framecapture_utils.so \
-    vendor/nubia/nx729j/proprietary/lib/libstagefright_surface_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_surface_utils.so \
-    vendor/nubia/nx729j/proprietary/lib64/com.dsi.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.dsi.ant@1.0.so \
-    vendor/nubia/nx729j/proprietary/lib64/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia_codeclist.so \
-    vendor/nubia/nx729j/proprietary/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_bufferpool@2.0.1.so \
-    vendor/nubia/nx729j/proprietary/lib64/libstagefright_codecbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_codecbase.so \
-    vendor/nubia/nx729j/proprietary/lib64/libstagefright_framecapture_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_framecapture_utils.so \
-    vendor/nubia/nx729j/proprietary/lib64/libstagefright_surface_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_surface_utils.so \
-    vendor/nubia/nx729j/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
-    vendor/nubia/nx729j/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
-    vendor/nubia/nx729j/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
-    vendor/nubia/nx729j/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
-    vendor/nubia/nx729j/proprietary/system_ext/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perf/wlc_model.tflite \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.uceservice@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.uceservice@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.qualcomm.qti.uceservice@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.uceservice@2.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.api@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.api@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.constants@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.constants@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.constants@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.server@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.server@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.server@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.server@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.server@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/com.quicinc.cne.server@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.server@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvideocodec.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvt.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvtextutils.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvtutils.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdiag_system.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmframework.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/libqcc_file_agent_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqcc_file_agent_sys.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.10.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.11.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.12.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.12.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.13.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.13.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.14.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.14.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.8.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.9.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.postproc@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@2.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@2.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@2.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.factory@2.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.mwqem@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.slm@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.diaghal@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.audiohalext@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.bluetooth_audio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.bluetooth_audio@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.btconfigstore@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.btconfigstore@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.cvp@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.server@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.server@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.server@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.server@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.server@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.server@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.connection@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.connection@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.dynamicdds@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.dynamicdds@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.flow@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.flow@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.flow@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.flow@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.iwlan@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.iwlan@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.iwlan@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.lce@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.fm@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qccsyshal@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qccsyshal@1.2-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.2-halimpl.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qccsyshal@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccvndhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qseecom@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.8.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.lpa@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.lpa@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.lpa@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.lpa@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.lpa@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.seccam@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.slmadapter@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.trustedui@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.trustedui@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.tui_comm@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.vpp@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.callcapability@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.callinfo@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.configservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.configservice@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.configservice@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.configservice@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.connection@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.factory@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcssip@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcssip@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcssip@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcssip@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcssip@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcssip@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcsuce@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsuce@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcsuce@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsuce@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.ims.rcsuce@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsuce@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.imsrtpservice@3.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.imsrtpservice@3.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.latency@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.latency@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.latency@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.latency@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.qspmhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.voiceprint@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.constants@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.constants@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.constants@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.server@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.server@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.server@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.server@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.server@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.quicinc.cne.server@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.server@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmframework.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/libqcc_file_agent_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqcc_file_agent_sys.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.10.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.11.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.12.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.12.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.13.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.13.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.14.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.14.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.8.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.9.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.postproc@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@2.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@2.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@2.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.factory@2.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.mwqem@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.slm@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.bluetooth_audio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.bluetooth_audio@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.btconfigstore@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.btconfigstore@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so \
+    vendor/nubia/nx729j/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
+    vendor/nubia/nx729j/proprietary/product/etc/permissions/qti_telephony_hidl_wrapper_prd.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_telephony_hidl_wrapper_prd.xml \
+    vendor/nubia/nx729j/proprietary/product/etc/permissions/qti_telephony_utils_prd.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_telephony_utils_prd.xml \
+    vendor/nubia/nx729j/proprietary/system/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
+    vendor/nubia/nx729j/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/nubia/nx729j/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/GetBTID:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/GetBTID \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/boot_rescue:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/boot_rescue \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/bootservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/bootservice \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/brcm_patchram_plus:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/brcm_patchram_plus \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/bt_ssp_debug_mode.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/bt_ssp_debug_mode.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/btsnoop:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/btsnoop \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/collectusage.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/collectusage.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/controlspeciallog.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/controlspeciallog.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/deletevendorlogs:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/deletevendorlogs \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/dumpmem.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dumpmem.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/dumptrace.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dumptrace.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dun-server \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/fsck.ntfs:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/fsck.ntfs \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/getbatterystatus.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/getbatterystatus.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/getdumpsys.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/getdumpsys.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/getearlylogtofile:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/getearlylogtofile \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/getjuphoonlog.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/getjuphoonlog.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/getlogtofile:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/getlogtofile \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/getsysteminfo:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/getsysteminfo \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/gettinylogtofile:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/gettinylogtofile \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/gsensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/gsensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/gyrosensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/gyrosensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/h3sensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/h3sensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/hsensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/hsensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/init.btprop.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/init.btprop.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/init.wlanprop.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/init.wlanprop.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/lgtsensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/lgtsensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/logcontrol:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/logcontrol \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/mkfs.ntfs:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/mkfs.ntfs \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/mount.exfat:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/mount.exfat \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/mount.ntfs:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/mount.ntfs \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/msensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/msensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/ntc_sensor_temperature:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/ntc_sensor_temperature \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/ntc_sensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/ntc_sensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/pm_ftm_lpm_test.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/pm_ftm_lpm_test.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/pm_ftm_test.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/pm_ftm_test.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/pm_fullload_recovery.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/pm_fullload_recovery.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/pm_fullload_test.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/pm_fullload_test.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/presensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/presensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/qcrosvm:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qcrosvm \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/sensor_test:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sensor_test \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/show_cpu.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/show_cpu.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/sigma_miracasthalservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice64 \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/snapshotwhenpull.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/snapshotwhenpull.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/ssdaemon:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/ssdaemon \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/start_ipclog.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/start_ipclog.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/start_qxdmbtlog.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/start_qxdmbtlog.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/start_tracer.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/start_tracer.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/startiotop.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/startiotop.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/stop_qxdmbtlog.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/stop_qxdmbtlog.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/stop_tracer.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/stop_tracer.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/tcpcat:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcpcat \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/triggerlogtag.sh:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/triggerlogtag.sh \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/vendorcfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vendorcfg \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/vendorcfgdeamon:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vendorcfgdeamon \
+    vendor/nubia/nx729j/proprietary/system_ext/bin/zbugreport:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/zbugreport \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/compatconfig/settings-platform-compat-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/compatconfig/settings-platform-compat-config.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/NX729J/cube:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/NX729J/cube \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/001:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/001 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/002:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/002 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/003:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/003 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/004:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/004 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/005:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/005 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/006:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/006 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/007:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/007 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/008:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/008 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/app/009:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/app/009 \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/SM8550/cube:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/SM8550/cube \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/app/aaa:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/app/aaa \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/app/aab:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/app/aab \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/app/aac:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/app/aac \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/cube/cube:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cube/cube \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/default-permissions/default-permissions-com.quicinc.voice.activation.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.quicinc.voice.activation.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/fs_config_dirs:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/fs_config_dirs \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/fs_config_files:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/fs_config_files \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/group:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/group \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/ans_off/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_off/ans_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/ans_on/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_on/ans_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_pt/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_ls/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_pt/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_ls/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_inv_pt/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_ls/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/none_pt/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_ls/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_inv_pt/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_ls/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_BiquadHPF_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_EQLeftTop_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_EQRightBottom_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_HDR.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_HDR.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_InputAGC_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_InputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_Limiter_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/selfie_pt/RPP_OutputCompressor_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_params.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_config.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_params.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/boot_rescue.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/boot_rescue.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/bootservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/bootservice.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/connectivity.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/connectivity.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/getearlylog.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/getearlylog.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/getlog.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/getlog.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/init.nubia.perf.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.nubia.perf.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/init.qti.bt.logger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.qti.bt.logger.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/logcontrol.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/logcontrol.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/ssdaemon.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/ssdaemon.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/init/vendorcfgd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendorcfgd.rc \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/perfetto_cfg_bugreport.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perfetto_cfg_bugreport.cfg \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/perfetto_cfg_bugreport_user.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perfetto_cfg_bugreport_user.cfg \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/perfetto_cfg_getsystrace.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perfetto_cfg_getsystrace.cfg \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permission_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permission_config.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.software.verified_boot.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.android.carrierconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.carrierconfig.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.android.emergency.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.emergency.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.android.settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.settings.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.android.storagemanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.storagemanager.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.android.systemui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.systemui.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.qti.media.secureprocessor.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.media.secureprocessor.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.qualcomm.qmapbridge.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qmapbridge.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.qualcomm.qti.VENDORSSGTZD.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.VENDORSSGTZD.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.zte.mifavor.launcher.adapter.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.zte.mifavor.launcher.adapter.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/com.zte.mifavor.launcher.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.zte.mifavor.launcher.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/extphonelib.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/extphonelib.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/privapp-permissions-com.android.subsys.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.android.subsys.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/privapp-permissions-com.quicinc.voice.activation.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.quicinc.voice.activation.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/privapp-permissions-device.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-device.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/privapp-permissions-mms.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-mms.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/privapp-permissions-platform-zte-sysext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-platform-zte-sysext.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti-system-ext.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/qti_supplicant_interface.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_supplicant_interface.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/qti_telephony_hidl_wrapper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_telephony_hidl_wrapper.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/qti_telephony_utils.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_telephony_utils.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/subsys-platform.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/subsys-platform.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/subsys-plugin.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/subsys-plugin.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/subsys-service.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/subsys-service.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/permissions/vendor.zte.hardware.camera.transferclient.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.zte.hardware.camera.transferclient.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/radarconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/radarconfig.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/sarconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sarconfig.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/vendor-voicemail-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vendor-voicemail-conf.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/etc/vendorlogconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vendorlogconfig.xml \
+    vendor/nubia/nx729j/proprietary/system_ext/lib/drm/libdrmzteplugin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/drm/libdrmzteplugin.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib/libztedrmcore.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libztedrmcore.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/android.hidl.base@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/android.hidl.base@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/fm_helium.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libAGC_recpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libAGC_recpp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libANS_recpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libANS_recpp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libAdaptiveEQ_recpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libAdaptiveEQ_recpp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libCompressor_recpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libCompressor_recpp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libGPMTEEC_system.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libGPMTEEC_system.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libGPQTEEC_system.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libGPQTEEC_system.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libGPTEE_system.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libGPTEE_system.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libHDR_recpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libHDR_recpp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libHPFilter_recpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libHPFilter_recpp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libLimiter_recpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libLimiter_recpp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libOpenCL_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libOpenCL_system.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libQOC.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libQOC.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libQSEEComAPI_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libQSEEComAPI_system.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libQTEEConnector_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libQTEEConnector_system.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libWNR.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libWNR.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libWNR_intf.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libWNR_intf.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libblued_ext.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libblued_ext.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libbluetooth_qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libbt-logClient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libbt-logClient.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libbtconfigstore.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libbtconfigstore.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libcryptfs_hw.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcryptfs_hw.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libdisplayconfig.system.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdisplayconfig.system.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libembmssqlite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libembmssqlite.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfm-hci.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libgralloc.system.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libgralloc.system.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmediasp_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediasp_jni.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmiracastsystem.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmmQSM.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmQSM.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmmhttpstack.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmhttpstack.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmmiipstreammmihttp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmiipstreammmihttp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmmio.dylib.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmio.dylib.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmmipstreamnetwork.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmipstreamnetwork.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmmipstreamsourcehttp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmipstreamsourcehttp.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmmipstreamutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmipstreamutils.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libmodemapi.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmodemapi.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libntfs-3g.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libntfs-3g.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/liboemaids_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liboemaids_system.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libqcomfm_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqcomfm_jni.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libqdMetaData.system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqdMetaData.system.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libqesdk_ndk_platform.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqesdk_ndk_platform.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti_vndfwk_detect.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libqti_vndfwk_detect_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti_vndfwk_detect_system.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/librecpp_intf.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/librecpp_intf.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libseccam-ipc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libseccam-ipc.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libseccam.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libseccam.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libseccamservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libseccamservice.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsecureui_svcsock_system.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsecureuisvc_jni.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libsigmautils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsigmautils.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libstrategy.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libstrategy.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libsystemhelper_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsystemhelper_jni.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libthermalclient.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libthermalclient.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libvendorutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvendorutils.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvndfwk_detect_jni.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libvndfwk_detect_jni.qti_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvndfwk_detect_jni.qti_system.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/libxrvd.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libxrvd.qti.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.hardware.zte.wifi@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.hardware.zte.wifi@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cryptfshw@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cvp@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.connection@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.connection@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.flow@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.flow@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.flow@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.flow@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.iwlan@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.iwlan@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.lce@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.display.composer@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.display.composer@3.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.display.composer@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.display.composer@3.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.embmssl@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.embmssl@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.embmssl@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.embmssl@1.1.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.8.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.seccam@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.systemhelper@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.systemhelper@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.trustedui@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.trustedui@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.vpp@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callcapability@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callinfo@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.configservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.configservice@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.configservice@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.configservice@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.connection@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.factory@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcssip@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcssip@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcssip@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcssip@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcssip@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcssip@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcsuce@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsuce@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcsuce@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsuce@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.ims.rcsuce@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsuce@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.latency@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.qesdhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qesdhal@1.0.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.qesdhal@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qesdhal@1.1.so \
+    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.qesdhal@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qesdhal@1.2.so \
     vendor/nubia/nx729j/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
-    vendor/nubia/nx729j/proprietary/vendor/bin/AnchorTest:$(TARGET_COPY_OUT_VENDOR)/bin/AnchorTest \
     vendor/nubia/nx729j/proprietary/vendor/bin/COSNet_spatial_8bit_quantized.serialized.bin:$(TARGET_COPY_OUT_VENDOR)/bin/COSNet_spatial_8bit_quantized.serialized.bin \
     vendor/nubia/nx729j/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/nubia/nx729j/proprietary/vendor/bin/PalTest:$(TARGET_COPY_OUT_VENDOR)/bin/PalTest \
@@ -366,38 +331,33 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/TrustedUISampleTAClient:$(TARGET_COPY_OUT_VENDOR)/bin/TrustedUISampleTAClient \
     vendor/nubia/nx729j/proprietary/vendor/bin/TrustedUISampleTest:$(TARGET_COPY_OUT_VENDOR)/bin/TrustedUISampleTest \
     vendor/nubia/nx729j/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
-    vendor/nubia/nx729j/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/nubia/nx729j/proprietary/vendor/bin/agmcap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcap \
     vendor/nubia/nx729j/proprietary/vendor/bin/agmcompresscap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompresscap \
     vendor/nubia/nx729j/proprietary/vendor/bin/agmcompressplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompressplay \
     vendor/nubia/nx729j/proprietary/vendor/bin/agmhostless:$(TARGET_COPY_OUT_VENDOR)/bin/agmhostless \
     vendor/nubia/nx729j/proprietary/vendor/bin/agmplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmplay \
     vendor/nubia/nx729j/proprietary/vendor/bin/agmvoiceui:$(TARGET_COPY_OUT_VENDOR)/bin/agmvoiceui \
+    vendor/nubia/nx729j/proprietary/vendor/bin/alikey_client:$(TARGET_COPY_OUT_VENDOR)/bin/alikey_client \
+    vendor/nubia/nx729j/proprietary/vendor/bin/apdpswitch:$(TARGET_COPY_OUT_VENDOR)/bin/apdpswitch \
     vendor/nubia/nx729j/proprietary/vendor/bin/ar_util_in_test_example:$(TARGET_COPY_OUT_VENDOR)/bin/ar_util_in_test_example \
-    vendor/nubia/nx729j/proprietary/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag \
     vendor/nubia/nx729j/proprietary/vendor/bin/audioadsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/audioadsprpcd \
     vendor/nubia/nx729j/proprietary/vendor/bin/audiodsd2pcmtest:$(TARGET_COPY_OUT_VENDOR)/bin/audiodsd2pcmtest \
     vendor/nubia/nx729j/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
+    vendor/nubia/nx729j/proprietary/vendor/bin/battery_record_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/battery_record_daemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/battery_stats:$(TARGET_COPY_OUT_VENDOR)/bin/battery_stats \
-    vendor/nubia/nx729j/proprietary/vendor/bin/boringssl_self_test32:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test32 \
     vendor/nubia/nx729j/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
+    vendor/nubia/nx729j/proprietary/vendor/bin/camerahalvs:$(TARGET_COPY_OUT_VENDOR)/bin/camerahalvs \
     vendor/nubia/nx729j/proprietary/vendor/bin/ccid_daemon_nr:$(TARGET_COPY_OUT_VENDOR)/bin/ccid_daemon_nr \
-    vendor/nubia/nx729j/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/nubia/nx729j/proprietary/vendor/bin/checkpoint_gc:$(TARGET_COPY_OUT_VENDOR)/bin/checkpoint_gc \
     vendor/nubia/nx729j/proprietary/vendor/bin/chiaoncameratest:$(TARGET_COPY_OUT_VENDOR)/bin/chiaoncameratest \
     vendor/nubia/nx729j/proprietary/vendor/bin/chimcxtest:$(TARGET_COPY_OUT_VENDOR)/bin/chimcxtest \
     vendor/nubia/nx729j/proprietary/vendor/bin/chiofflinepostproctest:$(TARGET_COPY_OUT_VENDOR)/bin/chiofflinepostproctest \
     vendor/nubia/nx729j/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
-    vendor/nubia/nx729j/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
-    vendor/nubia/nx729j/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
     vendor/nubia/nx729j/proprietary/vendor/bin/compatibilitytest:$(TARGET_COPY_OUT_VENDOR)/bin/compatibilitytest \
     vendor/nubia/nx729j/proprietary/vendor/bin/cplay:$(TARGET_COPY_OUT_VENDOR)/bin/cplay \
     vendor/nubia/nx729j/proprietary/vendor/bin/ctrlapp_dut:$(TARGET_COPY_OUT_VENDOR)/bin/ctrlapp_dut \
     vendor/nubia/nx729j/proprietary/vendor/bin/debug-diag:$(TARGET_COPY_OUT_VENDOR)/bin/debug-diag \
-    vendor/nubia/nx729j/proprietary/vendor/bin/dhcpcd-6.8.2:$(TARGET_COPY_OUT_VENDOR)/bin/dhcpcd-6.8.2 \
     vendor/nubia/nx729j/proprietary/vendor/bin/diag-router:$(TARGET_COPY_OUT_VENDOR)/bin/diag-router \
-    vendor/nubia/nx729j/proprietary/vendor/bin/diag_StartWifi:$(TARGET_COPY_OUT_VENDOR)/bin/diag_StartWifi \
-    vendor/nubia/nx729j/proprietary/vendor/bin/diag_TinyServer:$(TARGET_COPY_OUT_VENDOR)/bin/diag_TinyServer \
     vendor/nubia/nx729j/proprietary/vendor/bin/diag_callback_sample:$(TARGET_COPY_OUT_VENDOR)/bin/diag_callback_sample \
     vendor/nubia/nx729j/proprietary/vendor/bin/diag_dci_sample:$(TARGET_COPY_OUT_VENDOR)/bin/diag_dci_sample \
     vendor/nubia/nx729j/proprietary/vendor/bin/diag_klog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_klog \
@@ -405,57 +365,38 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/diag_socket_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_socket_log \
     vendor/nubia/nx729j/proprietary/vendor/bin/diag_uart_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_uart_log \
     vendor/nubia/nx729j/proprietary/vendor/bin/diagcommd:$(TARGET_COPY_OUT_VENDOR)/bin/diagcommd \
-    vendor/nubia/nx729j/proprietary/vendor/bin/dmapp:$(TARGET_COPY_OUT_VENDOR)/bin/dmapp \
+    vendor/nubia/nx729j/proprietary/vendor/bin/dlsc:$(TARGET_COPY_OUT_VENDOR)/bin/dlsc \
     vendor/nubia/nx729j/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
-    vendor/nubia/nx729j/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
-    vendor/nubia/nx729j/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
     vendor/nubia/nx729j/proprietary/vendor/bin/e_loop:$(TARGET_COPY_OUT_VENDOR)/bin/e_loop \
     vendor/nubia/nx729j/proprietary/vendor/bin/edgnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/edgnss-daemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
     vendor/nubia/nx729j/proprietary/vendor/bin/engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/engine-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/f2managertest:$(TARGET_COPY_OUT_VENDOR)/bin/f2managertest \
     vendor/nubia/nx729j/proprietary/vendor/bin/f2player:$(TARGET_COPY_OUT_VENDOR)/bin/f2player \
-    vendor/nubia/nx729j/proprietary/vendor/bin/feature_enabler_client:$(TARGET_COPY_OUT_VENDOR)/bin/feature_enabler_client \
+    vendor/nubia/nx729j/proprietary/vendor/bin/fan_service:$(TARGET_COPY_OUT_VENDOR)/bin/fan_service \
     vendor/nubia/nx729j/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
     vendor/nubia/nx729j/proprietary/vendor/bin/fmconfig:$(TARGET_COPY_OUT_VENDOR)/bin/fmconfig \
     vendor/nubia/nx729j/proprietary/vendor/bin/fmfactorytest:$(TARGET_COPY_OUT_VENDOR)/bin/fmfactorytest \
     vendor/nubia/nx729j/proprietary/vendor/bin/fmfactorytestserver:$(TARGET_COPY_OUT_VENDOR)/bin/fmfactorytestserver \
     vendor/nubia/nx729j/proprietary/vendor/bin/ftmdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/ftmdaemon \
-    vendor/nubia/nx729j/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
-    vendor/nubia/nx729j/proprietary/vendor/bin/gt_mp_test:$(TARGET_COPY_OUT_VENDOR)/bin/gt_mp_test \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hal_proxy_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hal_proxy_daemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
     vendor/nubia/nx729j/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.audio.service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service_64 \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-qti \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.boot@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.boot@1.2-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
+    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.dumpstate-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate-service.qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.health-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.identity-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.identity-service-qti \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service.sec:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service.sec \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.sensors@2.1-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.1-service.multihal \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.qti-v2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.qti-v2 \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.usb.gadget@1.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb.gadget@1.1-service-qti \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-qti \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/qvrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qvrservice \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/sxrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sxrservice \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.hardware.media.c2@1.0-dtscodec-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.hardware.media.c2@1.0-dtscodec-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.nubia.tiktap@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nubia.tiktap@1.0-service \
+    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.hardware.zte.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.hardware.zte.wifi@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.camera.provider-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider-service_64 \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
@@ -463,7 +404,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.display.demura-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.demura-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.limits@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.limits@1.2-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.memtrack-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.memtrack-service \
@@ -476,56 +416,46 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.vibrator.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.vibrator.service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2audio@1.0-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.spu@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.spu@1.1-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.spu@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.spu@2.0-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
+    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.zte.fingerprint.ifaahidl@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zte.fingerprint.ifaahidl@1.0-service \
+    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.zte.fingerprint.ztecmd@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zte.fingerprint.ztecmd@1.0-service \
+    vendor/nubia/nx729j/proprietary/vendor/bin/ims-dataservice-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims-dataservice-daemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
+    vendor/nubia/nx729j/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
+    vendor/nubia/nx729j/proprietary/vendor/bin/init.qcom.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.usb.sh \
+    vendor/nubia/nx729j/proprietary/vendor/bin/init.qti.media.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.media.sh \
+    vendor/nubia/nx729j/proprietary/vendor/bin/init.qti.qcv.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qcv.sh \
+    vendor/nubia/nx729j/proprietary/vendor/bin/init.qti.write.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.write.sh \
     vendor/nubia/nx729j/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/nubia/nx729j/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
-    vendor/nubia/nx729j/proprietary/vendor/bin/iwlist:$(TARGET_COPY_OUT_VENDOR)/bin/iwlist \
     vendor/nubia/nx729j/proprietary/vendor/bin/iwpriv:$(TARGET_COPY_OUT_VENDOR)/bin/iwpriv \
     vendor/nubia/nx729j/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/nubia/nx729j/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
-    vendor/nubia/nx729j/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
-    vendor/nubia/nx729j/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/nubia/nx729j/proprietary/vendor/bin/ltm:$(TARGET_COPY_OUT_VENDOR)/bin/ltm \
     vendor/nubia/nx729j/proprietary/vendor/bin/mcs_test:$(TARGET_COPY_OUT_VENDOR)/bin/mcs_test \
-    vendor/nubia/nx729j/proprietary/vendor/bin/mdparser:$(TARGET_COPY_OUT_VENDOR)/bin/mdparser \
-    vendor/nubia/nx729j/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
+    vendor/nubia/nx729j/proprietary/vendor/bin/memtester:$(TARGET_COPY_OUT_VENDOR)/bin/memtester \
     vendor/nubia/nx729j/proprietary/vendor/bin/mm-audio-ftm:$(TARGET_COPY_OUT_VENDOR)/bin/mm-audio-ftm \
     vendor/nubia/nx729j/proprietary/vendor/bin/mmid:$(TARGET_COPY_OUT_VENDOR)/bin/mmid \
     vendor/nubia/nx729j/proprietary/vendor/bin/modemManager:$(TARGET_COPY_OUT_VENDOR)/bin/modemManager \
-    vendor/nubia/nx729j/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
-    vendor/nubia/nx729j/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
     vendor/nubia/nx729j/proprietary/vendor/bin/nativechitest:$(TARGET_COPY_OUT_VENDOR)/bin/nativechitest \
     vendor/nubia/nx729j/proprietary/vendor/bin/nativehaltest:$(TARGET_COPY_OUT_VENDOR)/bin/nativehaltest \
-    vendor/nubia/nx729j/proprietary/vendor/bin/nb_boost_test:$(TARGET_COPY_OUT_VENDOR)/bin/nb_boost_test \
     vendor/nubia/nx729j/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/nubia/nx729j/proprietary/vendor/bin/nqnfcinfo:$(TARGET_COPY_OUT_VENDOR)/bin/nqnfcinfo \
-    vendor/nubia/nx729j/proprietary/vendor/bin/nubia_hal_server:$(TARGET_COPY_OUT_VENDOR)/bin/nubia_hal_server \
     vendor/nubia/nx729j/proprietary/vendor/bin/oemcrypto_test:$(TARGET_COPY_OUT_VENDOR)/bin/oemcrypto_test \
     vendor/nubia/nx729j/proprietary/vendor/bin/offcamtest:$(TARGET_COPY_OUT_VENDOR)/bin/offcamtest \
     vendor/nubia/nx729j/proprietary/vendor/bin/osal_in_test_example:$(TARGET_COPY_OUT_VENDOR)/bin/osal_in_test_example \
     vendor/nubia/nx729j/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
-    vendor/nubia/nx729j/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
     vendor/nubia/nx729j/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/nubia/nx729j/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/pm_ioctl_app:$(TARGET_COPY_OUT_VENDOR)/bin/pm_ioctl_app \
     vendor/nubia/nx729j/proprietary/vendor/bin/pmic_key_reset:$(TARGET_COPY_OUT_VENDOR)/bin/pmic_key_reset \
     vendor/nubia/nx729j/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
-    vendor/nubia/nx729j/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/nubia/nx729j/proprietary/vendor/bin/qcc-trd:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-trd \
     vendor/nubia/nx729j/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
     vendor/nubia/nx729j/proprietary/vendor/bin/qcom-system-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qcom-system-daemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/qconfigfunctest:$(TARGET_COPY_OUT_VENDOR)/bin/qconfigfunctest \
-    vendor/nubia/nx729j/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
+    vendor/nubia/nx729j/proprietary/vendor/bin/qdss_qmi_helper:$(TARGET_COPY_OUT_VENDOR)/bin/qdss_qmi_helper \
     vendor/nubia/nx729j/proprietary/vendor/bin/qesdk-manager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-manager \
     vendor/nubia/nx729j/proprietary/vendor/bin/qguard:$(TARGET_COPY_OUT_VENDOR)/bin/qguard \
-    vendor/nubia/nx729j/proprietary/vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance:$(TARGET_COPY_OUT_VENDOR)/bin/qmi-framework-tests/qmi_test_mt_client_init_instance \
     vendor/nubia/nx729j/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
     vendor/nubia/nx729j/proprietary/vendor/bin/qms:$(TARGET_COPY_OUT_VENDOR)/bin/qms \
     vendor/nubia/nx729j/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
@@ -537,48 +467,37 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/qsap_sensors:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_sensors \
     vendor/nubia/nx729j/proprietary/vendor/bin/qsap_voiceui:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_voiceui \
     vendor/nubia/nx729j/proprietary/vendor/bin/qseecom_sample_client:$(TARGET_COPY_OUT_VENDOR)/bin/qseecom_sample_client \
-    vendor/nubia/nx729j/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/nubia/nx729j/proprietary/vendor/bin/qsh_wifi_test:$(TARGET_COPY_OUT_VENDOR)/bin/qsh_wifi_test \
     vendor/nubia/nx729j/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/qtigetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtigetprop \
     vendor/nubia/nx729j/proprietary/vendor/bin/qtisetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtisetprop \
-    vendor/nubia/nx729j/proprietary/vendor/bin/qvrcameratest:$(TARGET_COPY_OUT_VENDOR)/bin/qvrcameratest \
-    vendor/nubia/nx729j/proprietary/vendor/bin/qvrdatacapture:$(TARGET_COPY_OUT_VENDOR)/bin/qvrdatacapture \
-    vendor/nubia/nx729j/proprietary/vendor/bin/qvrdatalogger:$(TARGET_COPY_OUT_VENDOR)/bin/qvrdatalogger \
-    vendor/nubia/nx729j/proprietary/vendor/bin/qvrdatauploader:$(TARGET_COPY_OUT_VENDOR)/bin/qvrdatauploader \
-    vendor/nubia/nx729j/proprietary/vendor/bin/qvrservicetest:$(TARGET_COPY_OUT_VENDOR)/bin/qvrservicetest \
     vendor/nubia/nx729j/proprietary/vendor/bin/qwesd:$(TARGET_COPY_OUT_VENDOR)/bin/qwesd \
     vendor/nubia/nx729j/proprietary/vendor/bin/rkp_factory_extraction_tool:$(TARGET_COPY_OUT_VENDOR)/bin/rkp_factory_extraction_tool \
     vendor/nubia/nx729j/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/nubia/nx729j/proprietary/vendor/bin/sec_nfc_check:$(TARGET_COPY_OUT_VENDOR)/bin/sec_nfc_check \
-    vendor/nubia/nx729j/proprietary/vendor/bin/sec_nfc_inform:$(TARGET_COPY_OUT_VENDOR)/bin/sec_nfc_inform \
+    vendor/nubia/nx729j/proprietary/vendor/bin/rpmbClient:$(TARGET_COPY_OUT_VENDOR)/bin/rpmbClient \
     vendor/nubia/nx729j/proprietary/vendor/bin/sec_nfc_test:$(TARGET_COPY_OUT_VENDOR)/bin/sec_nfc_test \
-    vendor/nubia/nx729j/proprietary/vendor/bin/sec_nvm:$(TARGET_COPY_OUT_VENDOR)/bin/sec_nvm \
-    vendor/nubia/nx729j/proprietary/vendor/bin/see_awrw_reg_m:$(TARGET_COPY_OUT_VENDOR)/bin/see_awrw_reg_m \
-    vendor/nubia/nx729j/proprietary/vendor/bin/see_awrw_reg_s:$(TARGET_COPY_OUT_VENDOR)/bin/see_awrw_reg_s \
-    vendor/nubia/nx729j/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
     vendor/nubia/nx729j/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
-    vendor/nubia/nx729j/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
-    vendor/nubia/nx729j/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
-    vendor/nubia/nx729j/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
+    vendor/nubia/nx729j/proprietary/vendor/bin/soter_client:$(TARGET_COPY_OUT_VENDOR)/bin/soter_client \
+    vendor/nubia/nx729j/proprietary/vendor/bin/ssdaemon_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/ssdaemon_vendor \
     vendor/nubia/nx729j/proprietary/vendor/bin/ssgqmigd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgqmigd \
     vendor/nubia/nx729j/proprietary/vendor/bin/ssgqmigd64:$(TARGET_COPY_OUT_VENDOR)/bin/ssgqmigd64 \
     vendor/nubia/nx729j/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
     vendor/nubia/nx729j/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
     vendor/nubia/nx729j/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
-    vendor/nubia/nx729j/proprietary/vendor/bin/stc_oem_test:$(TARGET_COPY_OUT_VENDOR)/bin/stc_oem_test \
     vendor/nubia/nx729j/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
     vendor/nubia/nx729j/proprietary/vendor/bin/test_diag:$(TARGET_COPY_OUT_VENDOR)/bin/test_diag \
     vendor/nubia/nx729j/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/nubia/nx729j/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
     vendor/nubia/nx729j/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/nubia/nx729j/proprietary/vendor/bin/tlpd:$(TARGET_COPY_OUT_VENDOR)/bin/tlpd \
+    vendor/nubia/nx729j/proprietary/vendor/bin/toybox_oem:$(TARGET_COPY_OUT_VENDOR)/bin/toybox_oem \
+    vendor/nubia/nx729j/proprietary/vendor/bin/tpdtest:$(TARGET_COPY_OUT_VENDOR)/bin/tpdtest \
     vendor/nubia/nx729j/proprietary/vendor/bin/trusteduilistener:$(TARGET_COPY_OUT_VENDOR)/bin/trusteduilistener \
-    vendor/nubia/nx729j/proprietary/vendor/bin/ubwcconvert:$(TARGET_COPY_OUT_VENDOR)/bin/ubwcconvert \
+    vendor/nubia/nx729j/proprietary/vendor/bin/variantid:$(TARGET_COPY_OUT_VENDOR)/bin/variantid \
     vendor/nubia/nx729j/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
-    vendor/nubia/nx729j/proprietary/vendor/bin/vendor.qti.hardware.soter@1.0-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter@1.0-provision \
     vendor/nubia/nx729j/proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal@1.0-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
+    vendor/nubia/nx729j/proprietary/vendor/bin/vendordiag:$(TARGET_COPY_OUT_VENDOR)/bin/vendordiag \
     vendor/nubia/nx729j/proprietary/vendor/bin/vmmgr:$(TARGET_COPY_OUT_VENDOR)/bin/vmmgr \
     vendor/nubia/nx729j/proprietary/vendor/bin/vppcommonlibraryunittest:$(TARGET_COPY_OUT_VENDOR)/bin/vppcommonlibraryunittest \
     vendor/nubia/nx729j/proprietary/vendor/bin/vppipcunittest:$(TARGET_COPY_OUT_VENDOR)/bin/vppipcunittest \
@@ -587,15 +506,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/nubia/nx729j/proprietary/vendor/bin/vppserviceunittest:$(TARGET_COPY_OUT_VENDOR)/bin/vppserviceunittest \
     vendor/nubia/nx729j/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
-    vendor/nubia/nx729j/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
-    vendor/nubia/nx729j/proprietary/vendor/bin/wireless_test:$(TARGET_COPY_OUT_VENDOR)/bin/wireless_test \
-    vendor/nubia/nx729j/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
-    vendor/nubia/nx729j/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
-    vendor/nubia/nx729j/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
-    vendor/nubia/nx729j/proprietary/vendor/etc/GT9916_test_sensor_255_NX729.tporder:$(TARGET_COPY_OUT_VENDOR)/etc/GT9916_test_sensor_255_NX729.tporder \
+    vendor/nubia/nx729j/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
+    vendor/nubia/nx729j/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
+    vendor/nubia/nx729j/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+    vendor/nubia/nx729j/proprietary/vendor/bin/zte_diag_callback:$(TARGET_COPY_OUT_VENDOR)/bin/zte_diag_callback \
+    vendor/nubia/nx729j/proprietary/vendor/bin/zte_ftm:$(TARGET_COPY_OUT_VENDOR)/bin/zte_ftm \
+    vendor/nubia/nx729j/proprietary/vendor/etc/898-898-no-exp-2574099444.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/898-898-no-exp-2574099444.pfm \
     vendor/nubia/nx729j/proprietary/vendor/etc/IPACM_Filter_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_Filter_cfg.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/QWESAttestationCert.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/QWESAttestationCert.pfm \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd \
@@ -613,19 +531,23 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
+    vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
+    vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
+    vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd \
-    vendor/nubia/nx729j/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_policy_configuration.xml \
@@ -638,25 +560,107 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_grd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_grd.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama_qssi/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama_qssi/audio_effects.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama_qssi/audio_policy_configuration.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama_qssi/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama_qssi/audio_policy_volumes.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/SceneParamFile:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SceneParamFile \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/SceneParamFile-320:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SceneParamFile-320 \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/SceneParamFile-430:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SceneParamFile-430 \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/VfbTuningInterface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VfbTuningInterface.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/adaptive_config/mfnr_network_denoise_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/adaptive_config/mfnr_network_denoise_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/adaptive_shutter_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/adaptive_shutter_config.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/adaptive_shutter_config_night.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/adaptive_shutter_config_night.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/beautiful_app/preference_beautify0.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/beautiful_app/preference_beautify1.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify1.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/beautiful_app/preference_beautify2.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify2.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/beautiful_app/preference_beautify3.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify3.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/beautiful_fn/fn_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_fn/fn_default.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cache \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/cameraaiconfig:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraaiconfig \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/And.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/And.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Ant.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Ant.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Aps.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Aps.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Aql.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Aql.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Aqr.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Aqr.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Ara.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Ara.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Ari.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Ari.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Aur.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Aur.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Boo.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Boo.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cae.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cae.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cam.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cam.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cap.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cap.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Car.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Car.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cas.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cas.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cen.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cen.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cep.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cep.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cet.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cha.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cha.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cir.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cir.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cma.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cma.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cmi.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cmi.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cnc.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cnc.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Col.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Col.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Com.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Com.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/CrA.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/CrA.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/CrB.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/CrB.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Crt.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Crt.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cru.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cru.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Crv.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Crv.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cvn.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cvn.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Cyg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Cyg.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Dec.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Dec.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Dor.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Dor.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Dra.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Dra.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Equ.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Equ.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Eri.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Eri.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/For.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/For.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Gem.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Gem.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Gru.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Gru.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Her.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Her.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Hor.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Hor.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Hya.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Hya.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Hyi.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Hyi.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Ind.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Ind.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Lac.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Lac.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Leo.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Leo.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Lep.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Lep.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Lib.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Lib.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Lmi.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Lmi.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Lup.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Lup.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Lyn.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Lyn.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Lyr.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Lyr.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Mer.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Mer.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Mic.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Mic.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Mon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Mon.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Mus.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Mus.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Nor.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Nor.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Oct.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Oct.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Oph.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Oph.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Ori.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Ori.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Pav.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Pav.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Peg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Peg.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Per.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Per.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Phs.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Phs.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Pic.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Pic.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Psa.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Psa.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Psc.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Psc.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Pyx.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Pyx.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Ret.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Ret.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Scl.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Scl.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Sco.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Sco.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Sct.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Sct.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Sex.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Sex.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Sge.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Sge.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Sgr.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Sgr.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Tau.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Tau.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Tel.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Tel.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/TrA.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/TrA.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Tri.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Tri.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Tuc.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Tuc.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/UMa.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/UMa.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Umi.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Umi.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Vir.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Vir.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Vol.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Vol.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/constellation/Vul.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/constellation/Vul.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/cud_binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cud_binary_cache \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/cud_kernel_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cud_kernel_cache \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/cud_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cud_model \
@@ -664,25 +668,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/debug/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/debug/camxoverridesettings.txt \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/defg_data.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/defg_data.txt \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/dualcam_cali.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dualcam_cali.bin \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/blackboard.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/blackboard.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/cool_background.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/cool_background.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/cool_map.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/cool_map.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/instant_lut.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/instant_lut.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/lomo_map.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/lomo_map.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/noise.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/noise.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/oldfilmdust.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/oldfilmdust.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/oldfilmscratches.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/oldfilmscratches.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/overlay_map.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/overlay_map.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/punch_lut.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/punch_lut.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/vignette.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/vignette.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/vignette_map.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/vignette_map.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/warm_map.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/warm_map.rgb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/effect/washout_lut.rgb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect/washout_lut.rgb \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/fonts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fonts.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/fonts/NotoColorEmoji.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fonts/NotoColorEmoji.ttf \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/fonts/Roboto-Medium.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fonts/Roboto-Medium.ttf \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/fonts/ZTEZhengYuan-55S.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fonts/ZTEZhengYuan-55S.ttf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/golden_camera_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_camera_calibration.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/beautybeautiful_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/beautybeautiful_fs.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/beautyblue_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/beautyblue_fs.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/beautyjapaneffect_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/beautyjapaneffect_fs.c \
@@ -705,18 +694,24 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_anhei.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_anhei.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_au3.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_au3.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_av800.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_av800.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_bleach.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_bleach.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_blue_crush.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_blue_crush.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_bw_contrast.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_bw_contrast.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_candy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_candy.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_comic_cloud.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_comic_cloud.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_dt2.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_dt2.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_dushi.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_dushi.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_encounter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_encounter.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_fashion.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_fashion.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_film.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_film.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_fj100.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_fj100.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_fj160s.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_fj160s.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_fj2.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_fj2.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_fj4.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_fj4.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_fj8.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_fj8.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_heijin.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_heijin.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_inspiration.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_inspiration.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_instant.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_instant.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_jianyue.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_jianyue.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_kd400.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_kd400.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_lime.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_lime.png \
@@ -728,20 +723,28 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_mono4.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_mono4.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_passion.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_passion.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_pt160.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_pt160.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_punch.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_punch.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_qingxin.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_qingxin.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_renwen.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_renwen.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_retro.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_retro.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_vintage.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_vintage.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_washout.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_washout.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_washout_color.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_washout_color.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/colorfilter_x_process.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_x_process.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/fish_eye_fs2.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/fish_eye_fs2.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/frag_shader_negative_film.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/frag_shader_negative_film.c \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/fun_effect_red2green.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/fun_effect_red2green.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/gray_scale_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/gray_scale_fs.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/lomo_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/lomo_fs.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/monocolor_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/monocolor_fs.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/noise.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/noise.png \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/noise_texture.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/noise_texture.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/oldfilm_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/oldfilm_fs.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/oldfilmdust.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/oldfilmdust.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/oldfilmscratches.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/oldfilmscratches.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/prague_fstwo.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/prague_fstwo.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/psudo_noise_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/psudo_noise_fs.c \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/psudo_noise_fs_v2.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/psudo_noise_fs_v2.c \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/red2green.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/red2green.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/red2green_r.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/red2green_r.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/simple_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/simple_fs.c \
@@ -752,20 +755,112 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/vignette.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/vignette.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black.argb \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_eng.argb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_v1a.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_v1a.argb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_v1a_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_v1a_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_guoji.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_guoji.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_guoji_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_guoji_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_guojij.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_guojij.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_guojij_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_guojij_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_hongmo.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_hongmo.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_hongmo_bxjg.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_hongmo_bxjg.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_hongmo_bxjg_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_hongmo_bxjg_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_hongmo_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_hongmo_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_hongmoplus.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_hongmoplus.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_hongmoplus_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_hongmoplus_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plus.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plus.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plus_bxjg.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plus_bxjg.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plus_bxjg_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plus_bxjg_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plus_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plus_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plus_touming.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plus_touming.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plus_touming_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plus_touming_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plus_toumingj.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plus_toumingj.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plus_toumingj_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plus_toumingj_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plusj.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plusj.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_plusj_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_plusj_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_touming.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_touming.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_touming_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_touming_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_toumingj.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_toumingj.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_toumingj_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_toumingj_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_blackj.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_blackj.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_blackj_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_blackj_eng.argb \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white.argb \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_eng.argb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_v1a.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_v1a.argb \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_v1a_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_v1a_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_guoji.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_guoji.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_guoji_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_guoji_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_guojij.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_guojij.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_guojij_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_guojij_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_hongmo.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_hongmo.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_hongmo_bxjg.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_hongmo_bxjg.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_hongmo_bxjg_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_hongmo_bxjg_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_hongmo_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_hongmo_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_hongmoplus.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_hongmoplus.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_hongmoplus_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_hongmoplus_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plus.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plus.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plus_bxjg.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plus_bxjg.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plus_bxjg_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plus_bxjg_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plus_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plus_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plus_touming.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plus_touming.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plus_touming_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plus_touming_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plus_toumingj.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plus_toumingj.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plus_toumingj_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plus_toumingj_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plusj.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plusj.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_plusj_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_plusj_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_touming.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_touming.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_touming_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_touming_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_toumingj.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_toumingj.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_toumingj_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_toumingj_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_whitej.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_whitej.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_drawable_whitej_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_whitej_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_time.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_time.config \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_v1a_drawable_black.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_v1a_drawable_black.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_v1a_drawable_black_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_v1a_drawable_black_eng.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_v1a_drawable_white.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_v1a_drawable_white.argb \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/water_mark_v1a_drawable_white_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_v1a_drawable_white_eng.argb \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/icon/yizhou_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/yizhou_fs.c \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/kernel_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/kernel_cache \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/mfnr_network_denoise_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mfnr_network_denoise_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/mfnr_network_denoise_config_night.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mfnr_network_denoise_config_night.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/mfnr_network_denoise_config_underdisplay.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mfnr_network_denoise_config_underdisplay.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/mfnr_network_denoise_config_underdisplay_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mfnr_network_denoise_config_underdisplay_2.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/remosaic_cali_ov16a1q.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/remosaic_cali_ov16a1q.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/remosaic_cali_s5kjn1sq03.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/remosaic_cali_s5kjn1sq03.bin \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/siq_ocl_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache \
-    vendor/nubia/nx729j/proprietary/vendor/etc/camera/superiq_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_0.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_0.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_1.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_1.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_10.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_10.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_11.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_11.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_2.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_2.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_3.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_3.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_4.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_4.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_5.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_5.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_6.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_6.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_7.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_7.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_8.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_8.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_9.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_horizontal/starry_sky_camera_sky_9.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_0.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_0.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_1.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_1.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_10.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_10.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_11.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_11.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_2.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_2.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_3.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_3.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_4.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_4.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_5.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_5.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_6.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_6.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_7.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_7.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_8.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_8.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_9.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/starry_sky_camera/sky_vertical/starry_sky_camera_sky_9.jpg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_bgm_art.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_bgm_art.mp3 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_bgm_cute.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_bgm_cute.mp3 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_bgm_dynamic.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_bgm_dynamic.mp3 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_bgm_fresh.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_bgm_fresh.mp3 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_bgm_magic.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_bgm_magic.mp3 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_bgm_soothing.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_bgm_soothing.mp3 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_art.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_art.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_cute.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_cute.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_dynamic.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_dynamic.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_fastplay.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_fastplay.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_fresh.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_fresh.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_magic.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_magic.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_pullfocus.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_pullfocus.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_reverse.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_reverse.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_slowmotion.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_slowmotion.mp4 \
+    vendor/nubia/nx729j/proprietary/vendor/etc/camera/vlog_app/vlog_demo_soothing.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_soothing.mp4 \
     vendor/nubia/nx729j/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/nubia/nx729j/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
@@ -804,14 +899,13 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/default_audio_logmask.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/default_audio_logmask.cfg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/default_common_logmask.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/default_common_logmask.cfg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/default_data_logmask.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/default_data_logmask.cfg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/default_mdm_diag_logmask.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/default_mdm_diag_logmask.cfg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/default_modem_logmask.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/default_modem_logmask.cfg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/default_power_logmask.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/default_power_logmask.cfg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/default_sns_logmask.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/default_sns_logmask.cfg \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml \
@@ -819,12 +913,16 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_BF068_NT377705_Full_Screen_DSC_FHD_6P78Inch.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_BF068_NT377705_Full_Screen_DSC_FHD_6P78Inch.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_BF068_NT37900_Fold_dev1_Screen_DSC_FHD_8PInch.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_BF068_NT37900_Fold_dev1_Screen_DSC_FHD_8PInch.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_BF068_NT37900_Fold_dev2_Screen_DSC_FHD_8PInch.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_BF068_NT37900_Fold_dev2_Screen_DSC_FHD_8PInch.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_BF068_RM692H0_Full_Screen_1116P_DSC_FHD_6P7Inch.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_BF068_RM692H0_Full_Screen_1116P_DSC_FHD_6P7Inch.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_dsi_rm692h0_1116_2480_amoled_command_dphy_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_dsi_rm692h0_1116_2480_amoled_command_dphy_panel.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json \
@@ -832,13 +930,15 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_visionox_od6630_dsc_cmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_visionox_od6630_dsc_cmd.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_visionox_rm692e5_1080p_dsc_cmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_visionox_rm692e5_1080p_dsc_cmd.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_visionox_rm692e5_f20_dev1_dsc_cmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_visionox_rm692e5_f20_dev1_dsc_cmd.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_visionox_rm692e5_f20_dev2_dsc_cmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_visionox_rm692e5_f20_dev2_dsc_cmd.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json \
-    vendor/nubia/nx729j/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/driver.iso:$(TARGET_COPY_OUT_VENDOR)/etc/driver.iso \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_bt_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/f08a4c48-0887-11e4-9191-0800200c9a11_bt_44.bin \
@@ -879,6 +979,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/custom_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/custom_accessory48 \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/custom_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/custom_speaker48 \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/customer.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dts/customer.cfg \
+    vendor/nubia/nx729j/proprietary/vendor/etc/dts/customer_cts.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dts/customer_cts.cfg \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/default_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/default_accessory44 \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/default_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/default_accessory48 \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/default_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/default_speaker48 \
@@ -910,63 +1011,56 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/dts/voice_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/voice_speaker48 \
     vendor/nubia/nx729j/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/nubia/nx729j/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/ffbm_ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ffbm_ftm_test_config \
-    vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
     vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config_kalama-grd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kalama-grd-snd-card \
     vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config_kalama-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kalama-qrd-snd-card \
     vendor/nubia/nx729j/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    vendor/nubia/nx729j/proprietary/vendor/etc/gpsInterval.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpsInterval.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
+    vendor/nubia/nx729j/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
+    vendor/nubia/nx729j/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
+    vendor/nubia/nx729j/proprietary/vendor/etc/hwid.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hwid.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.audio.service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service_64.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.boot@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot@1.2-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.health-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.sec.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.1-service-multihal.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.usb.gadget@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget@1.1-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/bluetooth_ext_vnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bluetooth_ext_vnd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/camerahalvs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalvs.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/diagcommd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/diagcommd.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/dlsc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlsc.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/dumpstate-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dumpstate-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/hbm_prop_sync.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hbm_prop_sync.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/hw/init.fingerprint.gf95xx.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.fingerprint.gf95xx.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/hw/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.audio.awinic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.awinic.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.audio.tfa9873plus.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.tfa9873plus.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.nb.systrace.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nb.systrace.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.nubia.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nubia.perf.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.fingerprint.alipay.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.alipay.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.nfc.st54j.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.st54j.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qti.display_boot.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.spuservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.spuservice.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.vendor.qti.spu@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.spu@1.1-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.zte.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.zte.perf.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
@@ -976,26 +1070,22 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qguard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qguard.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/qvrd_vndr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qvrd_vndr.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qwesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qwesd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/ssdaemon_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssdaemon_vendor.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/touchscreen_zte.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/touchscreen_zte.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.hardware.media.c2@1.0-dtscodec-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.hardware.media.c2@1.0-dtscodec-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.nubia.tiktap@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nubia.tiktap@1.0-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.nubia_hal_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nubia_hal_server.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.hardware.zte.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.hardware.zte.wifi@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
@@ -1003,47 +1093,41 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.battery_stats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.battery_stats.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.diag_userdebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag_userdebug.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.sensors.awrwm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.awrwm.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.sensors.awrws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.awrws.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.zte.fingerprint.ifaahidl@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.zte.fingerprint.ifaahidl@1.0-service.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.zte.fingerprint.ztecmd@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.zte.fingerprint.ztecmd@1.0-service.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendorapdpswitch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendorapdpswitch.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/wifi-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi-diag.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/jpsp:$(TARGET_COPY_OUT_VENDOR)/etc/jpsp \
-    vendor/nubia/nx729j/proprietary/vendor/etc/keybox.xml:$(TARGET_COPY_OUT_VENDOR)/etc/keybox.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/wifi_sniffer.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_sniffer.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/zcustom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/zcustom.rc \
+    vendor/nubia/nx729j/proprietary/vendor/etc/init/ztevendordiag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ztevendordiag.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-SN220_19_2MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-SN220_19_2MHZ.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-SN220_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-SN220_38_4MHZ.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
+    vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
@@ -1061,18 +1145,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
     vendor/nubia/nx729j/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
     vendor/nubia/nx729j/proprietary/vendor/etc/lm/sPLHFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/sPLHFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/ltm_config_dsi_rm692h0_1116_2480_amoled_command_dphy_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_dsi_rm692h0_1116_2480_amoled_command_dphy_panel.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_vendor.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_performance_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama.xml \
@@ -1083,13 +1158,11 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/media_profiles_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kalama.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/nubia/nx729j/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/nubia_jnii:$(TARGET_COPY_OUT_VENDOR)/etc/nubia_jnii \
-    vendor/nubia/nx729j/proprietary/vendor/etc/nubia_performance_thermal:$(TARGET_COPY_OUT_VENDOR)/etc/nubia_performance_thermal \
+    vendor/nubia/nx729j/proprietary/vendor/etc/oem_4_prj_ZTELTM8550_1663777224350.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/oem_4_prj_ZTELTM8550_1663777224350.pfm \
     vendor/nubia/nx729j/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
@@ -1101,6 +1174,16 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/perf/targetsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetsysnodesconfigs.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/perf/testcommonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testcommonresourceconfigs.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/perf/testtargetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testtargetresourceconfigs.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/qti_fingerprint_interface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_fingerprint_interface.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
+    vendor/nubia/nx729j/proprietary/vendor/etc/pinner_file_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pinner_file_list.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/nubia/nx729j/proprietary/vendor/etc/pwr/AODPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/AODPowerOptFeature.xml \
@@ -1112,14 +1195,17 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/11.0_config.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/12.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/12.0_config.sql \
+    vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/13.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/13.0_config.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/6.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/6.0_config.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/7.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/7.0_config.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/8.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/8.0_config.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/9.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/9.0_config.sql \
+    vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/oem/oem_common_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/oem/oem_common_config.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql \
+    vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/13_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/13_version_update_ecc_table.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql \
@@ -1131,49 +1217,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qguard.json:$(TARGET_COPY_OUT_VENDOR)/etc/qguard.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/qvirtmgr-vndr.json:$(TARGET_COPY_OUT_VENDOR)/etc/qvirtmgr-vndr.json \
-    vendor/nubia/nx729j/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua.txt \
-    vendor/nubia/nx729j/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt \
-    vendor/nubia/nx729j/proprietary/vendor/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_hid_device_list.txt \
-    vendor/nubia/nx729j/proprietary/vendor/etc/qvr/qvr_usb_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_usb_device_list.txt \
-    vendor/nubia/nx729j/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
-    vendor/nubia/nx729j/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/recovery-resource.dat:$(TARGET_COPY_OUT_VENDOR)/etc/recovery-resource.dat \
     vendor/nubia/nx729j/proprietary/vendor/etc/res/images/default/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/default/charger/battery_fail.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/res/images/default/charger/battery_scale.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/default/charger/battery_scale.png \
-    vendor/nubia/nx729j/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/nubia/nx729j/proprietary/vendor/etc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_hwreg.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_swreg.bin \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm64.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.dtscodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.dtscodec.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/codec2.vendor.external.dtscodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.external.dtscodec.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-qsap-location.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/modemManager.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/modemManager.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qsap_voiceui.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_voiceui.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/sxr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sxr@2.0.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
+    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_akmlib.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_akmlib.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_aw9610x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_aw9610x_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_aw9610x_0_sar_register_a.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_aw9610x_0_sar_register_a.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_aw9610x_0_sar_register_b.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_aw9610x_0_sar_register_b.json \
@@ -1184,18 +1235,16 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_aw9610x_1_sar_register_c.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_aw9610x_1_sar_register_c.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_default_sensors.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_dynamic_sensors.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_dynamic_sensors_template.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_dynamic_sensors_template.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_icm4x6xx.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_icm4x6xx.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_irq.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_lps22df_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lps22df_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lsm6dso_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_mtp_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_mtp_ak991x_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_mtp_icm4x6xx.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_mtp_icm4x6xx.json \
-    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_mtp_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_mtp_lsm6dso_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_power_0.json \
-    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_qrd_ak991x_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_qsh_ble_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_qsh_ble_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_stk3a7x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_stk3a7x_0.json \
-    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_v1_fcal_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_v1_fcal_ak991x_0.json \
-    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_vertigo_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_vertigo_ak991x_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/qsh_ble.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_ble.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/qsh_camera.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
@@ -1229,6 +1278,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_mag_cal_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal_legacy.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_multishake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_multishake.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_offbody_detect_phone.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_offbody_detect_phone.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
@@ -1237,56 +1287,30 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
+    vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_transport_ppe.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_transport_ppe.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/nubia/nx729j/proprietary/vendor/etc/smomo_setting.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smomo_setting.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/usb_compositions.conf:$(TARGET_COPY_OUT_VENDOR)/etc/usb_compositions.conf \
+    vendor/nubia/nx729j/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wfdconfig0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig0.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wfdconfig1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig1.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wfdconfig2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig2.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wfdconfig3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig3.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wfdconfig4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig4.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/flt.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/flt.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/kiwi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi/WCNSS_qcom_cfg.ini \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6490/WCNSS_qcom_cfg.ini \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/wpa_supplicant_diag.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_diag.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
-    vendor/nubia/nx729j/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/1-fastblood_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/1-fastblood_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/10-c3_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10-c3_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/11-c4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/11-c4_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/12-c5_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/12-c5_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/13-c6_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/13-c6_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/14-engendary_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/14-engendary_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/18-victory_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/18-victory_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/19-defeat_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/19-defeat_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/21-pisuccess_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/21-pisuccess_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/22-youhaveslainanenemy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/22-youhaveslainanenemy_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/23-da_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/23-da_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/24-xiao_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/24-xiao_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/3-doulekill_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/3-doulekill_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/4-triplekill_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/4-triplekill_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/5-quadrakill_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/5-quadrakill_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/6-pentakill_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/6-pentakill_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/7-hexa6_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/7-hexa6_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/8-hepta7_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/8-hepta7_RTP.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/9-octa8_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9-octa8_RTP.bin \
+    vendor/nubia/nx729j/proprietary/vendor/etc/zperf_action:$(TARGET_COPY_OUT_VENDOR)/etc/zperf_action \
+    vendor/nubia/nx729j/proprietary/vendor/etc/zperf_app_mode:$(TARGET_COPY_OUT_VENDOR)/etc/zperf_app_mode \
+    vendor/nubia/nx729j/proprietary/vendor/etc/zperf_framerate:$(TARGET_COPY_OUT_VENDOR)/etc/zperf_framerate \
+    vendor/nubia/nx729j/proprietary/vendor/etc/zperf_hint:$(TARGET_COPY_OUT_VENDOR)/etc/zperf_hint \
+    vendor/nubia/nx729j/proprietary/vendor/etc/zperf_sched:$(TARGET_COPY_OUT_VENDOR)/etc/zperf_sched \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
@@ -1310,42 +1334,20 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b20 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
+    vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.mbn.back:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn.back \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/ISP70dE1002002001M1200028DE5.fluf:$(TARGET_COPY_OUT_VENDOR)/firmware/ISP70dE1002002001M1200028DE5.fluf \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/ISW31bE1270002001M120001B713.fluf:$(TARGET_COPY_OUT_VENDOR)/firmware/ISW31bE1270002001M120001B713.fluf \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SELEN_UFS_3_1_V6256GbTLC_128GB_P04_FW00_Rev01503_20210802.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SELEN_UFS_3_1_V6256GbTLC_128GB_P04_FW00_Rev01503_20210802.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SELEN_UFS_3_1_V6256GbTLC_256GB_P04_FW00_Rev01503_20210802.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SELEN_UFS_3_1_V6256GbTLC_256GB_P04_FW00_Rev01503_20210802.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SELEN_UFS_3_1_V6512GbTLC_512GB_P03_FW00_Rev00411_20210819.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SELEN_UFS_3_1_V6512GbTLC_512GB_P03_FW00_Rev00411_20210819.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SERRA_V7_TLC_512Gb_UFS40_1TB_P13_FW01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SERRA_V7_TLC_512Gb_UFS40_1TB_P13_FW01.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SERRA_V7_TLC_512Gb_UFS40_256GB_P10_202209.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SERRA_V7_TLC_512Gb_UFS40_256GB_P10_202209.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SERRA_V7_TLC_512Gb_UFS40_256GB_P15_FW01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SERRA_V7_TLC_512Gb_UFS40_256GB_P15_FW01.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SERRA_V7_TLC_512Gb_UFS40_512GB_P10_202209.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SERRA_V7_TLC_512Gb_UFS40_512GB_P10_202209.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SERRA_V7_TLC_512Gb_UFS40_512GB_P15_FW01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SERRA_V7_TLC_512Gb_UFS40_512GB_P15_FW01.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SOLVIT_V6_TLC_256Gb_UFS31_128GB_P10_FW01_220512.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SOLVIT_V6_TLC_256Gb_UFS31_128GB_P10_FW01_220512.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SOLVIT_V6_TLC_256Gb_UFS31_256GB_P11_FW01_220519.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SOLVIT_V6_TLC_256Gb_UFS31_256GB_P11_FW01_220519.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SOLVIT_V6_TLC_512Gb_UFS31_1TB_P07_FW01_220523.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SOLVIT_V6_TLC_512Gb_UFS31_1TB_P07_FW01_220523.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SOLVIT_V6_TLC_512Gb_UFS31_256GB_P03_FW01_220524.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SOLVIT_V6_TLC_512Gb_UFS31_256GB_P03_FW01_220524.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/SOLVIT_V6_TLC_512Gb_UFS31_512GB_P07_FW01_220523.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SOLVIT_V6_TLC_512Gb_UFS31_512GB_P07_FW01_220523.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/UFS_FFU_FW_rev0100_FBO_000000_BGA_128GB.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/UFS_FFU_FW_rev0100_FBO_000000_BGA_128GB.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/UFS_FFU_FW_rev0100_FBO_000000_BGA_256GB.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/UFS_FFU_FW_rev0100_FBO_000000_BGA_256GB.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/UFS_FFU_FW_rev0100_FBO_000000_BGA_512GB.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/UFS_FFU_FW_rev0100_FBO_000000_BGA_512GB.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/UFS_FFU_FW_rev0300_220926_BGA_128GB_THGJFJT0E25BAIPC.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/UFS_FFU_FW_rev0300_220926_BGA_128GB_THGJFJT0E25BAIPC.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/UFS_FFU_FW_rev0300_220926_BGA_256GB_THGJFJT1E45BATPC.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/UFS_FFU_FW_rev0300_220926_BGA_256GB_THGJFJT1E45BATPC.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/UFS_FFU_FW_rev0300_220926_BGA_512GB_THGJFJT2T85BAT0C.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/UFS_FFU_FW_rev0300_220926_BGA_512GB_THGJFJT2T85BAT0C.bin \
+    vendor/nubia/nx729j/proprietary/vendor/firmware/GT9916_test_sensor_255.tporder:$(TARGET_COPY_OUT_VENDOR)/firmware/GT9916_test_sensor_255.tporder \
     vendor/nubia/nx729j/proprietary/vendor/firmware/a740_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_sqe.fw \
     vendor/nubia/nx729j/proprietary/vendor/firmware/a740_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b00 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/a740_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b01 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/a740_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b02 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/a740_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.elf \
     vendor/nubia/nx729j/proprietary/vendor/firmware/a740_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mbn \
+    vendor/nubia/nx729j/proprietary/vendor/firmware/a740_zap.mbn.back:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mbn.back \
     vendor/nubia/nx729j/proprietary/vendor/firmware/a740_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mdt \
     vendor/nubia/nx729j/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/aw22xxx_fw_nx669j_v1e.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw_nx669j_v1e.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_haptic.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/aw8697_osc_rtp_24K_5s.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_osc_rtp_24K_5s.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/aw9620x_bt_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9620x_bt_0.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/aw9620x_bt_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9620x_bt_1.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/aw9620x_fw_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9620x_fw_0.bin \
@@ -1461,780 +1463,33 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
+    vendor/nubia/nx729j/proprietary/vendor/firmware/evass.mbn.back:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn.back \
     vendor/nubia/nx729j/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/nubia/nx729j/proprietary/vendor/firmware/factory_test.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/factory_test.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/fan_led_off.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fan_led_off.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/fan_led_on.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fan_led_on.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/gmu_gen70200.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70200.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
+    vendor/nubia/nx729j/proprietary/vendor/firmware/goodix_cfg_group_9916r.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_9916r.bin \
+    vendor/nubia/nx729j/proprietary/vendor/firmware/goodix_firmware_9916r.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware_9916r.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/haptic_ram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_ram.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/haptic_ram_709.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_ram_709.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/haptic_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/haptic_rtp_lighthouse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp_lighthouse.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/left_red_off_noinit.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/left_red_off_noinit.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/left_red_on_noinit.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/left_red_on_noinit.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/m_led_off.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/m_led_off.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/right_blue_off_noinit.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/right_blue_off_noinit.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/right_blue_on_noinit.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/right_blue_on_noinit.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_s3nrn4v_firmware.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_s3nrn4v_hwreg.bin \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_s3nrn4v_swreg.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
-    vendor/nubia/nx729j/proprietary/vendor/firmware/tiktap_config.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_config.txt \
     vendor/nubia/nx729j/proprietary/vendor/firmware/tiktap_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_params.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/tiktap_wave.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_wave.bin \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
+    vendor/nubia/nx729j/proprietary/vendor/firmware/vpu30_4v.mbn.back:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn.back \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu30_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_unsigned.mbn \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn \
-    vendor/nubia/nx729j/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
-    vendor/nubia/nx729j/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
-    vendor/nubia/nx729j/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
-    vendor/nubia/nx729j/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.secure_element@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.sensor.nx729j_front_ov16e1q.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.nx729j_front_ov16e1q.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.sensor.nx729j_gc02m1.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.nx729j_gc02m1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.sensor.nx729j_rear_aux_wide.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.nx729j_rear_aux_wide.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.sensor.nx729j_s5kgn5.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.nx729j_s5kgn5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.sensormodule.nx729j_front_ov16e1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.nx729j_front_ov16e1q.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.sensormodule.nx729j_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.nx729j_gc02m1.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.sensormodule.nx729j_rear_aux_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.nx729j_rear_aux_wide.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.sensormodule.nx729j_s5kgn5.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.nx729j_s5kgn5.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.tuned.nx729j_front_ov16e1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.nx729j_front_ov16e1q.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.tuned.nx729j_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.nx729j_gc02m1.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.tuned.nx729j_rear_aux_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.nx729j_rear_aux_wide.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.qti.tuned.nx729j_s5kgn5.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.nx729j_s5kgn5.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.zte.eeprom.ov16a1q_freyr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.zte.eeprom.ov16a1q_freyr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.zte.sensor.ov16a1q_freyr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.zte.sensor.ov16a1q_freyr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.zte.sensormodule.zte_ov16a1q_freyr.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.zte.sensormodule.zte_ov16a1q_freyr.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/com.zte.tuned.zte_ov16a1q_freyr.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.zte.tuned.zte_ov16a1q_freyr.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.bots.node.vendortagwrite.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.bots.node.vendortagwrite.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.nubia.node.underdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.nubia.node.underdisplay.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.addconstant.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.binning.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.afbfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.afbfusion.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.aon.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.aon.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.customhwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.customhwnode.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.depth.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.depthprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.depthprovider.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.dewarp.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dewarp.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.dummydepth.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummydepth.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummyrtb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummysat.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.fcv.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.formatconversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.formatconversion.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.gme.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gme.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gpu.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.gyrornn.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gyrornn.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.hdr10pgen.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.hdr10pgen.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.hdr10phist.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.hdr10phist.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.memcpy.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.ml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.muxer.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.muxer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.remosaic.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.seg.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.seg.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.stich.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swaidenoiser.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swbestats.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swbestats.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swcac.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swcac.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swfusion.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swhme.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swhme.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swlsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swlsc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swmctf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swmctf.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swpdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swpdpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swpreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swpreprocess.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swregistration.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.node.swvrt.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swvrt.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aecwrapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.aecxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aecxcore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.af.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afd.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afwrapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awbwrapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.cnndriver.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.cnndriver.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.haf.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.hafoverride.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.localhistogram.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlib.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.statsgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.statsgenerator.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qti.stats.tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.tracker.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.aec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.af.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.awb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.zte.node.aicud.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.aicud.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.zte.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.capturebokeh.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.zte.node.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.hdr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.zte.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.realtimebokeh.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.zte.node.realtimeparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.realtimeparse.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/components/com.zte.node.superiq.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.superiq.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/fdconfigfrontpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigfrontpreview.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/fdconfigsecure.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigsecure.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camx.device-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.device-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/camx.provider-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.provider-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.dsi.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.dsi.ant@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.camx.chiiqutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.chiusecaseselector.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.afbrckt.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.afbrckt.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.anchorsync.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.demux.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.derivedoffline.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.derivedoffline.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.frameselect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.fusion.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.generic.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.gs.sm8550.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.gs.sm8550.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.hdr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.mcreprocrt.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mcreprocrt.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.memcpy.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mfsr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.ml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.mux.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mux.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.qcfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.qcfa.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rawhdr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.realtimeserializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.realtimeserializer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rt.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.rtmcx.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rtmcx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.serializer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.statsregeneration.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.statsregeneration.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.swmf.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.qseeaon.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.qseeaon.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.qseeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.qseeutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.settings.sm8550.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.settings.sm8550.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qti.stats.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.stats.common.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.mcx.distortionmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.mcx.distortionmapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.mcx.linearmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.mcx.linearmapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.mcx.nonlinearmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.mcx.nonlinearmapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.mcx.policy.mfl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.mcx.policy.mfl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.mcx.policy.xr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.mcx.policy.xr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.mcx.usecase.extension.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.mcx.usecase.extension.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/drm-vts-test-libs/libvtswidevine.so:$(TARGET_COPY_OUT_VENDOR)/lib/drm-vts-test-libs/libvtswidevine.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libVkLayer_ADRENO_qprofiler.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/ftm_fm_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/ftm_fm_lib.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@2.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@4.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio.effect@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@5.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@6.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@7.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@2.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@4.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@5.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@6.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.1-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.1-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.2-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.3-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/audio.primary.kalama.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.kalama.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.dsi.ant@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/com.qti.chi.offline.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.offline.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.dynamic_sensor_hal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/sound_trigger.primary.kalama.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.kalama.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.nubia.tiktap@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.nubia.tiktap@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.1-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.bttpi-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bttpi-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.soter@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-imscommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imscommon.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsdpl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsqimf.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-imsrcsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcsservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-imsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsvtcore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsxml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-qhcpservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-qhcpservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpcommon.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpcore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpsl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libDspIOProxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDspIOProxy_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libEGL_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libEvrcSwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libEvrcSwCodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFNVfbEngineHAL.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libFace3DTA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFace3DTA.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libFace3D_hlos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFace3D_hlos.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGLESv2_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libGPMTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPMTEEC_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel_svc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libMapService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMapService.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libNubiaImageAlgorithmVD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libNubiaImageAlgorithmVD.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxCore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libPeripheralStateUtils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPeripheralStateUtils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libQ6MSFR_manager_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQ6MSFR_manager_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libQcelp13SwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQcelp13SwCodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libQtiRilLoadable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQtiRilLoadable.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libScenescape.so:$(TARGET_COPY_OUT_VENDOR)/lib/libScenescape.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libStereoRectifyWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStereoRectifyWrapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libTouchInputVM.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTouchInputVM.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libTrustedInput.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTrustedInput.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libTrustedInputTZ.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTrustedInputTZ.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libTrustedInputUtils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTrustedInputUtils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libTrustedUI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTrustedUI.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libTrustedUITZ.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTrustedUITZ.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libTrustedUIVM.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTrustedUIVM.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libTxPwrJni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTxPwrJni.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libZEffectLib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libZEffectLib.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib_bt_aptx.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_bt_aptx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib_bt_ble.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_bt_ble.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/lib_bt_bundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_bt_bundle.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_app_profiles.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libagm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libagm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libagm_compress_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libagm_compress_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libagm_mixer_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libagm_mixer_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libagm_pcm_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libagm_pcm_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libagmclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libagmclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libagmmixer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libagmmixer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaidenoiser.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libaidenoiserv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaidenoiserv2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libaodoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaodoptfeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libar-acdb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libar-gpr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libar-gsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libar-gsl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libar-pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libar-pal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libarcsoft_dualcam_portraitlighting.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_portraitlighting.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_image.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libarcsoft_dualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus_video.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdr_detection.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_high_dynamic_range.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libarcsoft_pdc_p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_pdc_p.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1cper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1crt.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1crtx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libats.so:$(TARGET_COPY_OUT_VENDOR)/lib/libats.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libaudiochargerlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiochargerlistener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbacklight-calib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbacklight-calib.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatterylistener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbitmlengine.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbitmlenginev2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbluetooth_audio_session_aidl_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl_qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti_2_1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libboot_control_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libboot_control_qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-hidlclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacertclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerapostproc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxcommonutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxcommonutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxdefog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxdefog.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxeffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxeffect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfacialfeatures.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxhdrautodetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxhdrautodetect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxhwnodecontext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxhwnodecontext.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxifestriping.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamximageformatutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxmirror.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxmirror.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxqsatalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxqsatalgo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxsettingsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxsettingsmanager.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxskinbeautiful.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxskinbeautiful.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswispiqmodule.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcamxwidelencalc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxwidelencalc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcapiv2svacnnvendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnnvendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcapiv2svarnnvendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnnvendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcapiv2udk7vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2udk7vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcapiv2uvvendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2uvvendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdfw.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdfw_remote_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libchifeature2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchifeature2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchilog.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libclstc_algorithm_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libclstc_algorithm_adapter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libclstc_gcp_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libclstc_gcp_adapter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libclstc_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libclstc_tm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcne.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneoplookup.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneqmiutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_common.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcom.nubia.chinodenubiautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.nubia.chinodenubiautils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcommonchiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcommonchiutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libcv_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcv_common.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiagjni.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdigital-dimming.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdigital-dimming.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayconfig.qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplaydebug.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayskuutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpps.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdts-eagle-shared.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdtscodec_codec2_components.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtscodec_codec2_components.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtsdsec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libeai_fixed_32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeai_fixed_32.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libeepromutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeepromutil.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libengineplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libengineplugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libesepmconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libesepmconfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libesesbprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libesesbprovision.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libeva.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeva.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libeva_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeva_util.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libeye_tracking_dsp_sample_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeye_tracking_dsp_sample_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libface3d_dev.so:$(TARGET_COPY_OUT_VENDOR)/lib/libface3d_dev.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libfcell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfcell.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libfilefinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfilefinder.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libfmpal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfmpal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libfnxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfnxml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgame_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgame_enhance.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgdtap.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofencing.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnss.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgpt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpt.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgpu_tonemapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_tonemapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgralloc.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc.qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgralloccore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloccore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgrallocutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhalide_hexagon_host.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhalide_hexagon_host.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcpsrm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhdr10plus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr10plus.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhdr_backlight_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_backlight_adapter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhdr_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp_pal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhidparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidparser.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libhme.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhme.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libintervmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libintervmipc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipebpsstriping.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libipebpsstriping170.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipebpsstriping170.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libipebpsstriping480.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipebpsstriping480.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libisphwsetting.so:$(TARGET_COPY_OUT_VENDOR)/lib/libisphwsetting.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpege.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libjson.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjson.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libkcl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkcl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libkernelmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkernelmanager.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblistensoundmodel2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qgl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libloadtrusteduiapp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloadtrusteduiapp.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libloc_api_wds.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_wds.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_core.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libloc_eng_hub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_eng_hub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_socket.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libloc_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_util.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblocation_api_msg.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api_msg.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblocation_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_client_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblocation_integration_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_integration_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblocation_qesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_qesdk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblocdiagiface.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocdiagiface.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblx-ar_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblx-ar_util.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liblx-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblx-osal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmapdata_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmapdata_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmasc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmasc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmcs.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmctfengine_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmcxcroputil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmcxcroputil.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediautils_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmemutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmfGhostDetection.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmfGhostDetection.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmfec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmfec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libminksocket_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-omxcore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_bestats.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_cac3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmmcamera_lscv35.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lscv35.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmmcamera_mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mfnr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmmcamera_mfnr_t4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mfnr_t4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnanopb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnative-api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnative-api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnb_lsc_comm_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnb_lsc_comm_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgr_datapath_proxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_datapath_proxy.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_nr_fusion.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_rmnet_ext.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgr_sscm3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_sscm3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgr_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgrext_interface_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgrext_interface_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgrext_interface_server.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgrext_interface_server.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgrmodemproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgrmodemproxy.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgrportutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgrportutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnetmgrxfrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgrxfrmutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnlnetmgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemaids_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopencv.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libopencv3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopencv3a.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopestriping.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libos.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libpal_net_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpal_net_if.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libpalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpalclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfioctl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplatformconfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libpsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpsi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libpsmoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpsmoptfeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libq3dtools_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqape_oem_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqape_oem_ext.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_base.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2audio_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_basecodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2audio_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_core.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2audio_hooks.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_hooks.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2audio_hwaudiocodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_hwaudiocodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2audio_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_platform.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2audio_swaudiocodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_swaudiocodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2audio_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2audio_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2colorconvertfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2colorconvertfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2filter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2filter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqc2vppfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqc2vppfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcc_file_agent.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcc_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcc_sdk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_base.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_basecodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_core.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_cvpfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_cvpfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_filterbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_filterbase.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_hooks.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_hooks.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_imgtxrfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_imgtxrfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_mockfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_mockfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_mockqc2filter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_mockqc2filter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_platform.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_salmapfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_salmapfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_streaminteg_filter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_streaminteg_filter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcodec2_v4l2codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_v4l2codec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqconfigclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqconfigclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrilDataModule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilDataModule.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrilNr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilNr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrilNrFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilNrFramework.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrilNrImsModule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilNrImsModule.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrilNrLogger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilNrLogger.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrilNrQtiBus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilNrQtiBus.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrilNrQtiMutex.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilNrQtiMutex.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrildataaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildataaidl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqcrildataqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildataqos.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdMetaData.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqdcm-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdcm-algo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqdcm-json-mode-parser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdcm-json-mode-parser.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqdcm-mode-parser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdcm-mode-parser.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqdpr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdpr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqesdk2_0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqesdk_manager.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqll.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqll.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqll10.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqllengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqllengine.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_legacy.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmiextservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiextservices.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqms_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqms_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqnnengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqnnengine.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqrtrclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtrclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqsegnet.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsegnet.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqsh_ble_pb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsh_ble_pb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqshcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqshcamera.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti-qesdk-secure.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-qesdk-secure.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti_vndfwk_detect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqti_vndfwk_detect_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti_vndfwk_detect_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigefar.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqtiidentitycredential.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtiidentitycredential.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymaster4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqtikeymint.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymint.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvr_cam_cdsp_driver_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvr_cdsp_driver_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvr_eyetracking_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvr_hostcontroller_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvr_hostcontroller_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvrcamera_client.qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvrcameraplayback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvrcameraplayback.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvrservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvrservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvrservice_client.qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvrservice_ov7251_hvx_tuning.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvrservice_ov9282_hvx_tuning.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvrservice_v4l_ov7251_hvx_tuning.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcmask.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/librecovery_updater.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecovery_updater.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/librecovery_updater_msm.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecovery_updater_msm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libremosaic_ov16a1q_freyr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_ov16a1q_freyr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-db.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libril-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-legacy.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-ltedirectdisc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-radioconfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/librilqmimiscservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilqmimiscservices.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/librmnetctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmnetctl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-colormgr-algo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-vndapis.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmcore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdmdal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmdal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsensor_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_calibration.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsfeShiftExtrapolation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfeShiftExtrapolation.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libshsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshsc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskewknob.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsn220u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn220u_fw.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsnapdragoncolor-manager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnapdragoncolor-manager.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsnapdragoncolor-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnapdragoncolor-qdcm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsndcardparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndcardparser.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_direct_channel_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_direct_channel_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_dynamic_loader_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_dynamic_loader_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_registry_skel.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_remote_proc_state_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_remote_proc_state_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_set_brightness_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_set_brightness_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_set_debug_flag_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_set_debug_flag_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsns_set_fps_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_set_fps_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsnsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper_jni.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspcom.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libstandbyfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstandbyfeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libstc-oem-HW-modulate.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstc-oem-HW-modulate.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libstc-oem-mode-support.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstc-oem-mode-support.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreamparser.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsxrservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsxrservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynergy_loc_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsys_info_cache.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsys_info_cache.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeclientjni.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libtestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtestutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtfestriping.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthreadutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libtracker_6dof_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtracker_6dof_impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrustedapploader.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvibrator.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvideoml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideooptfeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvideotxr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideotxr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvmfilexfer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvmfilexfer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvmmem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvmmem.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndfwk_detect_jni.qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvndfwk_detect_jni.qti_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndfwk_detect_jni.qti_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvppcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppcommon.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphcp.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvppimmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppimmotion.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpptestutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvui_dmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvui_dmgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvui_dmgr_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvui_dmgr_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwifi-hal-ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal-ctrl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwifi-hal-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal-qcom.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwvaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvaidl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libxtwifi_server_protocol.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtwifi_server_protocol.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libxtwifi_server_protocol_uri_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtwifi_server_protocol_uri_v3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libclearkeycasplugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/nfc_nci_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci_sec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilInterfaces.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilInterfaces.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilMarshal.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilMarshal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNrQmiModule.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNrQmiModule.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNrSecureMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNrSecureMode.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNr_aidl_IQtiRadioConfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNr_aidl_IQtiRadioConfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNr_aidl_IRadioConfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNr_aidl_IRadioConfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNr_aidl_IRadioMessaging.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNr_aidl_IRadioMessaging.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNr_aidl_IRadioModem.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNr_aidl_IRadioModem.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNr_aidl_IRadioNetwork.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNr_aidl_IRadioNetwork.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNr_aidl_IRadioSim.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNr_aidl_IRadioSim.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNr_aidl_IRadioVoice.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNr_aidl_IRadioVoice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrilNr_aidl_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrilNr_aidl_common.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcril_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcril_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrild_libqcrilnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_libqcrilnr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qcrild_libqcrilnrutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_libqcrilnrutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qti.video.utils.videobufferlayout.so:$(TARGET_COPY_OUT_VENDOR)/lib/qti.video.utils.videobufferlayout.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qtiPeripheralMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtiPeripheralMgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qtiril-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtiril-utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/qtiwakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtiwakelock.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n29.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n29.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n30.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n30.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n35.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n35.bin \
@@ -2280,7 +1535,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n45.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a73v08s11n45.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n50.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a73v08s11n50.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n51.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a73v08s11n51.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libDspIOProxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libDspIOProxy_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQ6MSFR_manager_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libQnnHtpV73Skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQnnHtpV73Skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV73Skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSnpeHtpV73Skel.so \
@@ -2291,276 +1545,90 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libbitml_nsp_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libbitml_nsp_v2_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_binning.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libevadsp_3_0.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libevadsp_3_0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhdr_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmctfengine_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libqvr_dsp_driver_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libtfadsp_rx.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libtfadsp_rx.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libtfadsp_tx.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libtfadsp_tx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8450.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libtracker_6dof_skel_8450.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libvpp_ais.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_ais.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libvpp_ais_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_ais_networks.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_frc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_svc_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libvpp_vqa_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_vqa_networks.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpt_action_recognition.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/sensors.oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.oem.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdtsaudio.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhaptic_effect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhapticgenerator.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcompostprocbundle.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvisualizer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvoiceprocessing.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libquasar.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libquasar.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvolumelistener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.10.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.11.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.8.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.9.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.libdpmctmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmctmgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.libdpmfdmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmfdmgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmframework.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.libdpmtcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmtcm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.libmwqemiptablemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libmwqemiptablemgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.nubia.ifaa@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nubia.ifaa@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.nubia.ifaa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nubia.ifaa@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.nubia.tiktap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nubia.tiktap@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.factory@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.factory@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.factory@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.factory@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.factory@2.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.mwqem@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.slm@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.diaghal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.esepowermanager@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.esepowermanager@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.gnss-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss-V2-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.gnss-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss-service.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.AGMIPC@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.ListenSoundModel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.ListenSoundModel@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.ListenSoundModel@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.automotive.vehicle@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.bluetooth.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth.audio-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_audio@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.bttpi-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bttpi-V2-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cacert@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.camera.aon-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.aon-service-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.camera.aon@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.aon@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.camera.aon@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.aon@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.camera.aon@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.aon@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.camera.aon@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.aon@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.server@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.server@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.server@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.connectionfactory-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connectionfactory-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.dataactivity-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.dataactivity-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.dynamicdds@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.dynamicdds@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.flow@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.flow@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.flow@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.flow@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.iwlan@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.iwlan@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.iwlan@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.ka-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.ka-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.lce@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.allocator@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.allocator@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.allocator@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.allocator@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.allocator@4.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.composer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.composer@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.composer@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.composer@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V2-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V3-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V4-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V5-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V6-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V6-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.demura@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.demura@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@4.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dpmservice@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.dpmservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dpmservice@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.mwqemadapter@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.pal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.pal@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.pal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.perf@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.perf@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccsyshal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qccsyshal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccsyshal@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qccsyshal@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccsyshal@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccvndhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qconfig@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qseecom@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.qxr-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qxr-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.am-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.am-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims-V9-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims-V9-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.8.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio-V8-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio-V8-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradioconfig-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradioconfig-V2-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.slmadapter@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.soter@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.systemhelper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.systemhelper@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.trustedui@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.trustedui@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.trustedui@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.trustedui@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.trustedui@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.trustedui@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.tui_comm@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.vpp@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callcapability@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callinfo@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.configservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.configservice@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.configservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.configservice@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.connection@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.factory@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.factory@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.factory@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.factory@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.factory@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcssip@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcssip@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcssip@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcssip@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcssip@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcssip@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcsuce@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsuce@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcsuce@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsuce@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.ims.rcsuce@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsuce@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.imsrtpservice@3.1-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@3.1-service-Impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@3.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.latency@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.latency@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.latency@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.latency@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.memory.pasrmanager@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.memory.pasrmanager@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.power.pasrmanager@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.qesdhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qesdhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.qesdhal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qesdhal@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.qesdhal@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qesdhal@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.qesdhal@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qesdhal@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.qesdsys-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qesdsys-V3-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qspmhal@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qspmhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_foundation.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib/vndk/libstagefright_omx.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_omx.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.automotive.watchdog-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.automotive.watchdog-V2-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.frameworks.cameraservice.common@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.common@2.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.frameworks.cameraservice.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.device@2.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.frameworks.cameraservice.device@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.device@2.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.service@2.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.service@2.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.service@2.2.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.biometrics.common-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common-V2-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint-V2-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.2.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.common@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.drm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.drm@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.drm@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.drm@1.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.drm@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.drm@1.2.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.drm@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.drm@1.3.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.drm@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.drm@1.4.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.gatekeeper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gatekeeper@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.keymaster@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@3.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.keymaster@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@4.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.keymaster@4.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@4.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.media.c2@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.media.c2@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.2.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.secure_element@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.secure_element@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.secure_element@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.2.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.security.keymint-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.security.keymint-V1-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.0-ScopedWakelock.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.sensors@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.sensors@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.soundtrigger@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.soundtrigger@2.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.soundtrigger@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.soundtrigger@2.2.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.soundtrigger@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.soundtrigger@2.3.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.tetheroffload.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.config@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.tetheroffload.control@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.control@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.tetheroffload.control@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.control@1.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal@2.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.usb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.usb@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hardware.usb@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.2.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.allocator@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.memory.block@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.system.keystore2-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.keystore2-V1-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.system.net.netd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.net.netd@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.system.net.netd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.net.netd@1.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/android.system.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.wifi.keystore@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensor.nx729j_front_ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.nx729j_front_ov16a1q.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensor.nx729j_front_ov16e1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.nx729j_front_ov16e1q.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensor.nx729j_gc02m1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.nx729j_gc02m1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensor.nx729j_rear_aux_wide.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.nx729j_rear_aux_wide.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensor.nx729j_s5kgn5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.nx729j_s5kgn5.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensormodule.nx729j_front_ov16a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.nx729j_front_ov16a1q.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensormodule.nx729j_front_ov16e1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.nx729j_front_ov16e1q.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensormodule.nx729j_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.nx729j_gc02m1.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensormodule.nx729j_rear_aux_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.nx729j_rear_aux_wide.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.sensormodule.nx729j_s5kgn5.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.nx729j_s5kgn5.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.tuned.nx729j_front_ov16a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.nx729j_front_ov16a1q.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.tuned.nx729j_front_ov16e1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.nx729j_front_ov16e1q.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.tuned.nx729j_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.nx729j_gc02m1.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.tuned.nx729j_rear_aux_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.nx729j_rear_aux_wide.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.qti.tuned.nx729j_s5kgn5.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.nx729j_s5kgn5.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.zte.eeprom.ov16a1q_freyr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.eeprom.ov16a1q_freyr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.zte.sensor.ov16a1q_freyr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensor.ov16a1q_freyr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.zte.sensormodule.zte_ov16a1q_freyr.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.zte_ov16a1q_freyr.bin \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.zte.tuned.zte_ov16a1q_freyr.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.tuned.zte_ov16a1q_freyr.bin \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/com.zte.eeprom.nx729j_front_eeprom_ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.eeprom.nx729j_front_eeprom_ov16a1q.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.bots.node.vendortagwrite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.bots.node.vendortagwrite.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.nubia.node.underdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.nubia.node.underdisplay.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
@@ -2626,19 +1694,21 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.aicud.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.aicud.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.aipreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.aipreprocess.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.capturebokeh.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.capturepostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.capturepostprocess.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.deflicker.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.capturereprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.capturereprocess.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.hdr.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.mcxrealtimepostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.mcxrealtimepostprocess.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.motiondetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.motiondetect.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.realtimebokeh.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.realtimedefog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.realtimedefog.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.realtimeparse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.realtimeparse.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.realtimepostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.realtimepostprocess.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.sat.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.sharpnessdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.sharpnessdetect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.superiq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.superiq.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/com.zte.node.supres.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.supres.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/components/libdepthmapwrapper_secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper_secure.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/camera/fdconfigfrontpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigfrontpreview.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib64/camera/fdconfigsecure.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigsecure.bin \
@@ -2671,6 +1741,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.serializer.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qti.feature2.statsregeneration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.statsregeneration.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.stub.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/com.qti.feature2.supres.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.supres.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qti.qseeaon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.qseeaon.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qti.qseeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.qseeutils.so \
@@ -2681,7 +1752,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qualcomm.mcx.nonlinearmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.nonlinearmapper.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qualcomm.mcx.policy.mfl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.policy.mfl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qualcomm.mcx.policy.xr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.policy.xr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
@@ -2694,29 +1764,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/deviceInfoServiceModuleNr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/deviceInfoServiceModuleNr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/drm-vts-test-libs/libvtswidevine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/drm-vts-test-libs/libvtswidevine.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libVkLayer_ADRENO_qprofiler.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/ftm_fm_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ftm_fm_lib.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@2.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio.effect@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@4.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio.effect@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@5.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@6.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@7.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@2.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@4.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@5.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@6.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.1-impl.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-aidl-impl-qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.2-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.3-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
@@ -2729,13 +1782,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/com.qti.chi.offline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.offline.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.default.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/fingerprint.gf95xx.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.gf95xx.default.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/sound_trigger.primary.kalama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.kalama.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/tiktap_algo.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/tiktap_algo.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vendor.nubia.tiktap@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.nubia.tiktap@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
@@ -2749,9 +1799,11 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/lib-framework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-framework.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/lib-imscommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscommon.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/lib-imsdcservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdcservice.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/lib-imsrcsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsservice.so \
@@ -2764,45 +1816,35 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpsl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libCOSNet_spatial_qnn_quantized.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCOSNet_spatial_qnn_quantized.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libCud.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCud.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libDcfHalBleProto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalBleProto.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libDcfHalFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalFramework.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libDcfHalLogger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalLogger.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libDcfHalQtiMutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalQtiMutex.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libDspIOProxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDspIOProxy_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEGL_adreno.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libEvrcSwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEvrcSwCodec.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFNVfbEngineHAL.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libFace3DTA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3DTA.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libFace3D_hlos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3D_hlos.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFileMux_proprietary.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGLESv2_adreno.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libGPMTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPMTEEC_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libMapService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMapService.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libNubiaImageAlgorithmVD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNubiaImageAlgorithmVD.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxCore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libPeripheralStateUtils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPeripheralStateUtils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libQ6MSFR_manager_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQ6MSFR_manager_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libQcelp13SwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQcelp13SwCodec.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnCpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnCpu.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtp.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnHtpNetRunExtensions.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpNetRunExtensions.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnHtpPrepare.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpPrepare.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnHtpProfilingReader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpProfilingReader.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnHtpV73.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpV73.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnHtpV73Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpV73Stub.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnSaver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnSaver.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libQnnSystem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnSystem.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libQtiRilLoadable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQtiRilLoadable.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libScenescape.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libScenescape.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libSensorsInterface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSensorsInterface.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libSnpeHtpV73Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpV73Stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libStereoRectifyWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStereoRectifyWrapper.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTouchInputVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTouchInputVM.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTrustedInput.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedInput.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTrustedInputTZ.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedInputTZ.so \
@@ -2811,17 +1853,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTrustedUITZ.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUITZ.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTrustedUIVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUIVM.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTxPwrJni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTxPwrJni.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libZEffectLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libZEffectLib.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/lib_bt_aptx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_aptx.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/lib_bt_ble.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_ble.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/lib_bt_bundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_bundle.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libaacvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaacvibrator.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libadaptive_shutter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptive_shutter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libadaptlaunch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptlaunch.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_app_profiles.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libagm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libagm_compress_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm_compress_plugin.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libagm_mixer_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm_mixer_plugin.so \
@@ -2833,33 +1870,22 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libaidenoiserv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiserv2.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libainativeprocessclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libainativeprocessclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libanc_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_hdr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libancbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libancbase.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libancbase_cud.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libancbase_cud.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libaodoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaodoptfeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libapengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapengine.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libapp-framework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapp-framework.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-acdb.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gpr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libar-gsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gsl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libar-pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-pal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_dualcam_portraitlighting.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_portraitlighting.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_image.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_video.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_detection.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_high_dynamic_range_normal_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range_normal_hdr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_object_tracking.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_object_tracking.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_pdc_p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_pdc_p.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libarcsoft_picselfie.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_picselfie.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crtx.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libats.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libaudiochargerlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiochargerlistener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libbacklight-calib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbacklight-calib.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libaudioloop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloop.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libavservices_minijail.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatterylistener.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbinderdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderdebug.so \
@@ -2872,14 +1898,13 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti_2_1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libboot_control_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libboot_control_qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libbt_nv_tool.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt_nv_tool.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxcommonutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxcommonutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxdefog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxdefog.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxeffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxeffect.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
@@ -2888,55 +1913,40 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxhwnodecontext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxhwnodecontext.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxifestriping.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamximageformatutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxmirror.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxmirror.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxqsatalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxqsatalgo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxselfiebokeharc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxselfiebokeharc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxsettingsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxsettingsmanager.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxskinbeautiful.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxskinbeautiful.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswispiqmodule.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcamxwidelencalc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxwidelencalc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcapiv2svacnnvendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnnvendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcapiv2svarnnvendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svarnnvendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcapiv2udk7vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2udk7vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcapiv2uvvendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2uvvendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcert_parse.wpa_s.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcert_parse.wpa_s.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libchifeature2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchifeature2.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libclstc_algorithm_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_algorithm_adapter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libclstc_gcp_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_gcp_adapter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libclstc_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_tm.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchrome.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libchvs-bc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchvs-bc.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libchvs-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchvs-util.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl_plugin.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_common.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vndk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcom.nubia.chinodenubiautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.nubia.chinodenubiautils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcommonchiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcommonchiutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcv_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcv_common.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdigital-dimming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdigital-dimming.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplaydebug.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsd2pcm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
@@ -2944,6 +1954,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdts-eagle-shared.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdtscodec_codec2_components.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtscodec_codec2_components.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtsdsec.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libdualAlgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualAlgo.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libeai_fixed.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeai_fixed.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libeai_float.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeai_float.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libeepromutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeepromutil.so \
@@ -2953,92 +1964,59 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libesesbprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libesesbprovision.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libeva.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeva.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libeva_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeva_util.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libeye_tracking_dsp_sample_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeye_tracking_dsp_sample_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libface3d_dev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libface3d_dev.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libfcell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfcell.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libfilefinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfilefinder.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libfmpal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfmpal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libfnxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfnxml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libgame_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgame_enhance.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgpt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpt.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgpu_tonemapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpu_tonemapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgralloc.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc.qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgralloccore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloccore.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrallocutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libhalide_hexagon_host.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhalide_hexagon_host.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhap_power.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhap_power.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhdr10plus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10plus.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libhdr_backlight_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_backlight_adapter.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhdr_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp_pal.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhidparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidparser.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhme.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhme.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhvxopr_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvxopr_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libhvxopr_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvxopr_stub.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libin_display.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libin_display.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libintervmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libintervmipc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libipanat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipanat.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libipebpsstriping170.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping170.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libipebpsstriping480.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping480.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libisphwsetting.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libisphwsetting.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libjnigraphics.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnigraphics.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpege.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libjson.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjson.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libkcl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkcl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libkernelmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkernelmanager.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblearningmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblearningmodule.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblightninglaunches.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblightninglaunches.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblistensoundmodel2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qgl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblmthermallistner.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblmthermallistner.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblmutils-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblmutils-ns.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libloadalgo_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadalgo_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libloadtrusteduiapp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadtrusteduiapp.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libloc_api_wds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_wds.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libloc_eng_hub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_eng_hub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libloc_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_util.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblocation_api_msg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api_msg.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblocation_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_client_api.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblocation_integration_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_integration_api.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblocation_qesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_qesdk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblocdiagiface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocdiagiface.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblx-ar_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-ar_util.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblx-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-osal.so \
@@ -3048,19 +2026,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctfengine_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmcxcroputil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmcxcroputil.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libmemperfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemperfd.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libmemutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libmeters-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters-ns.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemunreachable.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmfGhostDetection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfGhostDetection.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmfec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfec.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmfnr_network.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfnr_network.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libminksocket_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libminui_ftm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminui_ftm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-omxcore.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bestats.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
@@ -3068,11 +2041,13 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmmcamera_mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmmcamera_mfnr_t4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr_t4.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_pdpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libmorpho_video_deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_video_deflicker.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libmmosal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libmmrtpdecoder_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmrtpdecoder_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libmmrtpencoder_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmrtpencoder_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libmodemapi_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmodemapi_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libnative-api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnative-api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libnb_lsc_comm_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnb_lsc_comm_api.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libnetfilter_conntrack.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetfilter_conntrack.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
@@ -3090,61 +2065,29 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemaids_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/liboffloadhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboffloadhal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libopencv3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv3a.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libopencv_java4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv_java4.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libopticalzoomfallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopticalzoomfallback.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libpal_net_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpal_net_if.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libpalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpalclient.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libplatformconfig.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libprefapps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprefapps.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libprekill.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprekill.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libprocomp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprocomp.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-3.9.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libpsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpsi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libpsmoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpsmoptfeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libq3dtools_adreno.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqape_oem_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqape_oem_ext.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqapesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqapesdk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_base.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2audio_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_basecodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2audio_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_core.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2audio_hooks.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_hooks.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2audio_hwaudiocodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_hwaudiocodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2audio_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_platform.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2audio_swaudiocodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_swaudiocodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2audio_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2colorconvertfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2colorconvertfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2filter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqc2vppfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2vppfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcc_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_sdk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_base.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_basecodec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_core.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_cvpfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_cvpfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_filterbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_filterbase.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_hooks.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_hooks.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_imgtxrfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_imgtxrfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_mockfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_mockfilter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_mockqc2filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_mockqc2filter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_platform.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_salmapfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_salmapfilter.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_streaminteg_filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_streaminteg_filter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_utils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqcodec2_v4l2codec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcodec2_v4l2codec.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqconfigclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqconfigclient.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcrilDataModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilDataModule.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcrilNr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcrilNrCellInfoModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNrCellInfoModule.so \
@@ -3161,16 +2104,13 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqcrildataqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildataqos.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdMetaData.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqdcm-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdcm-algo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqdcm-json-mode-parser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdcm-json-mode-parser.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqdcm-mode-parser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdcm-mode-parser.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqdpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdpr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk2_0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk_manager.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libqfp-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp-service.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqll.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll10.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqllengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqllengine.so \
@@ -3187,147 +2127,101 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqms_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqms_client.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqnnengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqnnengine.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqrtrclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtrclient.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqsegnet.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsegnet.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqservice.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqsh_ble_pb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsh_ble_pb.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqshcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqshcamera.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqti-qesdk-secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-qesdk-secure.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti_vndfwk_detect.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqti_vndfwk_detect_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti_vndfwk_detect_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigefar.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqtiidentitycredential.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtiidentitycredential.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqtikeymint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymint.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libqtivibratoreffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtivibratoreffect.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_cam_cdsp_driver_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_cdsp_driver_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_eyetracking_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvr_hostcontroller_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_hostcontroller_plugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrcamera_client.qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvrcameraplayback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrcameraplayback.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvrservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_client.qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_ov7251_hvx_tuning.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_ov9282_hvx_tuning.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/librecovery_updater.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librecovery_updater.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/librecovery_updater_msm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librecovery_updater_msm.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libreference-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreference-ril.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libremosaic_ov16a1q_freyr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_ov16a1q_freyr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-db.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libril-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-legacy.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/librilqmimiscservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmimiscservices.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/librmMug-lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmMug-lib.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/librmnetctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmnetctl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/librmsclib1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmsclib1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmcore.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsdmdal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmdal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsensor_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_calibration.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libsensorapi_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorapi_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libsensorcal_vendor_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal_vendor_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsfeShiftExtrapolation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfeShiftExtrapolation.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libshsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshsc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsilkyscrolls.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsilkyscrolls.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskewknob.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libskia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskia.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmemlog.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn100u_fw.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsn220u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn220u_fw.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsnapdragoncolor-manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-manager.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsnapdragoncolor-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-qdcm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsndcardparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndcardparser.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsnpe_loader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_loader.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_api.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_direct_channel_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_direct_channel_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_dynamic_loader_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_dynamic_loader_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_registry_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_remote_proc_state_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_remote_proc_state_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_set_brightness_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_set_brightness_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_set_debug_flag_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_set_debug_flag_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsns_set_fps_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_set_fps_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsnsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper_jni.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspcom.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsplh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsplh.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libss-base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libss-base.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libss-modem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libss-modem.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libss-plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libss-plugin.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libss-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libss-qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libstandbyfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstandbyfeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libstc-oem-HW-modulate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstc-oem-HW-modulate.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libstc-oem-mode-support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstc-oem-mode-support.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstdc++.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstreamparser.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsxrservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsxrservice.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsys_info_cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsys_info_cache.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libteec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteec.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libtensorflowlite_gpu_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtensorflowlite_gpu_jni.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtensorflowlite_jni.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libtestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtestutils.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libtestcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtestcore.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libtflite_model_bnudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_model_bnudc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libtflite_model_denoised_528_528.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_model_denoised_528_528.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libtflite_model_denoised_608_608.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_model_denoised_608_608.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libtracker_6dof_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtracker_6dof_impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libtlpd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libtlpd_configmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd_configmgr.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libtlpd_crypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd_crypto.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libtlpd_internal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd_internal.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libtlpd_logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlpd_logger.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libtpdlibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtpdlibrary.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libvendorcfg_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendorcfg_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libvendorutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendorutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvibrator.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvideoml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libvideotxr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideotxr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libvmfilexfer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvmfilexfer.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvmmem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvmmem.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvndfwk_detect_jni.qti_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti_vendor.so \
@@ -3340,21 +2234,37 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvui_dmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvui_dmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvui_dmgr_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvui_dmgr_client.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdaac_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdaac_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdcodecv4l2_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdcommonutils_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdconfigutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdconfigutils_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfddisplayconfig_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfddisplayconfig_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdhdcpservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpservice_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdmminterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdmminterface_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdmmservice_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdmmservice_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdmmsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdmmsrc_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdmodulehdcpsession.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdrtsp_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdrtsp_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdsessionmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdsessionmodule.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdsourcesession_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdsourcesession_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdsourcesm_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdsourcesm_proprietary.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfduibcinterface_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfduibcinterface_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfduibcsink_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfduibcsink_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfduibcsinkinterface_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfduibcsinkinterface_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfduibcsrc_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfduibcsrc_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfduibcsrcinterface_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfduibcsrcinterface_vendor.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdutils_proprietary.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwifi-hal-ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-ctrl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libwifi-hal-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-qcom.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libwlanapi_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwlanapi_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libworker_pool.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libworker_pool.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwvaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvaidl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libxtwifi_server_protocol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_server_protocol.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libxtwifi_server_protocol_uri_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_server_protocol_uri_v3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libzcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libzcv.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/libzte_variantflag_shared_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libzte_variantflag_shared_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/nfc_nci_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_sec.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qcrilInterfaces.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilInterfaces.so \
@@ -3372,15 +2282,13 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qcril_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcril_client.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qcrild_libqcrilnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_libqcrilnr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qcrild_libqcrilnrutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_libqcrilnrutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/qti.video.utils.videobufferlayout.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qti.video.utils.videobufferlayout.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qtiPeripheralMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiPeripheralMgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qtiril-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiril-utils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qtiwakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiwakelock.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/sensors.oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.oem.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdtsaudio.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhaptic_effect.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhapticgenerator.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcompostprocbundle.so \
@@ -3389,37 +2297,15 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libquasar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libquasar.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvolumelistener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.6.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.10.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.11.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.8.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.9.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.hardware.zte.wifi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.hardware.zte.wifi@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.libdpmctmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmctmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.libdpmfdmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmfdmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmframework.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.libdpmtcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmtcm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.libmwqemiptablemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libmwqemiptablemgr.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.nb.halserver.nubia_hal_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nb.halserver.nubia_hal_server@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.nubia.ifaa@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nubia.ifaa@1.0-impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.nubia.ifaa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nubia.ifaa@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.nubia.tiktap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nubia.tiktap@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
@@ -3433,16 +2319,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.gnss-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V2-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.gnss-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V3-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.gnss-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V4-ndk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.gnss-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-service.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth.audio-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_audio@2.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
@@ -3456,7 +2340,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.camera.aon@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.aon@1.3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -3477,59 +2360,26 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.lce@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@4.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@3.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@3.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V2-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V3-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V4-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V5-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V6-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V6-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.demura@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.demura@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@4.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dpmservice@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.factory@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.factory@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.factory@1.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.2.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@2.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@2.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.2.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qconfig@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qxr-V1-ndk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.am-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am-V1-ndk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd-V1-ndk.so \
@@ -3552,7 +2402,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio-V8-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio-V8-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio-V9-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio-V9-ndk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
@@ -3561,7 +2411,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradioconfig-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradioconfig-V2-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradioconfig-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradioconfig-V3-ndk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
@@ -3574,6 +2424,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.servicetracker@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.servicetracker@1.1.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.servicetracker@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.servicetracker@1.2.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.systemhelper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.systemhelper@1.0.so \
@@ -3582,12 +2436,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.trustedui@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.trustedui@1.2.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.vibrator.impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vibrator.impl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.vpp@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.ims.configservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.configservice@1.0.so \
@@ -3614,9 +2465,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.latency@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.memory.pasrmanager@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.memory.pasrmanager@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.power.pasrmanager@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.qesdhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhal@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.qesdhal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhal@1.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.qesdhal@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhal@1.2.so \
@@ -3625,30 +2473,64 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.qesdsys-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdsys-V3-ndk.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0-impl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.spu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.spu@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.spu@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.spu@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.spu@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.spu@2.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.zte.fingerprint.ifaahidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.fingerprint.ifaahidl@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.zte.fingerprint.ztecmd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.fingerprint.ztecmd@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.zte.hardware.camera.transfer-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.hardware.camera.transfer-V1-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.zte.modem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.modem@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.zte.radio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.radio-V1-ndk.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.zte.subsys@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.subsys@1.0.so \
+    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.zte.subsys@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.subsys@2.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/weak_refs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/weak_refs.so
 
 PRODUCT_PACKAGES += \
     CACertService \
     CneApp \
-    ConnectionSecurityService \
     IWlanService \
-    QCC-TR-UI \
+    QFingerprintService \
+    ThermalBridge_prebuild \
     TimeService \
-    TrustZoneAccessService \
     TrustedUIService \
     TxPwrAdmin \
     com.qualcomm.qti.gpudrivers.kalama.api33 \
-    DualCameraCalibration \
-    android.hardware.boot@1.2 \
-    android.hardware.cas@1.2-service \
+    FloatAssist13 \
+    MStatsSystemService \
+    QdcmFF \
+    QesdkSysService \
+    SecureElement \
+    WAPPushManager \
+    com.qualcomm.qti.services.secureui \
+    datastatusnotification \
+    imssettings \
+    workloadclassifier \
+    QAS_DVC_MSP \
+    QualcommVoiceActivation \
+    RemoteProvisioner \
+    SubsysService \
+    com.qualcomm.qti.services.systemhelper \
+    dcf \
+    seccamservice \
+    xrcbservice \
+    xrvdservice \
+    com.qti.media.secureprocessor \
+    cubeserver \
+    embmslibrary \
+    extphonelib \
+    qmapbridge \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-utils \
+    subsys-modem \
+    subsys-platform \
+    subsys-plugin \
+    subsys-service \
+    vendor-telephony-common \
+    vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.hardware.fingerprint-V1.0-java \
+    vendor.qti.hardware.sensorscalibrate-V1.0-java \
+    vendor.zte.hardware.camera.transferclient \
     android.hardware.drm-service.clearkey \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.graphics.mapper-impl-qti-display \
-    android.hardware.health-service.qti \
     android.hardware.radio.config \
     android.hardware.radio.data \
     android.hardware.radio.messaging \
@@ -3659,31 +2541,19 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     android.hardware.sensors@2.1-multihal \
     android.hardware.thermal@2.0-service.qti \
-    android.hardware.usb.gadget@1.1-service \
-    android.hardware.usb@1.2-service \
-    android.hardware.wifi.hostapd \
-    android.hardware.wifi.supplicant \
-    android.hardware.wifi@1.0-service \
+    bluetooth_audio \
     bttpi-saidl \
-    c2_manifest_vendor \
-    c2_manifest_vendor_audio \
-    c2_manifest_vendor_audio_dts \
     dataconnection-saidl \
     deviceinfo-saidl \
-    dumpstate-qti \
+    imsdcservice-saidl \
     manifest_android.hardware.drm-service.widevine \
     manifest_identity_credential \
     manifest_non_qmaa \
     manifest_non_qmaa_extn \
     memtrack_qti \
-    power \
     qcrilhook-saidl \
     qms-saidl \
     qtiradio-saidl \
-    vendor.nubia.tiktap@1.0-service \
-    vendor.nubia_hal_server \
-    vendor.qti.camera.aon-impl-1.3 \
-    vendor.qti.camera.postproc-impl \
     vendor.qti.camera.provider \
     vendor.qti.diag.hal.service \
     vendor.qti.gnss-service \
@@ -3693,10 +2563,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.lights.service \
     vendor.qti.hardware.limits-service \
     vendor.qti.hardware.perf \
-    vendor.qti.hardware.qconfig@1.0-service \
-    vendor.qti.hardware.qxr-service \
     vendor.qti.hardware.radio.am \
     vendor.qti.hardware.radio.ims \
     vendor.qti.hardware.radio.qtiradioconfig \
     vendor.qti.hardware.vibrator.service \
-    vendor.qti.hardware.vpp@2.0-service
+    vendor.qti.hardware.vpp@2.0-service \
+    vendor.qti.hardware.wifidisplaysession-service \
+    vendor.zte.radio-manifest-ds \
+    vendor.qti.hardware.sigma_miracast

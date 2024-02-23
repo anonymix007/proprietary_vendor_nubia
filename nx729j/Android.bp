@@ -28,17 +28,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ConnectionSecurityService",
-	owner: "nubia",
-	apk: "proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "IWlanService",
 	owner: "nubia",
 	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
@@ -50,9 +39,20 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QCC-TR-UI",
+	name: "QFingerprintService",
 	owner: "nubia",
-	apk: "proprietary/vendor/app/QCC-TR-UI/QCC-TR-UI.apk",
+	apk: "proprietary/vendor/app/QFingerprintService/QFingerprintService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "ThermalBridge_prebuild",
+	owner: "nubia",
+	apk: "proprietary/vendor/app/ThermalBridge_prebuild/ThermalBridge_prebuild.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -64,17 +64,6 @@ android_app_import {
 	name: "TimeService",
 	owner: "nubia",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "TrustZoneAccessService",
-	owner: "nubia",
-	apk: "proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -116,33 +105,333 @@ android_app_import {
 }
 
 android_app_import {
-	name: "DualCameraCalibration",
+	name: "FloatAssist13",
 	owner: "nubia",
-	apk: "proprietary/vendor/priv-app/DualCameraCalibration/DualCameraCalibration.apk",
+	apk: "proprietary/system_ext/app/FloatAssist13/FloatAssist13.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "MStatsSystemService",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/MStatsSystemService/MStatsSystemService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QdcmFF",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/QdcmFF/QdcmFF.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QesdkSysService",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/QesdkSysService/QesdkSysService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SecureElement",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/SecureElement/SecureElement.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "WAPPushManager",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/WAPPushManager/WAPPushManager.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.services.secureui",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "datastatusnotification",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "workloadclassifier",
+	owner: "nubia",
+	apk: "proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QAS_DVC_MSP",
+	owner: "nubia",
+	apk: "proprietary/system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	soc_specific: true,
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.boot@1.2",
+android_app_import {
+	name: "QualcommVoiceActivation",
 	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/priv-app/QualcommVoiceActivation/QualcommVoiceActivation.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.cas@1.2-service",
+android_app_import {
+	name: "RemoteProvisioner",
 	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/priv-app/RemoteProvisioner/RemoteProvisioner.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SubsysService",
+	owner: "nubia",
+	apk: "proprietary/system_ext/priv-app/SubsysService/SubsysService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.services.systemhelper",
+	owner: "nubia",
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "dcf",
+	owner: "nubia",
+	apk: "proprietary/system_ext/priv-app/dcf/dcf.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "seccamservice",
+	owner: "nubia",
+	apk: "proprietary/system_ext/priv-app/seccamservice/seccamservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "xrcbservice",
+	owner: "nubia",
+	apk: "proprietary/system_ext/priv-app/xrcbservice/xrcbservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "xrvdservice",
+	owner: "nubia",
+	apk: "proprietary/system_ext/priv-app/xrvdservice/xrvdservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.media.secureprocessor",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/com.qti.media.secureprocessor.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "cubeserver",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/cubeserver.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "embmslibrary",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "extphonelib",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/extphonelib.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qmapbridge",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/qmapbridge.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-hidl-wrapper",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/qti-telephony-hidl-wrapper.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-utils",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/qti-telephony-utils.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "subsys-modem",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/subsys-modem.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "subsys-platform",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/subsys-platform.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "subsys-plugin",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/subsys-plugin.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "subsys-service",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/subsys-service.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor-telephony-common",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/vendor-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.alarm-V1.0-java",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.fingerprint-V1.0-java",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.zte.hardware.camera.transferclient",
+	owner: "nubia",
+	jars: ["proprietary/system_ext/framework/vendor.zte.hardware.camera.transferclient.jar"],
+	system_ext_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -167,15 +456,6 @@ prebuilt_etc_xml {
 	name: "android.hardware.graphics.mapper-impl-qti-display",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.health-service.qti",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health-service.qti.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -272,45 +552,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.usb.gadget@1.1-service",
+	name: "bluetooth_audio",
 	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb.gadget@1.1-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.usb@1.2-service",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.wifi.hostapd",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.wifi.supplicant",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.wifi@1.0-service",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -320,33 +564,6 @@ prebuilt_etc_xml {
 	name: "bttpi-saidl",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/bttpi-saidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "c2_manifest_vendor",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "c2_manifest_vendor_audio",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "c2_manifest_vendor_audio_dts",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio_dts.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -371,9 +588,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "dumpstate-qti",
+	name: "imsdcservice-saidl",
 	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/dumpstate-qti.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/imsdcservice-saidl.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -425,15 +642,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "power",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/power.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "qcrilhook-saidl",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/qcrilhook-saidl.xml",
@@ -455,42 +663,6 @@ prebuilt_etc_xml {
 	name: "qtiradio-saidl",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/qtiradio-saidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.nubia.tiktap@1.0-service",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.nubia.tiktap@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.nubia_hal_server",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.nubia_hal_server.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.camera.aon-impl-1.3",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl-1.3.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.camera.postproc-impl",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -578,24 +750,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.qconfig@1.0-service",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.qxr-service",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.qxr-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.qti.hardware.radio.am",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.am.xml",
@@ -638,5 +792,32 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.hardware.wifidisplaysession-service",
+	owner: "nubia",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.wifidisplaysession-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.zte.radio-manifest-ds",
+	owner: "nubia",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.zte.radio-manifest-ds.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.hardware.sigma_miracast",
+	owner: "nubia",
+	src: "proprietary/system_ext/etc/vintf/manifest/vendor.qti.hardware.sigma_miracast.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	system_ext_specific: true,
 }
 
