@@ -1,3 +1,0 @@
-service vendorcfgd /system_ext/bin/vendorcfgdeamon
-class main
-    socket vendorcfgd stream 0660 system system

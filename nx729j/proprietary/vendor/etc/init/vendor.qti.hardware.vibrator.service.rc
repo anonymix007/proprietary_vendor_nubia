@@ -10,7 +10,7 @@ service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service
     group system input
 
     setenv RICHTAP_DEVICE_PATH  /dev/awinic_haptic;/dev/awinic_x_haptic
-    setenv ENV_RICHTAP_CONFIG_PATH /vendor/etc/aac_richtap.config;/vendor/etc/aac_richtap_1.config
+    setenv ENV_RICHTAP_CONFIG_PATH /odm/etc/aac_richtap.config;/odm/etc/aac_richtap_1.config
 
 on property:sys.boot_completed=1
     setprop vendor.haptic.calibrate.done 1
