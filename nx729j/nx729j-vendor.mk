@@ -6,27 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nubia/nx729j
 
 PRODUCT_COPY_FILES += \
+    vendor/nubia/nx729j/proprietary//vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_SYSTEM)//vendor/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/nubia/nx729j/proprietary/system/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.10.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.11.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.12.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.12.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.13.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.13.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.14.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.14.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.8.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.9.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@2.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.cvp@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qseecom@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.seccam@1.0.so \
@@ -37,28 +21,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/fm_helium.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfm-hci.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.1.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.10.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.11.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.12.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.12.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.13.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.13.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.14.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.14.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.2.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.3.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.4.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.5.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.6.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.7.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.8.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.9.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@2.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cvp@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.display.composer@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.display.composer@3.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.display.composer@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.display.composer@3.1.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.seccam@1.0.so \
@@ -161,9 +126,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.camera.provider-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider-service_64 \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.display.allocator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.allocator-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.display.demura-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.demura-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.limits@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.limits@1.2-service \
@@ -688,9 +650,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.diag_userdebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag_userdebug.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
@@ -1700,10 +1659,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmcore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdmdal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmdal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libsensor_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_calibration.so \
@@ -1895,21 +1850,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libquasar.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libquasar.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvolumelistener.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.color@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.10.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.11.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.8.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.9.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@2.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.libdpmctmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmctmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.libdpmfdmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmfdmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libdpmframework.so \
@@ -1975,27 +1915,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.lce@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.allocator@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.allocator@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.allocator@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.allocator@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.allocator@4.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.composer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.composer@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.composer@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.composer@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V2-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V3-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V4-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V5-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.config-V6-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.config-V6-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.demura@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.demura@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapper@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapper@4.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.display.mapperextensions@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.display.mapperextensions@1.3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.dpmservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dpmservice@1.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
@@ -2461,7 +2380,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplaydebug.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
@@ -2708,10 +2626,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmcore.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdmdal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmdal.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libsensor_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_calibration.so \
@@ -2859,19 +2773,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvolumelistener.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.6.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.color@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.10.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.11.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.3.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.4.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.5.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.6.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.7.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.8.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.9.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@2.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.libdpmctmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmctmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.libdpmfdmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmfdmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmframework.so \
@@ -2938,29 +2839,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.lce@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.allocator@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.allocator@4.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.composer@3.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.composer@3.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V1-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V2-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V3-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V4-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V5-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V6-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V6-ndk.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.demura@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.demura@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@2.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@3.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@4.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.2.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.3.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dpmservice@1.1.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
@@ -3097,7 +2975,6 @@ PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service \
     android.hardware.drm-service.clearkey \
     android.hardware.gnss-aidl-service-qti \
-    android.hardware.graphics.mapper-impl-qti-display \
     android.hardware.health-service.qti \
     android.hardware.radio.config \
     android.hardware.radio.data \
@@ -3133,9 +3010,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.provider \
     vendor.qti.diag.hal.service \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.lights.service \
     vendor.qti.hardware.limits-service \
     vendor.qti.hardware.perf \
