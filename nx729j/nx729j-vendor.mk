@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nubia/nx729j
 
 PRODUCT_COPY_FILES += \
-    vendor/nubia/nx729j/proprietary//vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_SYSTEM)//vendor/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/nubia/nx729j/proprietary/system/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
     vendor/nubia/nx729j/proprietary/system_ext/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.cvp@1.0.so \
@@ -808,6 +807,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/sxr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sxr@2.0.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
+    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
+    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
+    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_aw9610x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_aw9610x_0.json \
     vendor/nubia/nx729j/proprietary/vendor/etc/sensors/config/kailua_aw9610x_0_sar_register_a.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_aw9610x_0_sar_register_a.json \
