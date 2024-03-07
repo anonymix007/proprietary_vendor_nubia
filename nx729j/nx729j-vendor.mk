@@ -115,7 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.sensors@2.1-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.1-service.multihal \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.qti-v2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.qti-v2 \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/qvrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qvrservice \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/sxrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sxrservice \
@@ -144,7 +143,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.spu@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.spu@1.1-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.spu@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.spu@2.0-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
     vendor/nubia/nx729j/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
     vendor/nubia/nx729j/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
@@ -587,7 +585,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.1-service-multihal.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/bluetooth_ext_vnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bluetooth_ext_vnd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
@@ -894,7 +891,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6490/WCNSS_qcom_cfg.ini \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/wpa_supplicant_diag.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_diag.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
@@ -1718,8 +1714,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libvui_dmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvui_dmgr.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libvui_dmgr_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvui_dmgr_client.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwifi-hal-ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal-ctrl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libwifi-hal-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal-qcom.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
@@ -2350,7 +2344,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libcert_parse.wpa_s.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcert_parse.wpa_s.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libchifeature2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchifeature2.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
@@ -2442,8 +2435,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/liblistensoundmodel2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libloadalgo_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadalgo_stub.so \
@@ -2731,9 +2722,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwfduibcsrc_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfduibcsrc_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwfduibcsrcinterface_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfduibcsrcinterface_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdutils_proprietary.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libwifi-hal-ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-ctrl.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libwifi-hal-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-qcom.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libworker_pool.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libworker_pool.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so \
@@ -3003,8 +2991,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     android.hardware.sensors@2.1-multihal \
     android.hardware.thermal@2.0-service.qti \
-    android.hardware.wifi.hostapd \
-    android.hardware.wifi.supplicant \
     bttpi-saidl \
     c2_manifest_vendor_audio_dts \
     dataconnection-saidl \
