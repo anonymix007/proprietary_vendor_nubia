@@ -97,7 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
     vendor/nubia/nx729j/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.audio.service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service_64 \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.boot@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.boot@1.2-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
@@ -569,7 +568,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.audio.service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service_64.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.boot@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot@1.2-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
@@ -1701,7 +1699,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvibrator.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libvideoml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoml.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvmmem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvmmem.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndfwk_detect_jni.qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libvndfwk_detect_jni.qti_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndfwk_detect_jni.qti_vendor.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
@@ -2689,7 +2686,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvibrator.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvideoml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoml.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvmfilexfer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvmfilexfer.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libvmmem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvmmem.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvmmem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvmmem.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libvndfwk_detect_jni.qti_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti_vendor.so \
