@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service.sec:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service.sec \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.sensors@2.1-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.1-service.multihal \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.qti-v2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.qti-v2 \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
@@ -581,7 +580,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.sec.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.sensors@2.1-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.1-service-multihal.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/bluetooth_ext_vnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bluetooth_ext_vnd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
