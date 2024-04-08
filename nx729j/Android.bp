@@ -263,6 +263,24 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "c2_manifest_vendor",
+	owner: "nubia",
+	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "c2_manifest_vendor_audio",
+	owner: "nubia",
+	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "c2_manifest_vendor_audio_dts",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio_dts.xml",
@@ -464,6 +482,15 @@ prebuilt_etc_xml {
 	name: "vendor.qti.hardware.perf",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.hardware.qconfig@1.0-service",
+	owner: "nubia",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
