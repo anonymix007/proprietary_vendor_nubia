@@ -1,2 +1,1 @@
-#enable3ADebugData=TRUE
-
+enable3ADebugData=TRUE

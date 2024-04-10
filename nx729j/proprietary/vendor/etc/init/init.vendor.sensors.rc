@@ -31,8 +31,11 @@
 
 on early-boot
 
-#   exec_background u:r:vendor_qti_init_shell_bg:s0 -- /vendor/bin/init.qti.write.sh /sys/kernel/boot_slpi/boot 1
-#   write /sys/kernel/boot_slpi/boot 1
+    exec_background u:r:vendor_qti_init_shell_bg:s0 -- /vendor/bin/init.qti.write.sh /sys/kernel/boot_slpi/boot 1
+
+    mkdir /mnt/vendor/persist/sensors
+    mkdir /mnt/vendor/persist/sensors/registry
+    mkdir /mnt/vendor/persist/sensors/registry/registry
 
     chown system system /mnt/vendor/persist/sensors
     chown system system /mnt/vendor/persist/sensors/sns.reg
@@ -47,18 +50,7 @@ on early-boot
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
     chown system system /sys/kernel/boot_adsp/ssr
 
-    chown system system /mnt/vendor/persist/sensors/calib
-    chown system system /mnt/vendor/persist/sensors/calib/als_fac_cal
-    chown system system /mnt/vendor/persist/sensors/calib/als_cal_data
-    chown system system /mnt/vendor/persist/sensors/calib/xtalk_cal
-
-    chmod 0777 /mnt/vendor/persist/sensors/calib
-    chmod 0666 /mnt/vendor/persist/sensors/calib/xtalk_cal
-    chmod 0666 /mnt/vendor/persist/sensors/calib/als_fac_cal
-    chmod 0666 /mnt/vendor/persist/sensors/calib/als_cal_data
-
-on post-fs-data && property:ro.build.type=userdebug
+on post-fs-data
     #sensors log dir
     mkdir /data/vendor/sensors 0777 system system
     mkdir /data/vendor/sensors/scripts 0777 system system
-

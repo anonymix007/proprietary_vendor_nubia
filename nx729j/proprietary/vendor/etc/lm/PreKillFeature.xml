@@ -17,9 +17,6 @@
 <Feature>
     <Name>PreKill</Name>
     <Libname>libprekill.so</Libname>
-    <Configs>
-        <Enable>0</Enable>
-    </Configs>
     <Meters>
         <SamplesRequired>3</SamplesRequired>
         <Meter>

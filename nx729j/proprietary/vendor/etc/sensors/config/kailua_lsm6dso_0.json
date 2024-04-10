@@ -76,64 +76,28 @@
           "data": "0"
         }
       }
-    },
-    ".ois_accel":{
-      "owner": "lsm6dso",
-      ".config":{
-        "owner": "lsm6dso",
-        "is_dri":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "hw_id":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "res_idx":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sync_stream":{ "type": "int", "ver": "0",
-          "data": "0"
-        }
-      }
-    },
-    ".ois_gyro":{
-      "owner": "lsm6dso",
-      ".config":{
-        "owner": "lsm6dso",
-        "is_dri":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "hw_id":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "res_idx":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sync_stream":{ "type": "int", "ver": "0",
-          "data": "0"
-        }
-      }
     }
   },
   "lsm6dso_0_platform":{
     "owner": "lsm6dso",
     ".config":{
       "owner": "lsm6dso",
-      "bus_type":{ "type": "int", "ver": "0",
+      "bus_type":{ "type": "int", "ver": "7",
         "data": "3"
       },
-      "bus_instance":{ "type": "int", "ver": "0",
+      "bus_instance":{ "type": "int", "ver": "7",
         "data": "1"
       },
-      "slave_config":{ "type": "int", "ver": "0",
+      "slave_config":{ "type": "int", "ver": "7",
         "data": "106"
       },
-      "i3c_address":{ "type": "int", "ver": "0",
+      "i3c_address":{ "type": "int", "ver": "7",
         "data": "10"
       },
-      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+      "min_bus_speed_khz":{ "type": "int", "ver": "7",
         "data": "400"
       },
-      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+      "max_bus_speed_khz":{ "type": "int", "ver": "7",
         "data": "12500"
       },
       "reg_addr_type":{ "type": "int", "ver": "0",
@@ -142,7 +106,7 @@
       "dri_irq_num":{ "type": "int", "ver": "0",
         "data": "84"
       },
-      "irq_pull_type":{ "type": "int", "ver": "0",
+      "irq_pull_type":{ "type": "int", "ver": "7",
         "data": "0"
       },
       "irq_is_chip_pin":{ "type": "int", "ver": "0",
@@ -171,6 +135,18 @@
       },
       "max_odr":{ "type": "int", "ver": "0",
         "data": "500"
+      }
+    },
+    ".orient":{
+      "owner": "lsm6dso",
+      "x":{ "type": "str", "ver": "7",
+        "data": "-x"
+      },
+      "y":{ "type": "str", "ver": "7",
+        "data": "-y"
+      },
+      "z":{ "type": "str", "ver": "7",
+        "data": "+z"
       }
     },
     ".gyro":{
@@ -269,122 +245,6 @@
         }
       }
     },
-    ".ois_gyro":{
-      "owner": "lsm6dso",
-      ".fac_cal":{
-        "owner": "lsm6dso",
-        ".corr_mat":{
-          "owner": "lsm6dso",
-          "0_0":{ "type": "flt", "ver": "0",
-            "data": "1.0"
-          },
-          "0_1":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "0_2":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "1_0":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "1_1":{ "type": "flt", "ver": "0",
-            "data": "1.0"
-          },
-          "1_2":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "2_0":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "2_1":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "2_2":{ "type": "flt", "ver": "0",
-            "data": "1.0"
-          }
-        },
-        ".bias":{
-          "owner": "lsm6dso",
-          "x":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "y":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "z":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          }
-        }
-      },
-      ".odr_val":
-      {
-        "owner": "lsm6dso",
-        ".config":{
-          "owner": "lsm6dso",
-          "x":{ "type": "flt", "ver": "0",
-            "data": "600.0"
-          }
-        }
-      }
-    },
-    ".ois_accel":{
-      "owner": "lsm6dso",
-      ".fac_cal":{
-        "owner": "lsm6dso",
-        ".corr_mat":{
-          "owner": "lsm6dso",
-          "0_0":{ "type": "flt", "ver": "0",
-            "data": "1.0"
-          },
-          "0_1":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "0_2":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "1_0":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "1_1":{ "type": "flt", "ver": "0",
-            "data": "1.0"
-          },
-          "1_2":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "2_0":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "2_1":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "2_2":{ "type": "flt", "ver": "0",
-            "data": "1.0"
-          }
-        },
-        ".bias":{
-          "owner": "lsm6dso",
-          "x":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "y":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "z":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          }
-        }
-      },
-      ".odr_val":
-      {
-        "owner": "lsm6dso",
-        ".config":{
-          "owner": "lsm6dso",
-          "x":{ "type": "flt", "ver": "0",
-            "data": "700.0"
-          }
-        }
-      }
-    },
     ".temp":{
       "owner": "lsm6dso",
       ".fac_cal":
@@ -409,7 +269,34 @@
       ".config":{
         "owner": "lsm6dso",
         "thresh":{ "type": "flt", "ver": "0",
-            "data": "1.22"
+            "data": "0.6132"
+        },
+        "disable":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "win":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },
+    ".ff":{
+      "owner": "lsm6dso",
+      ".config":{
+        "owner": "lsm6dso",
+        "thresh":{ "type": "flt", "ver": "0",
+            "data": "2.15"
+        },
+        "win":{ "type": "flt", "ver": "0",
+          "data": "0.0204"
+        }
+      }
+    },
+    ".hs":{
+      "owner": "lsm6dso",
+      ".config":{
+        "owner": "lsm6dso",
+        "thresh":{ "type": "flt", "ver": "0",
+            "data": "17.30"
         },
         "disable":{ "type": "int", "ver": "0",
           "data": "0"

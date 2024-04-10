@@ -17,9 +17,6 @@
 <Feature>
     <Name>PreferredApps</Name>
     <Libname>libprefapps.so</Libname>
-    <Configs>
-        <Enable>0</Enable>
-    </Configs>
     <Meters>
         <Meter>
             <Name>PreferredApps</Name>

@@ -12,4 +12,12 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
             <instance>vendor_qti/0</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.zte.hardware.camera.transfer</name>
+        <version>1</version>
+        <interface>
+            <name>ITransfer</name>
+            <instance>vendor_zte/0</instance>
+        </interface>
+    </hal>
 </manifest>

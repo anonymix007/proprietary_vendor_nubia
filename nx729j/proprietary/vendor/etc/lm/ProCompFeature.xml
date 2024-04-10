@@ -17,9 +17,6 @@
 <Feature>
     <Name>ProComp</Name>
     <Libname>libprocomp.so</Libname>
-    <Configs>
-        <Enable>0</Enable>
-    </Configs>
     <Meters>
         <SamplesRequired>2</SamplesRequired>
         <Meter>

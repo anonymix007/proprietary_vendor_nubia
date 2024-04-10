@@ -1,5 +1,0 @@
-service vendor.sensors.awrwm /vendor/bin/see_awrw_reg_m
-    class core
-    user system
-    group system
-

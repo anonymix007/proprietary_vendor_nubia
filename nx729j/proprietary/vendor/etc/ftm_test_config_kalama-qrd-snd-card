@@ -1176,6 +1176,7 @@ WSA_COMP1 Switch:1
 SpkrLeft COMP Switch:1
 SpkrLeft VISENSE Switch:1
 SpkrLeft SWR DAC_Port Switch:1
+WSA_RX0 Digital Volume:78
 
 TX_AIF1_CAP Mixer DEC0:1
 TX DEC0 MUX:SWR_MIC
@@ -1323,6 +1324,10 @@ HPHL_COMP Switch:1
 HPHR_COMP Switch:1
 HPHL_RDAC Switch:1
 HPHR_RDAC Switch:1
+RX_HPH_PWR_MODE:ULP
+RX HPH Mode:CLS_H_ULP
+RX_RX0 Digital Volume:84
+RX_RX1 Digital Volume:84
 
 TX_AIF1_CAP Mixer DEC0:1
 TX DEC0 MUX:SWR_MIC
@@ -1462,6 +1467,7 @@ WSA_COMP2 Switch:1
 SpkrRight COMP Switch:1
 SpkrRight VISENSE Switch:1
 SpkrRight SWR DAC_Port Switch:1
+WSA_RX1 Digital Volume:84
 
 TX_AIF1_CAP Mixer DEC0:1
 TX DEC0 MUX:SWR_MIC
@@ -1507,6 +1513,7 @@ WSA_COMP2 Switch:1
 SpkrRight COMP Switch:1
 SpkrRight VISENSE Switch:1
 SpkrRight SWR DAC_Port Switch:1
+WSA_RX1 Digital Volume:84
 
 TX_AIF1_CAP Mixer DEC0:1
 TX DEC0 MUX:SWR_MIC
@@ -1550,6 +1557,7 @@ WSA_COMP2 Switch:1
 SpkrRight COMP Switch:1
 SpkrRight VISENSE Switch:1
 SpkrRight SWR DAC_Port Switch:1
+WSA_RX1 Digital Volume:84
 
 TX_AIF1_CAP Mixer DEC0:1
 TX DEC0 MUX:SWR_MIC
