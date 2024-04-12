@@ -56,17 +56,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QFingerprintService",
-	owner: "nubia",
-	apk: "proprietary/vendor/app/QFingerprintService/QFingerprintService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "ThermalBridge_prebuild",
 	owner: "nubia",
 	apk: "proprietary/vendor/app/ThermalBridge_prebuild/ThermalBridge_prebuild.apk",
