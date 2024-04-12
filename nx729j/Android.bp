@@ -5,6 +5,23 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+	name: "libaacvibrator",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libaacvibrator.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
 android_app_import {
 	name: "CACertService",
 	owner: "nubia",
@@ -486,15 +503,6 @@ prebuilt_etc_xml {
 	name: "vendor.qti.hardware.radio.qtiradioconfig",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.vibrator.service",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
