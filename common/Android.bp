@@ -1,0 +1,9 @@
+android_app_import {
+	name: "DtsUltra",
+	owner: "nubia",
+	apk: "proprietary/system/app/DtsUltra/DtsUltra.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
