@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
-    vendor/nubia/nx729j/proprietary/system/etc/wifi/wifi_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wifi/wifi_config.xml \
     vendor/nubia/nx729j/proprietary/system/lib64/libarcsoft_single_chart_calibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_single_chart_calibration.so \
     vendor/nubia/nx729j/proprietary/system/lib64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmpbase.so \
     vendor/nubia/nx729j/proprietary/system/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so \
@@ -83,7 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.audio.service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service_64 \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-qti \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
@@ -106,7 +104,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.limits@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.limits@1.2-service \
-    vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.memtrack-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.memtrack-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
     vendor/nubia/nx729j/proprietary/vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.secureprocessor@1.0 \
@@ -201,7 +198,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/trusteduilistener:$(TARGET_COPY_OUT_VENDOR)/bin/trusteduilistener \
     vendor/nubia/nx729j/proprietary/vendor/bin/variantid:$(TARGET_COPY_OUT_VENDOR)/bin/variantid \
     vendor/nubia/nx729j/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
-    vendor/nubia/nx729j/proprietary/vendor/bin/vendordiag:$(TARGET_COPY_OUT_VENDOR)/bin/vendordiag \
     vendor/nubia/nx729j/proprietary/vendor/bin/vmmgr:$(TARGET_COPY_OUT_VENDOR)/bin/vmmgr \
     vendor/nubia/nx729j/proprietary/vendor/bin/vppcommonlibraryunittest:$(TARGET_COPY_OUT_VENDOR)/bin/vppcommonlibraryunittest \
     vendor/nubia/nx729j/proprietary/vendor/bin/vppipcunittest:$(TARGET_COPY_OUT_VENDOR)/bin/vppipcunittest \
@@ -218,7 +214,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/bin/zte_diag_callback:$(TARGET_COPY_OUT_VENDOR)/bin/zte_diag_callback \
     vendor/nubia/nx729j/proprietary/vendor/bin/zte_ftm:$(TARGET_COPY_OUT_VENDOR)/bin/zte_ftm \
     vendor/nubia/nx729j/proprietary/vendor/etc/898-898-no-exp-2574099444.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/898-898-no-exp-2574099444.pfm \
-    vendor/nubia/nx729j/proprietary/vendor/etc/IPACM_Filter_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_Filter_cfg.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/QWESAttestationCert.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/QWESAttestationCert.pfm \
     vendor/nubia/nx729j/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
@@ -733,11 +728,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/gpsInterval.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpsInterval.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/hwid.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hwid.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.audio.service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service_64.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
@@ -771,7 +764,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/nfc-service-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-sec.rc \
@@ -827,24 +819,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-SN220_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-SN220_38_4MHZ.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/LightningLaunchesFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/LightningLaunchesFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/PrefAppsFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PrefAppsFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/ProCompFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/ProCompFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/QAPE.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/QAPE.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/QGPE.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/QGPE.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/QGPEActionMap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/QGPEActionMap.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/SilkyScrollsFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/SilkyScrollsFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/prekill/prekill_2GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_2GB.data \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lm/sPLHFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/sPLHFeature.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -862,7 +839,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
-    vendor/nubia/nx729j/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/oem_4_prj_ZTELTM8550_1663777224350.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/oem_4_prj_ZTELTM8550_1663777224350.pfm \
     vendor/nubia/nx729j/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
@@ -870,11 +846,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/pinner_file_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pinner_file_list.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/nubia/nx729j/proprietary/vendor/etc/pwr/AODPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/AODPowerOptFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/pwr/PSMPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PSMPowerOptFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/pwr/StandbyFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/StandbyFeature.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
     vendor/nubia/nx729j/proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/11.0_config.sql \
@@ -1012,13 +983,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/kiwi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi/WCNSS_qcom_cfg.ini \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6490/WCNSS_qcom_cfg.ini \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
@@ -1198,10 +1162,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu30_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_unsigned.mbn \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
     vendor/nubia/nx729j/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libeai_fixed_32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeai_fixed_32.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqesdk2_0.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqesdk_manager.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n29.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n29.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n30.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n30.bin \
     vendor/nubia/nx729j/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n35.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n35.bin \
@@ -1992,9 +1954,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libzcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libzcv.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libzte_variantflag_shared_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libzte_variantflag_shared_vendor.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/nfc_nci_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_sec.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qcrilInterfaces.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilInterfaces.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/qcrilMarshal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilMarshal.so \
@@ -2230,7 +2189,6 @@ PRODUCT_PACKAGES += \
     TrustedUIService \
     TxPwrAdmin \
     com.qualcomm.qti.gpudrivers.kalama.api33 \
-    android.hardware.drm-service.clearkey \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.radio.config \
     android.hardware.radio.data \
@@ -2251,9 +2209,7 @@ PRODUCT_PACKAGES += \
     manifest_identity_credential \
     manifest_non_qmaa \
     manifest_non_qmaa_extn \
-    memtrack_qti \
     nfc-service-sec \
-    power \
     qcrilhook-saidl \
     qms-saidl \
     qtiradio-saidl \
