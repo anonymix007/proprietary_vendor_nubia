@@ -6,6 +6,23 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libPeripheralStateUtils",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libPeripheralStateUtils.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libaacvibrator",
 	owner: "nubia",
 	strip: {
@@ -256,24 +273,6 @@ prebuilt_etc_xml {
 	name: "manifest_identity_credential",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_identity_credential.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_non_qmaa",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_non_qmaa.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_non_qmaa_extn",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
