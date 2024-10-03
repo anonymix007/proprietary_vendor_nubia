@@ -1421,9 +1421,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTrustedUITZ.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUITZ.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTrustedUIVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUIVM.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libTxPwrJni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTxPwrJni.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/lib_bt_aptx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_aptx.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/lib_bt_ble.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_ble.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/lib_bt_bundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_bundle.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libadaptive_shutter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptive_shutter.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadm.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
@@ -1443,7 +1440,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatterylistener.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlenginev2.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
@@ -1567,7 +1563,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpege.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libjson.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjson.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
@@ -1649,8 +1644,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libopticalzoomfallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopticalzoomfallback.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libpal_net_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpal_net_if.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
-    vendor/nubia/nx729j/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libplatformconfig.so \
     vendor/nubia/nx729j/proprietary/vendor/lib64/libpsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpsi.so \
@@ -2088,6 +2081,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libPeripheralStateUtils \
     libaacvibrator \
+    libpdmapper \
+    libpdnotifier \
     CACertService \
     CneApp \
     IWlanService \
