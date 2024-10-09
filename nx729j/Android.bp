@@ -168,15 +168,6 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.gnss-aidl-service-qti",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.radio.config",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.config.xml",
@@ -396,15 +387,6 @@ prebuilt_etc_xml {
 	name: "vendor.qti.diag.hal.service",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.gnss-service",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
