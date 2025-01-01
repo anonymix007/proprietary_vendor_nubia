@@ -1235,17 +1235,9 @@ PRODUCT_PACKAGES += \
     libdataitems \
     libdiag \
     libdiagjni \
-    libdigital-dimming_vendor \
-    libdisp-aba_vendor \
-    libdisplayconfig.qti_vendor \
-    libdisplaydebug_vendor \
-    libdisplayqos_vendor \
-    libdisplayskuutils_vendor \
     libdpmqmihal \
-    libdpps_vendor \
     libdrmfs \
     libdrmtime \
-    libdrmutils_vendor \
     libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
@@ -1266,7 +1258,6 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfcell \
-    libfilefinder_vendor \
     libfnxml \
     libgarden \
     libgarden_haltests_e2e \
@@ -1277,20 +1268,17 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
-    libgpu_tonemapper_vendor \
     libhap_power \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr10plus \
     libhdr_stub \
-    libhistogram_vendor \
     libhme \
     libhvxopr_skel \
     libhvxopr_stub \
     libidl \
     libin_display \
-    libintervmipc_vendor \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
@@ -1332,7 +1320,6 @@ PRODUCT_PACKAGES += \
     libmcxcroputil \
     libmdmdetect \
     libmdsprpc \
-    libmemutils_vendor \
     libmfGhostDetection \
     libmfec \
     libmfnr_network \
@@ -1447,7 +1434,6 @@ PRODUCT_PACKAGES += \
     libqnnengine \
     libqrtr \
     libqsegnet \
-    libqservice_vendor \
     libqsh_ble_pb \
     libqshcamera \
     libqsocket \
@@ -1473,13 +1459,6 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm_vendor \
-    libsdm-color_vendor \
-    libsdm-disp-vndapis_vendor \
-    libsdmcore_vendor \
-    libsdmdal_vendor \
-    libsdmextension_vendor \
-    libsdmutils_vendor \
     libsdsprpc \
     libsecureui_svcsock \
     libsensorapi_vendor \
@@ -1492,7 +1471,6 @@ PRODUCT_PACKAGES += \
     libskia_vendor \
     libslimclient \
     libsmemlog \
-    libsnapdragoncolor-manager_vendor \
     libsnpe_loader \
     libsns_api \
     libsns_device_mode_stub \
@@ -1526,7 +1504,6 @@ PRODUCT_PACKAGES += \
     libtensorflowlite_gpu_jni \
     libtensorflowlite_jni_vendor \
     libtestcore \
-    libtestutils_vendor \
     libtfestriping \
     libtflite_model_bnudc \
     libtflite_model_denoised_528_528 \
@@ -1534,7 +1511,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
-    libtinyxml2_1_vendor \
     libtlpd \
     libtlpd_configmgr \
     libtlpd_crypto \
@@ -1548,7 +1524,6 @@ PRODUCT_PACKAGES += \
     libvideoml \
     libvideotxr \
     libvideoutils \
-    libvmfilexfer_vendor \
     libvmmem_vendor \
     libvppclient \
     libvppcommon \
@@ -1948,14 +1923,10 @@ PRODUCT_PACKAGES += \
     capabilityconfigstoretest \
     qconfigservice \
     qcrilNrd \
-    vendor.display.color@1.0-service_vendor \
     vendor.hardware.media.c2@1.0-dtscodec-service \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.allocator-service_vendor \
-    vendor.qti.hardware.display.composer-service_vendor \
-    vendor.qti.hardware.display.demura-service_vendor \
     vendor.qti.hardware.factory@1.0-service \
     vendor.qti.hardware.lights.service \
     vendor.qti.hardware.limits@1.2-service \
