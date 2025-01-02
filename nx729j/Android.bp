@@ -8,6 +8,7 @@ soong_namespace {
 		"hardware/nubia",
 		"vendor/qcom/common/system/telephony",
 		"vendor/qcom/common/vendor/adreno-t",
+		"vendor/qcom/common/vendor/bt/hci",
 		"vendor/qcom/common/vendor/display",
 		"vendor/qcom/common/vendor/display/5.15",
 		"vendor/qcom/common/vendor/perf",
@@ -2548,42 +2549,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.bluetooth@1.0-impl-qti",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmiservices", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "libsoc_helper", "libminksocket_vendor", "libPeripheralStateUtils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.bluetooth@1.1-impl-qti",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmiservices", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.1", "android.hardware.bluetooth@1.0-impl-qti", "libsoc_helper", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "android.hardware.gatekeeper@1.0-impl-qti",
 	owner: "nubia",
 	strip: {
@@ -2773,78 +2738,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so"],
 			shared_libs: ["android.hardware.audio.common@5.0", "libbluetooth_audio_session_qti_2_1", "libbase", "libcutils", "libfmq", "libhidlbase", "libhidltransport", "liblog", "libutils", "vendor.qti.hardware.bluetooth_audio@2.1", "vendor.qti.hardware.bluetooth_audio@2.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.bluetooth_sar@1.1-impl",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "liblog", "libbase", "libcutils", "vendor.qti.hardware.bluetooth_sar@1.0", "vendor.qti.hardware.bluetooth_sar@1.1", "android.hardware.bluetooth@1.0-impl-qti", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.btconfigstore@1.0-impl",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "vendor.qti.hardware.btconfigstore@1.0", "android.hardware.bluetooth@1.0-impl-qti", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.btconfigstore@2.0-impl",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "vendor.qti.hardware.btconfigstore@2.0", "android.hardware.bluetooth@1.0-impl-qti", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.bttpi-impl",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "liblog", "libbase", "libcutils", "libhardware", "libbinder_ndk", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.0-impl-qti", "vendor.qti.hardware.bttpi-V2-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -3520,23 +3413,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libPeripheralStateUtils",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libPeripheralStateUtils.so"],
-			shared_libs: ["libminksocket_vendor", "liblog", "libutils", "libcutils", "libbase", "libminkdescriptor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
 }
@@ -4402,40 +4278,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_qti_2_1.so"],
 			shared_libs: ["vendor.qti.hardware.bluetooth_audio@2.1", "vendor.qti.hardware.bluetooth_audio@2.0", "libaudioutils", "libbase", "libcutils", "libfmq", "libhidlbase", "libhidltransport", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbt-hidlclient",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbt-hidlclient.so"],
-			shared_libs: ["libutils", "libhidlbase", "android.hardware.bluetooth@1.0", "com.dsi.ant@1.0", "vendor.qti.hardware.fm@1.0", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbtnv",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbtnv.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9396,40 +9238,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsoc_helper",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsoc_helper.so"],
-			shared_libs: ["libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsoc_helper_jni",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsoc_helper_jni.so"],
-			shared_libs: ["libsoc_helper", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libspcom",
 	owner: "nubia",
 	strip: {
@@ -11599,57 +11407,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so"],
 			shared_libs: ["android.hardware.automotive.vehicle@2.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.bluetooth_sar@1.0",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.bluetooth_sar@1.1",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so"],
-			shared_libs: ["vendor.qti.hardware.bluetooth_sar@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.bttpi-V2-ndk",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.bttpi-V2-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -14922,15 +14679,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "bttpi-saidl.xml",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/bttpi-saidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "c2_manifest_vendor.xml",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
@@ -15340,23 +15088,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/battery_stats"],
 			shared_libs: ["libqcc_sdk", "libprotobuf-cpp-full-3.9.1-vendorcompat", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "btconfig",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/btconfig"],
-			shared_libs: ["libcutils", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -15878,23 +15609,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "ftmdaemon",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/ftmdaemon"],
-			shared_libs: ["libnl", "libbt-hidlclient", "libdiag", "libcutils", "liblog", "libhardware", "libbtnv", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "garden_app",
 	owner: "nubia",
 	target: {
@@ -15942,24 +15656,6 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.bluetooth@1.1-service-qti",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libhidlbase", "libbinder_ndk", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.1", "android.hardware.bluetooth@1.0-impl-qti", "android.hardware.bluetooth@1.1-impl-qti", "vendor.qti.hardware.bttpi-V2-ndk", "libsoc_helper", "vendor.qti.hardware.fm@1.0", "com.dsi.ant@1.0", "vendor.qti.hardware.bluetooth_sar@1.0", "vendor.qti.hardware.bluetooth_sar@1.1", "vendor.qti.hardware.bttpi-impl", "vendor.qti.hardware.btconfigstore@1.0", "vendor.qti.hardware.btconfigstore@2.0", "libqti_vndfwk_detect_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -17110,7 +16806,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/qms"],
-			shared_libs: ["libavservices_minijail", "libcutils", "liblog", "libdiag", "libnetutils", "libutils", "libhardware_legacy", "libqmiservices", "libqmi_cci", "libnl", "libidl", "libandroid_net", "libhidlbase", "libbinder", "libbinder_ndk", "vendor.qti.hardware.bttpi-V2-ndk", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libcrypto", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libavservices_minijail", "libcutils", "liblog", "libdiag", "libnetutils", "libutils", "libhardware_legacy", "libqmiservices", "libqmi_cci", "libnl", "libidl", "libandroid_net", "libhidlbase", "libbinder", "libbinder_ndk", "vendor.qti.hardware.bttpi-V3-ndk", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -17910,23 +17606,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/vppserviceunittest"],
 			shared_libs: ["libcutils", "liblog", "libvpplibrary", "libvpptestutils", "libhidlbase", "libhidltransport", "libhwbinder", "libutils", "libhardware", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "vendor.qti.hardware.vpp@1.3", "libvppclient", "libqdMetaData", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "wdsdaemon",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/wdsdaemon"],
-			shared_libs: ["libdiag", "libcutils", "libbt-hidlclient", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

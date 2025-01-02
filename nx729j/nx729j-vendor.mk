@@ -500,7 +500,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/gpsInterval.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpsInterval.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
@@ -1080,8 +1079,6 @@ PRODUCT_PACKAGES += \
     libvtswidevine \
     ftm_fm_lib \
     android.hardware.bluetooth.audio-impl-qti \
-    android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
     audio.bluetooth_qti.default \
@@ -1093,10 +1090,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
@@ -1136,7 +1129,6 @@ PRODUCT_PACKAGES += \
     libGPreqcancel \
     libGPreqcancel_svc \
     libNubiaImageAlgorithmVD \
-    libPeripheralStateUtils \
     libQ6MSFR_manager_stub \
     libQSEEComAPI \
     libQTEEConnector_vendor \
@@ -1188,8 +1180,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
-    libbt-hidlclient \
-    libbtnv \
     libc++_shared \
     libcacertclient \
     libcamerapostproc \
@@ -1481,8 +1471,6 @@ PRODUCT_PACKAGES += \
     libsnsapi \
     libsnsdiaglog \
     libsnsutils \
-    libsoc_helper \
-    libsoc_helper_jni \
     libspcom \
     libspl \
     libss-base \
@@ -1610,9 +1598,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
     vendor.qti.hardware.automotive.vehicle@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.bttpi-V2-ndk \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
@@ -1838,7 +1823,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.sim.xml \
     android.hardware.radio.voice.xml \
     android.hardware.security.keymint-service-qti.xml \
-    bttpi-saidl.xml \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
     c2_manifest_vendor_audio_dts.xml \
@@ -1876,7 +1860,6 @@ PRODUCT_PACKAGES += \
     apdpswitch \
     battery_record_daemon \
     battery_stats \
-    btconfig \
     camerahalvs \
     ccid_daemon_nr \
     cdsprpcd \
@@ -1907,11 +1890,9 @@ PRODUCT_PACKAGES += \
     fmconfig \
     fmfactorytest \
     fmfactorytestserver \
-    ftmdaemon \
     garden_app \
     hdcp1prov \
     hdcp2p2prov \
-    android.hardware.bluetooth@1.1-service-qti \
     android.hardware.drm-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.gnss-aidl-service-qti \
@@ -2028,7 +2009,6 @@ PRODUCT_PACKAGES += \
     vpplibraryunittest \
     vppservice \
     vppserviceunittest \
-    wdsdaemon \
     wfdhdcphalservice \
     wfdvndservice \
     wifidisplayhalservice \
