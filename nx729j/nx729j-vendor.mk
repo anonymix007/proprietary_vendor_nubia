@@ -1083,7 +1083,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-impl-qti \
     audio.bluetooth_qti.default \
     camera.qcom \
-    com.dsi.ant@1.0-impl \
     com.qti.chi.offline \
     com.qti.chi.override \
     fingerprint.gf95xx.default \
