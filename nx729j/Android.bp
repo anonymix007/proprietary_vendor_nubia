@@ -106,23 +106,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "btaudio_offload_if",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/btaudio_offload_if.so"],
-			shared_libs: ["libbase", "libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "libbinder_ndk", "android.hardware.bluetooth.audio-V2-ndk", "libbluetooth_audio_session_aidl_qti", "libbluetooth_audio_session_qti", "libbluetooth_audio_session_qti_2_1", "vendor.qti.hardware.bluetooth.audio-V1-ndk", "android.hardware.bluetooth.audio-impl-qti", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "com.qti.sensor.nx729j_front_ov16a1q",
 	owner: "nubia",
 	strip: {
@@ -2531,24 +2514,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.bluetooth.audio-impl-qti",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so"],
-			shared_libs: ["libbase", "libbinder_ndk", "libcutils", "libfmq", "liblog", "android.hardware.bluetooth.audio-V2-ndk", "libbluetooth_audio_session_aidl_qti", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "android.hardware.gatekeeper@1.0-impl-qti",
 	owner: "nubia",
 	strip: {
@@ -2576,24 +2541,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so"],
 			shared_libs: ["libbase", "libbinder_ndk", "android.hardware.gnss-V2-ndk", "android.hardware.health-V1-ndk", "android.hardware.health@1.0", "android.hardware.health@2.0", "android.hardware.health@2.1", "libhidlbase", "liblog", "libcutils", "libutils", "libloc_core", "libgps.utils", "liblocation_api", "libqti_vndfwk_detect_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "audio.bluetooth_qti.default",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so"],
-			shared_libs: ["libbluetooth_audio_session_qti_2_1", "libbluetooth_audio_session_qti", "android.hardware.bluetooth.audio-V2-ndk", "libbluetooth_audio_session_aidl_qti", "android.hardware.bluetooth.audio-impl-qti", "libaudioutils", "libbinder_ndk", "libbase", "libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -2684,42 +2631,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so"],
 			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libesepmconfig", "vendor.qti.esepowermanager@1.0", "vendor.qti.esepowermanager@1.1", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.bluetooth_audio@2.0-impl",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so"],
-			shared_libs: ["android.hardware.audio.common@5.0", "vendor.qti.hardware.bluetooth_audio@2.0", "libbase", "libbluetooth_audio_session_qti", "libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.bluetooth_audio@2.1-impl",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so"],
-			shared_libs: ["android.hardware.audio.common@5.0", "libbluetooth_audio_session_qti_2_1", "libbase", "libcutils", "libfmq", "libhidlbase", "libhidltransport", "liblog", "libutils", "vendor.qti.hardware.bluetooth_audio@2.1", "vendor.qti.hardware.bluetooth_audio@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -4212,57 +4123,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbluetooth_audio_session_aidl_qti",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_aidl_qti.so"],
-			shared_libs: ["android.hardware.bluetooth.audio@2.0", "android.hardware.bluetooth.audio@2.1", "libbase", "libcutils", "libbinder_ndk", "libfmq", "liblog", "android.hardware.bluetooth.audio-V2-ndk", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbluetooth_audio_session_qti",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_qti.so"],
-			shared_libs: ["vendor.qti.hardware.bluetooth_audio@2.0", "libaudioutils", "libbase", "libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbluetooth_audio_session_qti_2_1",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_qti_2_1.so"],
-			shared_libs: ["vendor.qti.hardware.bluetooth_audio@2.1", "vendor.qti.hardware.bluetooth_audio@2.0", "libaudioutils", "libbase", "libcutils", "libfmq", "libhidlbase", "libhidltransport", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
 }

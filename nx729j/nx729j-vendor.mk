@@ -941,7 +941,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.connectionaidl-V1-ndk \
     libqesdk2_0 \
     libqesdk_manager \
-    btaudio_offload_if \
     com.qti.sensor.nx729j_front_ov16a1q \
     com.qti.sensor.nx729j_front_ov16e1q \
     com.qti.sensor.nx729j_gc02m1 \
@@ -1078,17 +1077,13 @@ PRODUCT_PACKAGES += \
     deviceInfoServiceModuleNr \
     libvtswidevine \
     ftm_fm_lib \
-    android.hardware.bluetooth.audio-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    audio.bluetooth_qti.default \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
     fingerprint.gf95xx.default \
     vendor.qti.esepowermanager@1.1-impl \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
@@ -1176,9 +1171,6 @@ PRODUCT_PACKAGES += \
     libbatching \
     libbitmlengine \
     libbitmlenginev2 \
-    libbluetooth_audio_session_aidl_qti \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
     libc++_shared \
     libcacertclient \
     libcamerapostproc \
