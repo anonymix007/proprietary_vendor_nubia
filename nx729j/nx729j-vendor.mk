@@ -379,7 +379,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile7.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
@@ -521,7 +520,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
@@ -533,7 +531,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/nfc-service-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-sec.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/qguard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qguard.rc \
@@ -569,14 +566,11 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-SN220_19_2MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-SN220_19_2MHZ.conf \
@@ -588,15 +582,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_vendor.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_performance_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_codecs_performance_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_vendor.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_kalama/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_kalama/video_system_specs.json \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/media_profiles_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kalama.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
@@ -640,12 +625,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_hwreg.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_swreg.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm64.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-qsap-location.policy \
@@ -1108,20 +1087,16 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
-    libAlacSwDec \
-    libApeSwDec \
     libCOSNet_spatial_qnn_quantized \
     libCud \
     libDcfHalBleProto \
     libDcfHalFramework \
     libDcfHalLogger \
     libDcfHalQtiMutex \
-    libEvrcSwCodec \
     libFNVfbEngineHAL \
     libFace3DTA \
     libFace3D_hlos \
     libFileMux_proprietary \
-    libFlacSwDec \
     libGPMTEEC_vendor \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
@@ -1131,7 +1106,6 @@ PRODUCT_PACKAGES += \
     libQ6MSFR_manager_stub \
     libQSEEComAPI \
     libQTEEConnector_vendor \
-    libQcelp13SwCodec \
     libQnnCpu \
     libQnnHtp \
     libQnnHtpNetRunExtensions \
@@ -1355,37 +1329,11 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libqape_oem_ext \
-    libqc2audio_base \
-    libqc2audio_basecodec \
-    libqc2audio_core \
-    libqc2audio_hooks \
-    libqc2audio_hwaudiocodec \
-    libqc2audio_platform \
-    libqc2audio_swaudiocodec \
-    libqc2audio_utils \
-    libqc2colorconvertfilter \
-    libqc2filter \
-    libqc2vppfilter \
     libqcbor \
     libqcc_file_agent \
     libqcc_sdk \
     libqcci_legacy \
     libqcmaputils \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_cvpfilter \
-    libqcodec2_filterbase \
-    libqcodec2_hooks \
-    libqcodec2_imgtxrfilter \
-    libqcodec2_mockfilter \
-    libqcodec2_mockqc2filter \
-    libqcodec2_platform \
-    libqcodec2_salmapfilter \
-    libqcodec2_streaminteg_filter \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
-    libqconfigclient \
     libqcrilDataModule \
     libqcrilNr \
     libqcrilNrCellInfoModule \
@@ -1420,7 +1368,6 @@ PRODUCT_PACKAGES += \
     libqmiextservices \
     libqmiservices \
     libqms_client \
-    libqnnengine \
     libqrtr \
     libqsegnet \
     libqsh_ble_pb \
@@ -1509,16 +1456,7 @@ PRODUCT_PACKAGES += \
     libvendorcfg_vendor \
     libvendorutils \
     libvideoml \
-    libvideotxr \
-    libvideoutils \
     libvmmem_vendor \
-    libvppclient \
-    libvppcommon \
-    libvpphcp \
-    libvpphvx \
-    libvppimmotion \
-    libvpplibrary \
-    libvpptestutils \
     libvui_dmgr \
     libvui_dmgr_client \
     libwfdcodecv4l2_proprietary \
@@ -1565,7 +1503,6 @@ PRODUCT_PACKAGES += \
     qcril_client \
     qcrild_libqcrilnr \
     qcrild_libqcrilnrutils \
-    qti.video.utils.videobufferlayout \
     qtiPeripheralMgr \
     qtiril-utils \
     qtiwakelock \
@@ -1636,7 +1573,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
     vendor.qti.hardware.qccvndhal@1.0 \
-    vendor.qti.hardware.qconfig@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am-V1-ndk_vendor \
@@ -1690,10 +1626,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.trustedui@1.1 \
     vendor.qti.hardware.trustedui@1.2 \
     vendor.qti.hardware.tui_comm@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.hardware.vpp@2.0 \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.ims.callcapability@1.0_vendor \
@@ -1822,8 +1754,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.sim.xml \
     android.hardware.radio.voice.xml \
     android.hardware.security.keymint-service-qti.xml \
-    c2_manifest_vendor.xml \
-    c2_manifest_vendor_audio.xml \
     c2_manifest_vendor_audio_dts.xml \
     dataconnection-saidl.xml \
     deviceinfo-saidl.xml \
@@ -1841,11 +1771,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.lights.service.xml \
     vendor.qti.hardware.limits-service.xml \
-    vendor.qti.hardware.qconfig@1.0-service.xml \
     vendor.qti.hardware.radio.am.xml \
     vendor.qti.hardware.radio.ims.xml \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
-    vendor.qti.hardware.vpp@2.0-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     ATFWD-daemon \
     COSNet_spatial_8bit_quantized.serialized.bin \
@@ -1901,7 +1829,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc-service.sec \
     android.hardware.security.keymint-service-qti \
     capabilityconfigstoretest \
-    qconfigservice \
     qcrilNrd \
     vendor.hardware.media.c2@1.0-dtscodec-service \
     vendor.qti.camera.provider-service_64 \
@@ -1917,8 +1844,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.hardware.trustedui@1.0-service-qti \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
-    vendor.qti.media.c2@1.0-service \
-    vendor.qti.media.c2audio@1.0-service \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \
@@ -2002,12 +1927,6 @@ PRODUCT_PACKAGES += \
     variantid \
     vendor.dpmd \
     vmmgr \
-    vppcommonlibraryunittest \
-    vppipcunittest \
-    vpplibraryfunctionaltest \
-    vpplibraryunittest \
-    vppservice \
-    vppserviceunittest \
     wfdhdcphalservice \
     wfdvndservice \
     wifidisplayhalservice \

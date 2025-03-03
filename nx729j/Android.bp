@@ -11,6 +11,7 @@ soong_namespace {
 		"vendor/qcom/common/vendor/bt/hci",
 		"vendor/qcom/common/vendor/display",
 		"vendor/qcom/common/vendor/display/5.15",
+		"vendor/qcom/common/vendor/media-5.15",
 		"vendor/qcom/common/vendor/perf",
 	],
 }
@@ -3058,40 +3059,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libAlacSwDec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libAlacSwDec.so"],
-			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libApeSwDec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libApeSwDec.so"],
-			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libCOSNet_spatial_qnn_quantized",
 	owner: "nubia",
 	strip: {
@@ -3194,23 +3161,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libEvrcSwCodec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libEvrcSwCodec.so"],
-			shared_libs: ["libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libFNVfbEngineHAL",
 	owner: "nubia",
 	strip: {
@@ -3272,23 +3222,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libFileMux_proprietary.so"],
 			shared_libs: ["libmmosal_vendor", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libFlacSwDec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libFlacSwDec.so"],
-			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -3443,23 +3376,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libQTEEConnector_vendor.so"],
 			shared_libs: ["libhidlbase", "liblog", "libcutils", "libutils", "vendor.qti.hardware.qteeconnector@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libQcelp13SwCodec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libQcelp13SwCodec.so"],
-			shared_libs: ["libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -7264,193 +7180,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libqc2audio_base",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2audio_base.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2audio_basecodec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2audio_basecodec.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqc2audio_base", "libqc2audio_utils", "libqc2audio_platform", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2audio_core",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2audio_core.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqc2audio_base", "libqc2audio_hooks", "libqc2audio_utils", "libqc2audio_platform", "libqc2audio_basecodec", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2audio_hooks",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2audio_hooks.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqc2audio_base", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2audio_hwaudiocodec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2audio_hwaudiocodec.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2audio_platform",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2audio_platform.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqc2audio_base", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2audio_swaudiocodec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2audio_swaudiocodec.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libqc2audio_base", "libqc2audio_platform", "libqc2audio_utils", "libqc2audio_basecodec", "libcodec2_vndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2audio_utils",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2audio_utils.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqc2audio_base", "libqc2audio_platform", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2colorconvertfilter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2colorconvertfilter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_mockqc2filter", "libqc2filter", "libqcodec2_basecodec", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2filter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2filter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqc2vppfilter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqc2vppfilter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqdMetaData", "libhwbinder", "libhidlbase", "libhidltransport", "libqcodec2_base", "libqcodec2_basecodec", "libqcodec2_utils", "libqcodec2_platform", "vendor.qti.hardware.vpp@2.0", "vendor.qti.hardware.capabilityconfigstore@1.0", "vendor.qti.hardware.qconfig@1.0", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqcbor",
 	owner: "nubia",
 	strip: {
@@ -7528,261 +7257,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcmaputils.so"],
 			shared_libs: ["libdiag", "libdsutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_base",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_base.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_basecodec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_basecodec.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_platform", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_core",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_core.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_hooks", "libqcodec2_utils", "libqcodec2_platform", "libqcodec2_basecodec", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_cvpfilter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_cvpfilter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "libqcodec2_filterbase", "libeva", "libcv_common", "libqcodec2_platform", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_filterbase",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_filterbase.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_hooks",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_hooks.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_imgtxrfilter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_imgtxrfilter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "libqcodec2_filterbase", "libqcodec2_platform", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_mockfilter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_mockfilter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "libqcodec2_filterbase", "libqcodec2_platform", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_mockqc2filter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_mockqc2filter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libqcodec2_base", "libqcodec2_platform", "libqcodec2_utils", "libqcodec2_basecodec", "libcodec2_vndk", "libqcodec2_v4l2codec", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_platform",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_platform.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libjsoncpp", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_salmapfilter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_salmapfilter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "libqcodec2_filterbase", "libqcodec2_platform", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_streaminteg_filter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_streaminteg_filter.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "libqcodec2_filterbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_utils",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_utils.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_platform", "libhidlbase", "libgrallocutils", "libgralloctypes", "libgralloc.qti", "libdisplayconfig.qti", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "libnativewindow", "libvideotxr", "qti.video.utils.videobufferlayout", "libqnnengine", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcodec2_v4l2codec",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcodec2_v4l2codec.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libqcodec2_base", "libqcodec2_platform", "libqcodec2_utils", "libqcodec2_basecodec", "libcodec2_vndk", "libvmmem_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqconfigclient",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqconfigclient.so"],
-			shared_libs: ["libutils", "libhidlbase", "libcutils", "liblog", "vendor.qti.hardware.qconfig@1.0", "libjsoncpp", "libbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8361,23 +7835,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqms_client.so"],
 			shared_libs: ["liblog", "libbinder", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqnnengine",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqnnengine.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9884,40 +9341,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libvideotxr",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvideotxr.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libnativewindow", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvideoutils",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvideoutils.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libvmmem_vendor",
 	stem: "libvmmem",
 	owner: "nubia",
@@ -9928,125 +9351,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvmmem.so"],
 			shared_libs: ["liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvppclient",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvppclient.so"],
-			shared_libs: ["libhidlbase", "libhidltransport", "liblog", "libhwbinder", "libutils", "libhardware", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "vendor.qti.hardware.vpp@1.3", "libvpplibrary", "libcutils", "libqdMetaData", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvppcommon",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvppcommon.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libdmabufheap", "libvmmem_vendor", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvpphcp",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvpphcp.so"],
-			shared_libs: ["libcutils", "liblog", "libcdsprpc", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvpphvx",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvpphvx.so"],
-			shared_libs: ["libcutils", "liblog", "libcdsprpc", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvppimmotion",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvppimmotion.so"],
-			shared_libs: ["libcutils", "liblog", "libadsprpc", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvpplibrary",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvpplibrary.so"],
-			shared_libs: ["libvppcommon", "libhidlbase", "libutils", "vendor.qti.hardware.capabilityconfigstore@1.0", "libcutils", "liblog", "libqdMetaData", "libdmabufheap", "libvpphvx", "libcdsprpc", "libvpphcp", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvpptestutils",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvpptestutils.so"],
-			shared_libs: ["libcutils", "liblog", "libvpplibrary", "libvppcommon", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -10829,23 +10133,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/qcrild_libqcrilnrutils.so"],
 			shared_libs: ["libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "qti.video.utils.videobufferlayout",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/qti.video.utils.videobufferlayout.so"],
-			shared_libs: ["libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12090,23 +11377,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qconfig@1.0",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.qconfig@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.qseecom@1.0",
 	owner: "nubia",
 	strip: {
@@ -13040,74 +12310,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.vpp@1.1",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.vpp@1.2",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so"],
-			shared_libs: ["vendor.qti.hardware.vpp@1.1", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.vpp@1.3",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so"],
-			shared_libs: ["vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.vpp@2.0",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.vpp@2.0.so"],
 			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -14661,24 +13863,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "c2_manifest_vendor.xml",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "c2_manifest_vendor_audio.xml",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "c2_manifest_vendor_audio_dts.xml",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio_dts.xml",
@@ -14832,15 +14016,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.qconfig@1.0-service.xml",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.qti.hardware.radio.am.xml",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.am.xml",
@@ -14862,15 +14037,6 @@ prebuilt_etc_xml {
 	name: "vendor.qti.hardware.radio.qtiradioconfig.xml",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.vpp@2.0-service.xml",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vpp@2.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -15804,24 +14970,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "qconfigservice",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/qconfigservice"],
-			shared_libs: ["libutils", "libhidlbase", "libcutils", "liblog", "vendor.qti.hardware.qconfig@1.0", "libjsoncpp", "libbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "qcrilNrd",
 	owner: "nubia",
 	target: {
@@ -16080,42 +15228,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti"],
 			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware", "libhidlbase", "libbinder", "vendor.qti.hardware.tui_comm@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.qti.media.c2@1.0-service",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "android.hardware.media.c2@1.0", "libavservices_minijail", "libbinder", "libhidlbase", "libhidltransport", "libhwbinder", "libvndksupport", "libcodec2_hidl@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.qti.media.c2audio@1.0-service",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqc2audio_base", "libqc2audio_utils", "libqc2audio_basecodec", "libqc2audio_platform", "libqc2audio_core", "android.hardware.media.c2@1.0", "libavservices_minijail", "libbinder", "libhidlbase", "libhidltransport", "libhwbinder", "libvndksupport", "libcodec2_hidl@1.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -17486,108 +16598,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/vmmgr"],
 			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vppcommonlibraryunittest",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/vppcommonlibraryunittest"],
-			shared_libs: ["libcutils", "liblog", "libvppcommon", "libvpptestutils", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vppipcunittest",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/vppipcunittest"],
-			shared_libs: ["libcutils", "liblog", "libvpplibrary", "libvpptestutils", "libhidlbase", "libhidltransport", "libhwbinder", "libutils", "libhardware", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "vendor.qti.hardware.vpp@1.3", "libvppclient", "libqdMetaData", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vpplibraryfunctionaltest",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/vpplibraryfunctionaltest"],
-			shared_libs: ["libcutils", "liblog", "libvpplibrary", "libvpptestutils", "libdmabufheap", "libvppcommon", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vpplibraryunittest",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/vpplibraryunittest"],
-			shared_libs: ["libvpphvx", "libvpphcp", "libcutils", "liblog", "libvpplibrary", "libvpptestutils", "libvppcommon", "qti.video.utils.videobufferlayout", "libdmabufheap", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vppservice",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/vppservice"],
-			shared_libs: ["libhidlbase", "libhidltransport", "liblog", "libhwbinder", "libutils", "libhardware", "vendor.qti.hardware.vpp@2.0", "libcutils", "libvpplibrary", "libqdMetaData", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vppserviceunittest",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/vppserviceunittest"],
-			shared_libs: ["libcutils", "liblog", "libvpplibrary", "libvpptestutils", "libhidlbase", "libhidltransport", "libhwbinder", "libutils", "libhardware", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "vendor.qti.hardware.vpp@1.3", "libvppclient", "libqdMetaData", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
