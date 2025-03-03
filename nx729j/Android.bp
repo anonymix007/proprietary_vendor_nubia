@@ -11,6 +11,7 @@ soong_namespace {
 		"vendor/qcom/common/vendor/bt/hci",
 		"vendor/qcom/common/vendor/display",
 		"vendor/qcom/common/vendor/display/5.15",
+		"vendor/qcom/common/vendor/gps-5.15",
 		"vendor/qcom/common/vendor/media-5.15",
 		"vendor/qcom/common/vendor/perf",
 	],
@@ -2568,24 +2569,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.gnss-aidl-impl-qti",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so"],
-			shared_libs: ["libbase", "libbinder_ndk", "android.hardware.gnss-V2-ndk", "android.hardware.health-V1-ndk", "android.hardware.health@1.0", "android.hardware.health@2.0", "android.hardware.health@2.1", "libhidlbase", "liblog", "libcutils", "libutils", "libloc_core", "libgps.utils", "liblocation_api", "libqti_vndfwk_detect_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "audio.bluetooth_qti.default",
 	owner: "nubia",
 	strip: {
@@ -2739,24 +2722,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so"],
 			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware", "libhidlbase", "libxml2", "vendor.qti.hardware.capabilityconfigstore@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qccvndhal@1.0-impl",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so"],
-			shared_libs: ["libbase", "libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "vendor.qti.hardware.qccvndhal@1.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -4081,23 +4046,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libbatching",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbatching.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libloc_core", "libgps.utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libbitmlengine",
 	owner: "nubia",
 	strip: {
@@ -4592,40 +4540,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcdfw",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcdfw.so"],
-			shared_libs: ["libgps.utils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcdfw_remote_api",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcdfw_remote_api.so"],
-			shared_libs: ["libgps.utils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libcdsp_default_listener",
 	owner: "nubia",
 	strip: {
@@ -4891,23 +4805,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcv_common.so"],
 			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdataitems",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdataitems.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "liblog", "libloc_core", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -5188,23 +5085,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libengineplugin",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libengineplugin.so"],
-			shared_libs: ["libgps.utils", "libcutils", "libdiag", "libz", "liblog", "liblocdiagiface", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libesepmconfig",
 	owner: "nubia",
 	strip: {
@@ -5358,74 +5238,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libgarden",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgarden.so"],
-			shared_libs: ["libgps.utils", "libloc_core", "liblocation_api", "liblog", "libdataitems", "libutils", "libbase", "libbinder_ndk", "android.hardware.gnss-V2-ndk", "libhidlbase", "vendor.qti.gnss-V3-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libgarden_haltests_e2e",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgarden_haltests_e2e.so"],
-			shared_libs: ["libgarden", "libgps.utils", "libloc_core", "liblocation_api", "liblog", "libutils", "libbase", "libbinder_ndk", "android.hardware.gnss-V2-ndk", "vendor.qti.gnss-V3-ndk", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libgdtap",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgdtap.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "liblog", "libloc_core", "libizat_core", "liblbs_core", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libgeofencing",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgeofencing.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "liblog", "libloc_core", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libgf_hal",
 	owner: "nubia",
 	strip: {
@@ -5435,57 +5247,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgf_hal.so"],
 			shared_libs: ["liblog", "libc", "libdl", "libion", "libcutils", "libutils", "libhardware", "libhidlbase", "libc++", "libdmabufheap", "libm", "vendor.goodix.hardware.biometrics.fingerprint@2.1", "libQSEEComAPI", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libgnss",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgnss.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libloc_core", "libgps.utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libgnsspps",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgnsspps.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libgps.utils",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgps.utils.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libprocessgroup", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -5767,40 +5528,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libizat_client_api",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libizat_client_api.so"],
-			shared_libs: ["liblog", "libgps.utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libizat_core",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libizat_core.so"],
-			shared_libs: ["libutils", "libcutils", "libloc_core", "libgps.utils", "libloc_api_v02", "libloc_util", "libsqlite", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libjnihelper",
 	owner: "nubia",
 	strip: {
@@ -5886,23 +5613,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liblbs_core",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblbs_core.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libizat_core", "libloc_core", "libgps.utils", "libcrypto", "libsqlite", "libloc_api_v02", "libmdmdetect", "libperipheral_client", "libpdmapper", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "liblistensoundmodel2vendor",
 	owner: "nubia",
 	strip: {
@@ -5946,312 +5656,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libloadtrusteduiapp.so"],
 			shared_libs: ["liblog", "libhidlbase", "libutils", "libminksocket_vendor", "libvmmem_vendor", "libtrustedapploader", "libminkdescriptor", "libhidlmemory", "libcpion", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_api_v02",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_api_v02.so"],
-			shared_libs: ["libutils", "libcutils", "libqmi_cci", "libqmi_common_so", "libloc_core", "libgps.utils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_api_wds",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_api_wds.so"],
-			shared_libs: ["libgps.utils", "libidl", "libcutils", "liblog", "libutils", "liblocation_api", "libqmi_cci", "libqmi_common_so", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_core",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_core.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_eng_hub",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_eng_hub.so"],
-			shared_libs: ["libgps.utils", "liblog", "libizat_core", "libgnsspps", "libdiag", "liblocdiagiface", "libutils", "libloc_util", "libcdfw", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_qwes_iface",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_qwes_iface.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libgps.utils", "libqcbor", "libminksocket_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_ril_client",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_ril_client.so"],
-			shared_libs: ["libcutils", "liblog", "libloc_core", "libgps.utils", "liblbs_core", "libdataitems", "libutils", "liblocationservice_glue", "qcril_client", "libqcrilNrLogger", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_socket",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_socket.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libgps.utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_util",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_util.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libgps.utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblocation_api",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocation_api.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblocation_api_msg",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocation_api_msg.so"],
-			shared_libs: ["libgps.utils", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblocation_client_api",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocation_client_api.so"],
-			shared_libs: ["libgps.utils", "liblocation_api_msg", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblocation_integration_api",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocation_integration_api.so"],
-			shared_libs: ["libgps.utils", "liblocation_api_msg", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblocation_qesdk",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocation_qesdk.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "libcdfw", "liblog", "liblocation_api", "libloc_core", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblocationservice",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocationservice.so"],
-			shared_libs: ["libcutils", "liblog", "libloc_core", "libgps.utils", "liblbs_core", "libdataitems", "liblowi_client", "libizat_core", "liblocation_api", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblocationservice_glue",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocationservice_glue.so"],
-			shared_libs: ["liblocationservice", "libcutils", "liblog", "libloc_core", "libgps.utils", "libhardware_legacy", "liblbs_core", "libdataitems", "liblocation_api", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblocdiagiface",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblocdiagiface.so"],
-			shared_libs: ["libgps.utils", "libcutils", "libdiag", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblowi_client",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblowi_client.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libgps.utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liblowi_wifihal",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblowi_wifihal.so"],
-			shared_libs: ["liblowi_client", "libcutils", "libutils", "liblog", "libgps.utils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -7095,23 +6499,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libpal_net_if",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libpal_net_if.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "liblog", "libandroid_net", "libcrypto", "libssl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libpdmapper",
 	owner: "nubia",
 	strip: {
@@ -7189,40 +6576,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcbor.so"],
 			shared_libs: ["liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcc_file_agent",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcc_file_agent.so"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libbase", "libfmq", "libhidlbase", "vendor.qti.hardware.qccsyshal@1.0", "vendor.qti.hardware.qccsyshal@1.1", "vendor.qti.hardware.qccsyshal@1.2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqcc_sdk",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqcc_sdk.so"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libbinder", "libbase", "libz", "vendor.qti.hardware.qccsyshal@1.2", "libhidlbase", "libfmq", "libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8473,23 +7826,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libslimclient",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libslimclient.so"],
-			shared_libs: ["libutils", "libgps.utils", "liblog", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libdiag", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsmemlog",
 	owner: "nubia",
 	strip: {
@@ -8881,23 +8217,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsynergy_loc_api",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsynergy_loc_api.so"],
-			shared_libs: ["libutils", "libcutils", "libqmi_cci", "libqmi_common_so", "libloc_core", "libgps.utils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsynx",
 	owner: "nubia",
 	strip: {
@@ -8907,23 +8226,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsynx.so"],
 			shared_libs: ["libos", "libthreadutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsys_info_cache",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsys_info_cache.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "libloc_core", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9835,23 +9137,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libxtadapter",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libxtadapter.so"],
-			shared_libs: ["libgps.utils", "liblog", "libloc_core", "libizat_core", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libzcv",
 	owner: "nubia",
 	strip: {
@@ -10616,57 +9901,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.gnss-V3-ndk",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.gnss-V3-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.gnss-V4-ndk",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.gnss-V4-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.gnss-service",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.gnss-service.so"],
-			shared_libs: ["libbase", "libbinder_ndk", "vendor.qti.gnss-V4-ndk", "liblog", "libcutils", "libutils", "libloc_core", "libgps.utils", "liblocation_api", "liblocationservice_glue", "liblbs_core", "libdataitems", "liblocationservice", "libxtadapter", "libizat_core", "libizat_client_api", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.automotive.vehicle@1.0",
 	owner: "nubia",
 	strip: {
@@ -11283,91 +10517,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qccsyshal@1.0",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qccsyshal@1.1",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so"],
-			shared_libs: ["vendor.qti.hardware.qccsyshal@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qccsyshal@1.2",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so"],
-			shared_libs: ["vendor.qti.hardware.qccsyshal@1.0", "vendor.qti.hardware.qccsyshal@1.1", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qccvndhal@1.0-halimpl",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libfmq", "libcutils", "liblog", "vendor.qti.hardware.qccvndhal@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.qccvndhal@1.0",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so"],
 			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -13782,15 +12931,6 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.gnss-aidl-service-qti.xml",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.radio.config.xml",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.config.xml",
@@ -13992,15 +13132,6 @@ prebuilt_etc_xml {
 	name: "vendor.qti.diag.hal.service.xml",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.gnss-service.xml",
-	owner: "nubia",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -14613,46 +13744,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "edgnss-daemon",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/edgnss-daemon"],
-			shared_libs: ["libutils", "liblog", "libssl", "libgps.utils", "libcdfw_remote_api", "libpal_net_if", "libsys_info_cache", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "embmsslServer",
 	owner: "nubia",
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/embmsslServer"],
 			shared_libs: ["libembmsservice", "liblog", "libutils", "libhidlbase", "vendor.qti.hardware.embmssl@1.0_vendor", "vendor.qti.hardware.embmssl@1.1_vendor", "libqmiservices", "libqmi_cci", "libqmi_encdec", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "engine-service",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/engine-service"],
-			shared_libs: ["libgps.utils", "libengineplugin", "liblog", "liblocdiagiface", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -14766,23 +13863,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "garden_app",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/garden_app"],
-			shared_libs: ["libgarden", "libgarden_haltests_e2e", "libgps.utils", "liblocation_api", "libloc_core", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "hdcp1prov",
 	owner: "nubia",
 	target: {
@@ -14841,24 +13921,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti"],
 			shared_libs: ["android.hardware.gatekeeper@1.0", "libhardware", "libhidlbase", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.gnss-aidl-service-qti",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti"],
-			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libgps.utils", "liblocation_api", "libbinder_ndk", "libqti_vndfwk_detect_vendor", "libhidlbase", "android.hardware.gnss-V2-ndk", "android.hardware.gnss-aidl-impl-qti", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -15409,41 +14471,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "loc_launcher",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/loc_launcher"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libgps.utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "lowi-server",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/lowi-server"],
-			shared_libs: ["libcutils", "libgps.utils", "liblog", "libnl", "libqmi_cci", "libqmi_common_so", "libdiag", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "ltm",
 	owner: "nubia",
 	target: {
@@ -15467,23 +14494,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/memtester"],
 			shared_libs: ["libcutils", "liblog", "libhardware_legacy", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "mlid",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/mlid"],
-			shared_libs: ["libcutils", "liblowi_client", "libminksocket_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -15750,40 +14760,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "qcc-trd",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/qcc-trd"],
-			shared_libs: ["libqmi_cci", "libqmiservices", "libqcc_sdk", "libnl", "libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "qcc-vendor",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/qcc-vendor"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libqcc_file_agent", "libqcc_sdk", "libqmi_cci", "libqmiservices", "libidl", "libfmq", "libhidlbase", "vendor.qti.hardware.qccsyshal@1.2", "libz", "libbinder", "libbase", "vendor.qti.hardware.qccvndhal@1.0", "vendor.qti.hardware.qccvndhal@1.0-halimpl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "qcom-system-daemon",
 	owner: "nubia",
 	target: {
@@ -15979,23 +14955,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/qsap_dcfd"],
 			shared_libs: ["libDcfHalFramework", "libDcfHalLogger", "libDcfHalQtiMutex", "libDcfHalBleProto", "libavservices_minijail", "libcutils", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libjsoncpp", "libqesdk2_0", "liblog", "libSensorsInterface", "libsnsapi", "libbase", "libcrypto", "libnl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "qsap_location",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/qsap_location"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "libqesdk2_0", "libjsoncpp", "liblog", "libcdfw_remote_api", "liblocdiagiface", "libavservices_minijail", "libbase", "libcrypto", "libnl", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16250,23 +15209,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/shsusrd"],
 			shared_libs: ["libutils", "libcutils", "libshsc", "libconfigdb", "libcrypto", "libdsutils", "liblog", "libssl", "libqmi_cci", "libqmi_common_so", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "slim_daemon",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/slim_daemon"],
-			shared_libs: ["libemutls_get_address", "libgps.utils", "liblog", "libdiag", "libqmi_csi", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libutils", "libhidlbase", "libsensorndkbridge", "android.frameworks.sensorservice@1.0", "libcutils", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libsnsapi", "libloc_api_v02", "libloc_core", "liblbs_core", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16658,40 +15600,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/wifidisplayhalservice"],
 			shared_libs: ["vendor.qti.hardware.wifidisplaysession@1.0_vendor", "vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl", "libhidlbase", "libutils", "liblog", "libbinder", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "xtra-daemon",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/xtra-daemon"],
-			shared_libs: ["libutils", "libcutils", "libcrypto", "libssl", "libsqlite", "libgps.utils", "libloc_core", "libizat_core", "liblbs_core", "liblog", "libandroid_net", "libavservices_minijail", "libsys_info_cache", "libpal_net_if", "libbinder", "libbinder_ndk", "libqcc_sdk", "libqcc_file_agent", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "xtwifi-client",
-	owner: "nubia",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/xtwifi-client"],
-			shared_libs: ["libcutils", "liblog", "libcrypto", "libz", "libsqlite", "libqmiservices", "libqmi_cci", "libqmi_common_so", "libgps.utils", "libloc_core", "libizat_core", "liblbs_core", "libavservices_minijail", "libgdtap", "liblowi_client", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

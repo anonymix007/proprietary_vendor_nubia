@@ -43,10 +43,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/nubia/nx729j/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd \
-    vendor/nubia/nx729j/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/VfbTuningInterface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VfbTuningInterface.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/adaptive_config/mfnr_network_denoise_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/adaptive_config/mfnr_network_denoise_config.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/camera/adaptive_shutter_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/adaptive_shutter_config.xml \
@@ -495,14 +493,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
     vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config_kalama-grd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kalama-grd-snd-card \
     vendor/nubia/nx729j/proprietary/vendor/etc/ftm_test_config_kalama-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kalama-qrd-snd-card \
-    vendor/nubia/nx729j/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/gpsInterval.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpsInterval.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
@@ -518,7 +512,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
@@ -526,7 +519,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/nfc-service-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-sec.rc \
@@ -545,7 +537,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.hardware.media.c2@1.0-dtscodec-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.hardware.media.c2@1.0-dtscodec-service.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
@@ -572,7 +563,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
     vendor/nubia/nx729j/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/nubia/nx729j/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-SN220_19_2MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-SN220_19_2MHZ.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-SN220_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-SN220_38_4MHZ.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
@@ -580,7 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC_DSC_FHD_6P7Inch.xml \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/nubia/nx729j/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
@@ -620,16 +609,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/recovery-resource.dat:$(TARGET_COPY_OUT_VENDOR)/etc/recovery-resource.dat \
     vendor/nubia/nx729j/proprietary/vendor/etc/res/images/default/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/default/charger/battery_fail.png \
     vendor/nubia/nx729j/proprietary/vendor/etc/res/images/default/charger/battery_scale.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/default/charger/battery_scale.png \
-    vendor/nubia/nx729j/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
-    vendor/nubia/nx729j/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/nubia/nx729j/proprietary/vendor/etc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_hwreg.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_swreg.bin \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-qsap-location.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
-    vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/modemManager.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/modemManager.policy \
     vendor/nubia/nx729j/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
@@ -718,7 +700,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx729j/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/nubia/nx729j/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
-    vendor/nubia/nx729j/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/nubia/nx729j/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
@@ -1059,7 +1040,6 @@ PRODUCT_PACKAGES += \
     ftm_fm_lib \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
-    android.hardware.gnss-aidl-impl-qti \
     audio.bluetooth_qti.default \
     camera.qcom \
     com.qti.chi.offline \
@@ -1069,7 +1049,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
@@ -1147,7 +1126,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_object_tracking \
     libaudio_log_utils \
     libbase64 \
-    libbatching \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl_qti \
@@ -1177,8 +1155,6 @@ PRODUCT_PACKAGES += \
     libcapiv2svarnnvendor \
     libcapiv2udk7vendor \
     libcapiv2uvvendor \
-    libcdfw \
-    libcdfw_remote_api \
     libcdsp_default_listener \
     libcdsprpc \
     libchifeature2 \
@@ -1195,7 +1171,6 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libcpion \
     libcv_common \
-    libdataitems \
     libdiag \
     libdiagjni \
     libdpmqmihal \
@@ -1212,7 +1187,6 @@ PRODUCT_PACKAGES += \
     libeai_float \
     libeepromutil \
     libembmsservice \
-    libengineplugin \
     libesepmconfig \
     libesesbprovision \
     libeva \
@@ -1222,14 +1196,7 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libfcell \
     libfnxml \
-    libgarden \
-    libgarden_haltests_e2e \
-    libgdtap \
-    libgeofencing \
     libgf_hal \
-    libgnss \
-    libgnsspps \
-    libgps.utils \
     libgpt \
     libhap_power \
     libhdcp1prov \
@@ -1246,35 +1213,14 @@ PRODUCT_PACKAGES += \
     libipebpsstriping170 \
     libipebpsstriping480 \
     libisphwsetting \
-    libizat_client_api \
-    libizat_core \
     libjnihelper \
     libjpege \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
-    liblbs_core \
     liblistensoundmodel2vendor \
     libloadalgo_stub \
     libloadtrusteduiapp \
-    libloc_api_v02 \
-    libloc_api_wds \
-    libloc_core \
-    libloc_eng_hub \
-    libloc_qwes_iface \
-    libloc_ril_client \
-    libloc_socket \
-    libloc_util \
-    liblocation_api \
-    liblocation_api_msg \
-    liblocation_client_api \
-    liblocation_integration_api \
-    liblocation_qesdk \
-    liblocationservice \
-    liblocationservice_glue \
-    liblocdiagiface \
-    liblowi_client \
-    liblowi_wifihal \
     liblqe \
     libmapdata_api \
     libmasc \
@@ -1324,14 +1270,11 @@ PRODUCT_PACKAGES += \
     libops \
     libopticalzoomfallback \
     libos \
-    libpal_net_if \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
     libqape_oem_ext \
     libqcbor \
-    libqcc_file_agent \
-    libqcc_sdk \
     libqcci_legacy \
     libqcmaputils \
     libqcrilDataModule \
@@ -1405,7 +1348,6 @@ PRODUCT_PACKAGES += \
     libshsc \
     libsi \
     libskia_vendor \
-    libslimclient \
     libsmemlog \
     libsnpe_loader \
     libsns_api \
@@ -1429,9 +1371,7 @@ PRODUCT_PACKAGES += \
     libstreamparser \
     libsubsystem_control \
     libswregistrationalgo \
-    libsynergy_loc_api \
     libsynx \
-    libsys_info_cache \
     libsysmon_cdsp_skel \
     libsystem_health_mon \
     libteec \
@@ -1485,7 +1425,6 @@ PRODUCT_PACKAGES += \
     libwvaidl \
     libwvhidl \
     libxml \
-    libxtadapter \
     libzcv \
     nfc_nci_sec \
     qcrilInterfaces \
@@ -1530,9 +1469,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
-    vendor.qti.gnss-V3-ndk \
-    vendor.qti.gnss-V4-ndk \
-    vendor.qti.gnss-service \
     vendor.qti.hardware.automotive.vehicle@1.0 \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
@@ -1568,11 +1504,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.1_vendor \
     vendor.qti.hardware.limits@1.2_vendor \
     vendor.qti.hardware.mwqemadapter@1.0_vendor \
-    vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qccsyshal@1.1 \
-    vendor.qti.hardware.qccsyshal@1.2 \
-    vendor.qti.hardware.qccvndhal@1.0-halimpl \
-    vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am-V1-ndk_vendor \
@@ -1745,7 +1676,6 @@ PRODUCT_PACKAGES += \
     TrustedUIService \
     TxPwrAdmin \
     com.qualcomm.qti.gpudrivers.kalama.api33 \
-    android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \
@@ -1769,7 +1699,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.postproc-impl.xml \
     vendor.qti.camera.provider.xml \
     vendor.qti.diag.hal.service.xml \
-    vendor.qti.gnss-service.xml \
     vendor.qti.hardware.lights.service.xml \
     vendor.qti.hardware.limits-service.xml \
     vendor.qti.hardware.radio.am.xml \
@@ -1809,21 +1738,17 @@ PRODUCT_PACKAGES += \
     dpmQmiMgr \
     dspservice \
     e_loop \
-    edgnss-daemon \
     embmsslServer \
-    engine-service \
     f2managertest \
     f2player \
     fm_qsoc_patches \
     fmconfig \
     fmfactorytest \
     fmfactorytestserver \
-    garden_app \
     hdcp1prov \
     hdcp2p2prov \
     android.hardware.drm-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
-    android.hardware.gnss-aidl-service-qti \
     android.hardware.identity-service-qti \
     android.hardware.keymaster@4.0-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
@@ -1856,11 +1781,8 @@ PRODUCT_PACKAGES += \
     iwpriv \
     ks \
     loadalgo \
-    loc_launcher \
-    lowi-server \
     ltm \
     memtester \
-    mlid \
     mm-audio-ftm \
     mmid \
     modemManager \
@@ -1876,8 +1798,6 @@ PRODUCT_PACKAGES += \
     pm_ioctl_app \
     pmic_key_reset \
     port-bridge \
-    qcc-trd \
-    qcc-vendor \
     qcom-system-daemon \
     qconfigfunctest \
     qdss_qmi_helper \
@@ -1890,7 +1810,6 @@ PRODUCT_PACKAGES += \
     qrtr-lookup \
     qrtr-ns \
     qsap_dcfd \
-    qsap_location \
     qsap_qapeservice \
     qsap_sensors \
     qsap_voiceui \
@@ -1907,7 +1826,6 @@ PRODUCT_PACKAGES += \
     sec_nfc_test \
     sensors.qti \
     shsusrd \
-    slim_daemon \
     soter_client \
     sscrpcd \
     ssdaemon_vendor \
@@ -1931,7 +1849,5 @@ PRODUCT_PACKAGES += \
     wfdhdcphalservice \
     wfdvndservice \
     wifidisplayhalservice \
-    xtra-daemon \
-    xtwifi-client \
     zte_diag_callback \
     zte_ftm
