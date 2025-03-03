@@ -13863,6 +13863,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "bluetooth_audio.xml",
+	owner: "nubia",
+	src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "c2_manifest_vendor_audio_dts.xml",
 	owner: "nubia",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio_dts.xml",

@@ -1754,6 +1754,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.sim.xml \
     android.hardware.radio.voice.xml \
     android.hardware.security.keymint-service-qti.xml \
+    bluetooth_audio.xml \
     c2_manifest_vendor_audio_dts.xml \
     dataconnection-saidl.xml \
     deviceinfo-saidl.xml \
