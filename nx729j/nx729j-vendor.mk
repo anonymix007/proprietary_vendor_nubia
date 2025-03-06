@@ -1118,7 +1118,6 @@ PRODUCT_PACKAGES += \
     libainativeprocessclient \
     libancbase_cud \
     libapp-framework \
-    libar-pal \
     libarcsoft_dualcam_refocus_image \
     libarcsoft_dualcam_refocus_video \
     libarcsoft_hdr_detection \

@@ -3910,23 +3910,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libar-pal",
-	owner: "nubia",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libar-pal.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libarcsoft_dualcam_refocus_image",
 	owner: "nubia",
 	strip: {
@@ -7289,10 +7272,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqtigefar.so"],
-			shared_libs: ["liblog", "libcutils", "libar-pal", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
